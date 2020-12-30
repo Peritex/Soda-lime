@@ -1,0 +1,67 @@
+/* Cool Member List */
+ .membersWrap-2h-GB4 {
+    min-width: unset;
+    max-width: 70px;
+    justify-content: right;
+    transition: max-width var(--user-anim-speed) ease 1s;
+}
+ 
+ .members-1998pB {
+
+ }
+ 
+ .membersWrap-2h-GB4:hover {
+    max-width: 100%;
+   transition: max-width var(--user-anim-speed) ease 0.5s;
+ }
+ 
+ .membersWrap-2h-GB4 .membersGroup-v9BXpm::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    border-radius: 50px;
+    background: unset;
+    background-color: var(--seperator-color);
+    position: absolute;
+    left: -36px;
+    top: 29px;
+    margin-left: 0px;
+ }
+ 
+ .membersWrap-2h-GB4 .members-1998pB .member-3-YXUe {
+    background-color: unset;
+    margin-left: 0px;
+    transition: margin-left var(--user-anim-speed);
+ }
+ 
+ .membersWrap-2h-GB4:hover .members-1998pB .member-3-YXUe {
+    margin-left: 8px;
+ }
+ 
+ .membersWrap-2h-GB4:hover .membersGroup-v9BXpm {
+    transform: translateX(-6px);
+ }
+ 
+ .membersWrap-2h-GB4 .membersGroup-v9BXpm {
+    cursor: default;
+    transform: translateX(45px);
+    transition: transform var(--user-anim-speed) 0.5s;
+    overflow: visible;
+ }
+
+.members-1998pB {
+  border-radius: var( --borders-user-area) !important;
+}
+.membersWrap-2h-GB4, .members-1998pB {
+  left: 15px;
+  margin-right: 10px
+}
+.chat-3bRxxu {
+  background: var(--background-tertiary);
+}
+.chatContent-a9vAAp {
+  background-color: var(--background-primary);
+  left: 25px;
+  margin-left: -25px;
+  max-width:100%;
+}
