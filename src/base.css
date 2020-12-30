@@ -1114,8 +1114,9 @@ button,
 #app-mount .tooltip-2QfLtc,
 #app-mount .subscribeTooltipWrapper-1JoUuw,
 #app-mount .tooltip-1_vJJI {
-   border-radius: var(--borders-tooltips);
-   background: rgb(255,0,0);
+  border-radius: var(--borders-tooltips);
+  background: rgba(0,0,0,0);
+  backdrop-filter: blur(5px);
 }
 
   /*------------------------------------*/
