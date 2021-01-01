@@ -1114,9 +1114,8 @@ button,
 #app-mount .tooltip-2QfLtc,
 #app-mount .subscribeTooltipWrapper-1JoUuw,
 #app-mount .tooltip-1_vJJI {
-  border-radius: var(--borders-tooltips);
-  background: rgba(0,0,0,0);
-  backdrop-filter: blur(5px);
+   border-radius: var(--borders-tooltips);
+    border: 
 }
 
   /*------------------------------------*/
@@ -1162,3 +1161,4 @@ button,
 #app-mount .powercord-quickcss-editor-settings {
    border-radius: var(--borders-editors);
 }
+
