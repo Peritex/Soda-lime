@@ -5,12 +5,12 @@
 
 .theme-dark,
 :root {
-	--background-primary: #2a2a2a!important;
-	--background-secondary: #1a1a1a!important;
-	--background-secondary-alt: #2a2a2a !important;
+	--background-primary: #1a1a1a!important;
+	--background-secondary: #121212!important;
+	--background-secondary-alt: #1a1a1a !important;
 	--background-tertiary: #1f1f1f!important;
 	--background-accent: #1f1f1f!important;
-	--background-floating: #29292b!important;
+	--background-floating: #19191b!important;
 	--background-modifier-hover: rgba(255, 255, 255, 0.01)!important;
 	--background-modifier-active: rgba(255, 255, 255, 0.03)!important;
 	--background-modifier-selected: rgba(255, 255, 255, 0.04)!important;
@@ -31,12 +31,15 @@
 	--interactive-muted: #747474!important;
 	--header-primary: white!important;
 	--header-secondary: #c9c9c9!important;
-	--toast-background: var(--background-primary)!important;
-	--toast-header: var(--background-tertiary)!important;
-	--toast-contents: var(--background-secondary)!important;
-	--toast-box-shadow: rgba(0, 0, 0, 0.2)!important;
-	--toast-border: var(--background-tertiary)!important;
+	--toast-background: #2a2a2a00!important;
+	--toast-header: #1f1f1f88!important;
+	--toast-contents: #1a1a1a66 !important;
+	--toast-box-shadow: rgba(0, 0, 0, 0.5)!important;
+	--toast-border:  #1f1f1f22 !important;
     --seperator-color: var(--background-accent);
+    
+    --toast-blur: 3.5px;
+    --tooltip-blur: 5px;
     
     
     --borders-buttons-rounded: 3px; /*Border shapes for rounded buttons. 25px for circle, 0px for square*/
@@ -117,6 +120,21 @@
 }
 
 
+  /*---------------------------------*/
+ /*--------{Fix Spotify}--------*/
+/*---------------------------------*/
+.powercord-spotify{background-color:#282828!important;padding-bottom:10px!important;border-top: 1px solid #333333!important;border-bottom: 1px solid #333333!important;}
+.powercord-spotify img{border-radius:0!important}
+.powercord-spotify .spotify-seek-bar{height:4px!important;border-radius:2px!important;margin-left:15px!important;margin-right:15px!important;background:#404040!important}
+.powercord-spotify .spotify-seek-bar-progress{background:#b3b3b3!important;border-radius:2px!important}
+.powercord-spotify .container-3baos1{background-color:transparent!important}
+.powercord-spotify .container-3baos1 .nameTag-3uD-yy .title-eS5yk3{color:#fff!important}
+.powercord-spotify .container-3baos1 .nameTag-3uD-yy .subtext-3CDbHg{color:#b3b3b3!important;overflow-x:hidden!important;text-indent:-15px!important}
+.powercord-spotify .spotify-buttons button{background:0 0!important;}
+.powercord-spotify .spotify-seek-elements,.powercord-spotify.hover .spotify-seek-elements{color:#b3b3b3!important;font-size:70%!important;margin-top:3px!important;margin-left:10px!important;margin-right:10px!important}
+.powercord-spotify .horizontal-1ae9ci *{width:0!important;overflow:hidden!important;opacity:0!important;display:none!important}
+.powercord-spotify:hover .horizontal-1ae9ci *{width:32px!important;overflow:visible!important;opacity:1!important;display:block!important}
+
 
 
   /*--------------------------------*/
@@ -141,15 +159,21 @@
 }
 
 
+/*frost the toast bg */
+.powercord-toast{
+ backdrop-filter:blur( var(--toast-blur));
+  
+}
+
   /*----------------------------------*/
  /*--------{tooltip frosting}--------*/
 /*----------------------------------*/
 #app-mount .tooltip-2QfLtc,
 #app-mount .subscribeTooltipWrapper-1JoUuw,
 #app-mount .tooltip-1_vJJI {
-  background: rgba(0,0,0,0);
-  backdrop-filter: blur(5px);
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0);
+    backdrop-filter: blur(var( --tooltip-blur));
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);    
 }
 
   /*----------------------------------*/
@@ -194,32 +218,13 @@
 }
 
 
+
   /*--------------------------------*/
  /*--------{Cant copy usernames}--------*/
 /*--------------------------------*/
 .header-23xsNx{
   user-select:none;
 }
-
-  /*---------------------------------*/
- /*--------{Fix Spotify}--------*/
-/*---------------------------------*/
-.powercord-spotify{background-color:#282828!important;padding-bottom:10px!important;border-top: 1px solid #333333!important;border-bottom: 1px solid #333333!important;}
-.powercord-spotify img{border-radius:0!important}
-.powercord-spotify .spotify-seek-bar{height:4px!important;border-radius:2px!important;margin-left:15px!important;margin-right:15px!important;background:#404040!important}
-.powercord-spotify .spotify-seek-bar-progress{background:#b3b3b3!important;border-radius:2px!important}
-.powercord-spotify .container-3baos1{background-color:transparent!important}
-.powercord-spotify .container-3baos1 .nameTag-3uD-yy .title-eS5yk3{color:#fff!important}
-.powercord-spotify .container-3baos1 .nameTag-3uD-yy .subtext-3CDbHg{color:#b3b3b3!important;overflow-x:hidden!important;text-indent:-15px!important}
-.powercord-spotify .spotify-buttons button{background:0 0!important;}
-.powercord-spotify .spotify-seek-elements,.powercord-spotify.hover .spotify-seek-elements{color:#b3b3b3!important;font-size:70%!important;margin-top:3px!important;margin-left:10px!important;margin-right:10px!important}
-.powercord-spotify .horizontal-1ae9ci *{width:0!important;overflow:hidden!important;opacity:0!important;display:none!important}
-.powercord-spotify:hover .horizontal-1ae9ci *{width:32px!important;overflow:visible!important;opacity:1!important;display:block!important}
-
-
-
-
-
 
   /*--------------------------------*/
  /*-----------{Top Bar}------------*/
@@ -264,10 +269,10 @@
 }
 
 
-  /*------------------------------------*/
- /*--------{TopBar Button Anim}--------*/
-/*------------------------------------*/
-/*anim TopBar bu-tons*/
+  /*--------------------------------*/
+ /*-----------{TopBar Button Anim}------------*/
+/*--------------------------------*/
+/*anim TopBar buttons*/
 .iconWrapper-2OrFZ1:hover {
     animation: Bop 1s 6;
   }
@@ -299,22 +304,6 @@
 /*TopBar help button del*/
 .iconWrapper-2OrFZ1[aria-label="Help"]{
     display:none;
-}
-
-/* Shake Anim */
-@keyframes shake {
-  from {transform: skewX(-10deg);}
-  to {transform: skewX(10deg);}
-  
-}
-/* shake on hover & dip on klick */
-.iconWrapper-2OrFZ1[aria-label="Member List"]:hover {
-  animation-name: shake;
-  animation-duration: .7s;
-}
-.iconWrapper-2OrFZ1[aria-label="Member List"]:active {
-	transform: scale(0.9, 0.9); 
-  transform: translateY(2px);
 }
 
 
