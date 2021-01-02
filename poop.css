@@ -106,9 +106,9 @@
 
 /*better PnP*/
 .pictureInPictureWindow-1B5qSe{
-    width: 440px;
-    height: 248px;
-    opacity: 60%;
+    width: 10%;
+    height: 10%;
+    opacity: 50%;
 }
 .pictureInPictureWindow-1B5qSe:hover{
         opacity: 100%;
@@ -123,17 +123,74 @@
   /*---------------------------------*/
  /*--------{Fix Spotify}--------*/
 /*---------------------------------*/
-.powercord-spotify{background-color:#282828!important;padding-bottom:10px!important;border-top: 1px solid #333333!important;border-bottom: 1px solid #333333!important;}
-.powercord-spotify img{border-radius:0!important}
-.powercord-spotify .spotify-seek-bar{height:4px!important;border-radius:2px!important;margin-left:15px!important;margin-right:15px!important;background:#404040!important}
-.powercord-spotify .spotify-seek-bar-progress{background:#b3b3b3!important;border-radius:2px!important}
-.powercord-spotify .container-3baos1{background-color:transparent!important}
-.powercord-spotify .container-3baos1 .nameTag-3uD-yy .title-eS5yk3{color:#fff!important}
-.powercord-spotify .container-3baos1 .nameTag-3uD-yy .subtext-3CDbHg{color:#b3b3b3!important;overflow-x:hidden!important;text-indent:-15px!important}
-.powercord-spotify .spotify-buttons button{background:0 0!important;}
-.powercord-spotify .spotify-seek-elements,.powercord-spotify.hover .spotify-seek-elements{color:#b3b3b3!important;font-size:70%!important;margin-top:3px!important;margin-left:10px!important;margin-right:10px!important}
-.powercord-spotify .horizontal-1ae9ci *{width:0!important;overflow:hidden!important;opacity:0!important;display:none!important}
-.powercord-spotify:hover .horizontal-1ae9ci *{width:32px!important;overflow:visible!important;opacity:1!important;display:block!important}
+.powercord-spotify{
+    position:absolute;
+    bottom: 58px ;
+    width: 240px;
+/*    background-color:var( --background-primary)!important;*/
+    padding-bottom:10px!important;
+    border-top: 1px solid #333333!important;
+    border-bottom: 1px solid #333333!important;
+    border-left: 1px solid var(--spotify-color);
+    overflow: hidden;
+    max-height: 5px;
+    transition: max-height ease-out .3s;
+    background: rgba(0,0,0,0);
+    backdrop-filter:blur(3px);
+    
+    z-index: 1;
+    
+}
+.powercord-spotify:hover{
+    max-height: 80px;
+}
+.powercord-spotify img{
+    border-radius:0!important
+}
+.powercord-spotify .spotify-seek-bar{
+    height:4px!important;
+    border-radius:2px!important;
+    margin-left:15px!important;
+    margin-right:15px!important;
+/*    background:#404040!important*/
+}
+.powercord-spotify .spotify-seek-bar-progress{
+    background:#b3b3b3!important;
+    border-radius:2px!important
+}
+.powercord-spotify .container-3baos1{
+    background-color:transparent!important
+}
+.powercord-spotify .container-3baos1 .nameTag-3uD-yy .title-eS5yk3{
+    color:#fff!important
+}
+.powercord-spotify .container-3baos1 .nameTag-3uD-yy .subtext-3CDbHg{
+    color:#b3b3b3!important;
+    overflow-x:hidden!important;
+    text-indent:-15px!important
+}
+.powercord-spotify .spotify-buttons button{
+    background:0 0!important;
+}
+.powercord-spotify .spotify-seek-elements,.powercord-spotify.hover .spotify-seek-elements{
+    color:#b3b3b3!important;
+    font-size:70%!important;
+    margin-top:3px!important;
+    margin-left:10px!important;
+    margin-right:10px!important
+}
+.powercord-spotify .horizontal-1ae9ci *{
+    width:0!important;
+    overflow:hidden!important;
+    opacity:0!important;
+    display:none!important
+}
+.powercord-spotify:hover .horizontal-1ae9ci *{
+    width:32px!important;
+    overflow:visible!important;
+    opacity:1!important;
+    display:block!important;
+}
 
 
 
@@ -151,14 +208,16 @@
   opacity: .5;
   /*makes blurred text fully opaque*/
 }
-.contents-2mQqc9 .spoilerText-3p6IlD.hidden-HHr2R9:hover>.inlineContent-3ZjPuv{
+.contents-2mQqc9 .spoilerText-3p6IlD.hidden-HHr2R9:hover > .inlineContent-3ZjPuv{
   filter:none;
   /*removes blur filter on hover*/
   opacity: 1;
   /*makes text opacity look like normal, non-spoiled text on hover*/
 }
 
-
+  /*--------------------------------*/
+ /*-----------Blur Toast-----------*/
+/*--------------------------------*/
 /*frost the toast bg */
 .powercord-toast{
  backdrop-filter:blur( var(--toast-blur));
@@ -185,6 +244,9 @@
 
 
 
+  /*---------------------------------*/
+ /*-----------{Icon Tray}-----------*/
+/*---------------------------------*/
 
   /*---------------------------------*/
  /*--------{Profile to Left}--------*/
@@ -204,7 +266,7 @@
   /*---------------------------------*/
  /*--------{User tray icons}--------*/
 /*---------------------------------*/
-.panels-j1Uci_ .container-3baos1 button[aria-checked="false"], .panels-j1Uci_ .container-3baos1 button:not([role="switch"]) {
+.panels-j1Uci_ .container-3baos1 button[aria-checked="false"], .panels-j1Uci_ .container-3baos1 button:not([role="switch"]){
     transition: 0.2s ease-in-out;
     width: 0px !important;
     overflow: hidden !important;
@@ -225,6 +287,8 @@
 .header-23xsNx{
   user-select:none;
 }
+
+
 
   /*--------------------------------*/
  /*-----------{Top Bar}------------*/
@@ -363,18 +427,18 @@ div .tutorialContainer-1v44GL {
 }
 
 .mentioned-xhSam7 {
-  padding-top:10px !important;
-	padding-bottom:10px !important;
-  border-left: 3px solid rgba(180, 180, 180, 0.4);
-  border-radius: 0;
+    padding-top:10px !important;
+    padding-bottom:10px !important;
+    border-left: 3px solid rgba(180, 180, 180, 0.4);
+    border-radius: 0;
 }
 
 .children-19S4PO, .toolbar-1t6TWx {
-  background-color: rgba(0,0,0,0.2);
-  border-radius: var( --borders-top-bar);
-  padding: 5px;
-  height: auto;
-  margin: 3px !important;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: var( --borders-top-bar);
+    padding: 5px;
+    height: auto;
+    margin: 3px !important;
 }
 .children-19S4PO::after {
   display: none;
