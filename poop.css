@@ -38,6 +38,8 @@
 	--toast-border:  #1f1f1f22 !important;
     --seperator-color: var(--background-accent);
     
+    --focus-primary: #ff0000;
+    
     --toast-blur: 3.5px;
     --tooltip-blur: 5px;
     
@@ -120,77 +122,6 @@
 }
 
 
-  /*---------------------------------*/
- /*--------{Fix Spotify}--------*/
-/*---------------------------------*/
-.powercord-spotify{
-    position:absolute;
-    bottom: 58px ;
-    width: 240px;
-/*    background-color:var( --background-primary)!important;*/
-    padding-bottom:10px!important;
-    border-top: 1px solid #333333!important;
-    border-bottom: 1px solid #333333!important;
-    border-left: 1px solid var(--spotify-color);
-    overflow: hidden;
-    max-height: 5px;
-    transition: max-height ease-out .3s;
-    background: rgba(0,0,0,0);
-    backdrop-filter:blur(3px);
-    
-    z-index: 1;
-    
-}
-.powercord-spotify:hover{
-    max-height: 80px;
-}
-.powercord-spotify img{
-    border-radius:0!important
-}
-.powercord-spotify .spotify-seek-bar{
-    height:4px!important;
-    border-radius:2px!important;
-    margin-left:15px!important;
-    margin-right:15px!important;
-/*    background:#404040!important*/
-}
-.powercord-spotify .spotify-seek-bar-progress{
-    background:#b3b3b3!important;
-    border-radius:2px!important
-}
-.powercord-spotify .container-3baos1{
-    background-color:transparent!important
-}
-.powercord-spotify .container-3baos1 .nameTag-3uD-yy .title-eS5yk3{
-    color:#fff!important
-}
-.powercord-spotify .container-3baos1 .nameTag-3uD-yy .subtext-3CDbHg{
-    color:#b3b3b3!important;
-    overflow-x:hidden!important;
-    text-indent:-15px!important
-}
-.powercord-spotify .spotify-buttons button{
-    background:0 0!important;
-}
-.powercord-spotify .spotify-seek-elements,.powercord-spotify.hover .spotify-seek-elements{
-    color:#b3b3b3!important;
-    font-size:70%!important;
-    margin-top:3px!important;
-    margin-left:10px!important;
-    margin-right:10px!important
-}
-.powercord-spotify .horizontal-1ae9ci *{
-    width:0!important;
-    overflow:hidden!important;
-    opacity:0!important;
-    display:none!important
-}
-.powercord-spotify:hover .horizontal-1ae9ci *{
-    width:32px!important;
-    overflow:visible!important;
-    opacity:1!important;
-    display:block!important;
-}
 
 
 
@@ -244,22 +175,115 @@
 
 
 
+
+
+
+
+  /*---------------------------------*/
+ /*--------{Fix Spotify}--------*/
+/*---------------------------------*/
+.powercord-spotify{
+    position:fixed;
+    bottom: 58px;
+    left: 0px;
+    width: 59px;
+    max-height: 5px;
+    background-color: var( --spotify-color)!important;
+    padding: 5px!important;
+    border-top: 1px solid #333333!important;
+    border-bottom: 1px solid #333333!important;
+    border-left: 1px solid var(--spotify-color);
+    overflow: hidden;
+    transition: max-height .5s ease 3s, background-color .3s 3s, width .5s 1s, z-index 1s 3s;
+    backdrop-filter:blur(5px);
+    
+    z-index: 1;
+}
+.powercord-spotify:hover{
+    width: 300px;
+    height: 100px;
+    max-height: 80px;
+    padding-left: 70px;
+    transition: max-height .5s ease-out .5s, background-color .5s, width .5s, z-index 10ms;
+    background-color: rgba(100,200,100,.1)!important;
+    z-index: 10;
+}
+
+.powercord-spotify img{
+    border-radius:0!important
+}
+.powercord-spotify .spotify-seek-bar{
+    height:4px!important;
+    border-radius:2px!important;
+    margin-left:15px!important;
+    margin-right:15px!important;
+    background:#404040!important
+}
+.powercord-spotify .spotify-seek-bar-progress{
+    background:#b3b3b3!important;
+    border-radius:2px!important
+}
+.powercord-spotify .container-3baos1{
+    background-color:transparent!important
+}
+.powercord-spotify .container-3baos1 .nameTag-3uD-yy .title-eS5yk3{
+    color:#fff!important
+}
+.powercord-spotify .container-3baos1 .nameTag-3uD-yy .subtext-3CDbHg{
+    color:#b3b3b3!important;
+    overflow-x:hidden!important;
+    text-indent:-15px!important
+}
+.powercord-spotify .spotify-buttons button{
+    background:0 0!important;
+}
+.powercord-spotify .spotify-seek-elements,.powercord-spotify.hover .spotify-seek-elements{
+    color:#b3b3b3!important;
+    font-size:70%!important;
+    margin-top:3px!important;
+    margin-left:10px!important;
+    margin-right:10px!important
+}
+.powercord-spotify .horizontal-1ae9ci *{
+    width:0!important;
+    overflow:hidden!important;
+    opacity:0!important;
+    display:none!important
+}
+.powercord-spotify:hover .horizontal-1ae9ci *{
+    width:32px!important;
+    overflow:visible!important;
+    opacity:1!important;
+    display:block!important;
+}
+
+
+
+
   /*---------------------------------*/
  /*-----------{Icon Tray}-----------*/
 /*---------------------------------*/
+
 
   /*---------------------------------*/
  /*--------{Profile to Left}--------*/
 /*---------------------------------*/
 .container-3baos1{
+/*    position: fixed;*/
+    max-height: 55px;
+    
+    bottom: 0px;
+    left: 0px;
+    
     padding: 0 5px 5px 5px;
     margin-left: 10px;
+    z-index: 5;
 }
 
   /*-------------------------------*/
  /*--------{User name del}--------*/
 /*-------------------------------*/
-.container-3baos1 .canCopy-2VBT7N.nameTag-3uD-yy {
+.container-3baos1 .nameTag-3uD-yy.canCopy-2VBT7N {
     display: none;
     
 }
@@ -523,6 +547,7 @@ svg.icon-22AiRD:hover {
 /* Removes a stupid Container */
 .form-2fGMdU:before{
     display: none;
+    content: 
 }
 
   /*--------------------------------*/
@@ -651,7 +676,7 @@ svg.icon-22AiRD:hover {
 /*--------------------------------*/
 .wrapper-1Rf91z {
   width: 70px;
-  height: calc(100% - 20px);
+  height: calc(100% - 60px);
 }
 .wrapper-1Rf91z::after {
   position: fixed;
@@ -669,6 +694,7 @@ svg.icon-22AiRD:hover {
 .tutorialContainer-SGrQ1h,
 [aria-label="Servers"] + .listItem-2P_4kh {
     position: fixed;
+    width: 70px;
     z-index: 100;
     /*border-radius: var(--borders-servers); */
     padding-top: 5px;
