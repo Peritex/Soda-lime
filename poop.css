@@ -1,7 +1,7 @@
 
-@import url(https://peritex.github.io/MyTheam/src/Format.css);
-@import url(https://peritex.github.io/MyTheam/src/User.css);
-@import url(https://peritex.github.io/MyTheam/src/User_Area.css);
+@import url(https://peritex.github.io/Soda-lime/src/Format.css);
+@import url(https://peritex.github.io/Soda-lime/src/User.css);
+@import url(https://peritex.github.io/Soda-lime/src/User_Area.css);
 
 .theme-dark,
 :root {
@@ -38,7 +38,7 @@
 	--toast-border:  #1f1f1f22 !important;
     --seperator-color: var(--background-accent);
     
-    --focus-primary: #ff0000;
+    --focus-primary: #e700fa;
     
     --toast-blur: 3.5px;
     --tooltip-blur: 5px;
