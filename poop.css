@@ -1,16 +1,16 @@
 
 @import url(https://peritex.github.io/MyTheam/src/Format.css);
 @import url(https://peritex.github.io/MyTheam/src/User.css);
-
+@import url(https://peritex.github.io/MyTheam/src/User_Area.css);
 
 .theme-dark,
 :root {
-	--background-primary: #1a1a1a!important;
-	--background-secondary: #121212!important;
-	--background-secondary-alt: #1a1a1a !important;
-	--background-tertiary: #1f1f1f!important;
+	--background-primary: #212121!important;
+	--background-secondary: #131313!important;
+	--background-secondary-alt: #212121 !important;
+	--background-tertiary: #0f0f0f!important;
 	--background-accent: #1f1f1f!important;
-	--background-floating: #19191b!important;
+	--background-floating: #191919!important;
 	--background-modifier-hover: rgba(255, 255, 255, 0.01)!important;
 	--background-modifier-active: rgba(255, 255, 255, 0.03)!important;
 	--background-modifier-selected: rgba(255, 255, 255, 0.04)!important;
@@ -179,9 +179,71 @@
 
 
 
+
+
+  /*-----------------------------------------------------*/
+ /*---------------------{User area}---------------------*/
+/*-----------------------------------------------------*/
+/* channel list */
+.container-3w7J-x{
+    max-height: calc(100% - 110px);
+}
+
+.panels-j1Uci_{
+    position: absolute;
+    bottom: 0%;
+    min-width: 240px;
+    
+    z-index: 3;
+}
   /*---------------------------------*/
- /*--------{Fix Spotify}--------*/
+ /*------------{Profile}------------*/
 /*---------------------------------*/
+.container-3baos1{
+/*    position: fixed;*/
+    max-height: 55px;
+    
+    bottom: 0px;
+    left: 0px;
+    border-top: 2px;
+    padding: 0px 5px 5px 5px;
+    margin-left: 10px;
+    z-index: 5;
+}
+  /*-------------------------------*/
+ /*--------{User name del}--------*/
+/*-------------------------------*/
+.container-3baos1 .nameTag-3uD-yy.canCopy-2VBT7N {
+    display: none;
+    
+}
+  /*---------------------------------*/
+ /*--------{User tray icons}--------*/
+/*---------------------------------*/
+.panels-j1Uci_ .container-3baos1 button[aria-checked="false"], .panels-j1Uci_ .container-3baos1 button:not([role="switch"]){
+    transition: 0.2s ease-in-out;
+    width: 0px !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+}
+.panels-j1Uci_ .container-3baos1:hover button.button-14-BFJ {
+    transition: 0.2s ease-in-out;
+    width: 45px !important;
+    overflow: visible !important;
+    opacity: 1 !important;
+}
+  /*---------------------------------*/
+ /*------{Cant copy usernames}------*/
+/*---------------------------------*/
+.header-23xsNx{
+  user-select:none;
+}
+
+
+
+  /*---------------------------------------*/
+ /*-------------{Fix Spotify}-------------*/
+/*---------------------------------------*/
 .powercord-spotify{
     position:fixed;
     bottom: 58px;
@@ -197,7 +259,7 @@
     transition: max-height .5s ease 3s, background-color .3s 3s, width .5s 1s, z-index 1s 3s;
     backdrop-filter:blur(5px);
     
-    z-index: 1;
+    z-index: 10;
 }
 .powercord-spotify:hover{
     width: 300px;
@@ -206,9 +268,8 @@
     padding-left: 70px;
     transition: max-height .5s ease-out .5s, background-color .5s, width .5s, z-index 10ms;
     background-color: rgba(100,200,100,.1)!important;
-    z-index: 10;
+    z-index: 11;
 }
-
 .powercord-spotify img{
     border-radius:0!important
 }
@@ -259,58 +320,48 @@
 
 
 
-
-  /*---------------------------------*/
- /*-----------{Icon Tray}-----------*/
-/*---------------------------------*/
-
-
-  /*---------------------------------*/
- /*--------{Profile to Left}--------*/
-/*---------------------------------*/
-.container-3baos1{
-/*    position: fixed;*/
-    max-height: 55px;
+  /*------------------------------------------*/
+ /*------------{Voice Chat Panel}------------*/
+/*------------------------------------------*/
+.wrapper-24pKcD:not(:empty){
+  position: fixed;
+  bottom: 50px;
+  left: 70px;
+  height: 45px;
+  overflow: hidden;
+  width: 240px;
+  background-color: var( --background-primary);
+  backdrop-filter:blur(5px);
+  z-index: 1;
+  transition: height .2s ease .7s, background-color .5s .5s;
+}
+.wrapper-24pKcD:hover{
+    background:#2a2a2a00;
+    height: 95px;
     
-    bottom: 0px;
-    left: 0px;
-    
-    padding: 0 5px 5px 5px;
-    margin-left: 10px;
     z-index: 5;
 }
-
-  /*-------------------------------*/
- /*--------{User name del}--------*/
-/*-------------------------------*/
-.container-3baos1 .nameTag-3uD-yy.canCopy-2VBT7N {
-    display: none;
-    
-}
-  /*---------------------------------*/
- /*--------{User tray icons}--------*/
-/*---------------------------------*/
-.panels-j1Uci_ .container-3baos1 button[aria-checked="false"], .panels-j1Uci_ .container-3baos1 button:not([role="switch"]){
-    transition: 0.2s ease-in-out;
-    width: 0px !important;
-    overflow: hidden !important;
-    opacity: 0 !important;
-}
-.panels-j1Uci_ .container-3baos1:hover button.button-14-BFJ {
-    transition: 0.2s ease-in-out;
-    width: 45px !important;
-    overflow: visible !important;
-    opacity: 1 !important;
+/*internal container*/
+.container-1giJp5{
+  padding: 0px 8px;
+  padding-bottom: 8px;
 }
 
 
 
-  /*--------------------------------*/
- /*--------{Cant copy usernames}--------*/
-/*--------------------------------*/
-.header-23xsNx{
-  user-select:none;
+  /*--------------------------------------------*/
+ /*------------{Screen share Panel}------------*/
+/*--------------------------------------------*/
+/* Streaming panel anim */
+.panel-24C3ux{
+  overflow: hidden;
+  padding: 5px 8px;
+  margin-bottom: 37px;
+  backdrop-filter:blur(5px);
+  z-index: 1;
+  transition:width .2s 1s, left .2s 1s, background-color .5s 1s;
 }
+
 
 
 
@@ -357,9 +408,9 @@
 }
 
 
-  /*--------------------------------*/
+  /*-------------------------------------------*/
  /*-----------{TopBar Button Anim}------------*/
-/*--------------------------------*/
+/*-------------------------------------------*/
 /*anim TopBar buttons*/
 .iconWrapper-2OrFZ1:hover {
     animation: Bop 1s 6;
@@ -373,7 +424,6 @@
       transform: rotateX(360deg);
     }
 }
-
 /*ring the mute bell*/
 .iconWrapper-2OrFZ1[role="switch"]:hover {
     animation: Ring 0.15s 6;
@@ -409,21 +459,6 @@
 
 
 
-  /*----------------------------------*/
- /*-----------{Home Icon}------------*/
-/*----------------------------------*/
-/*make home icon sticky*/
-div .tutorialContainer-1v44GL {
-  position: sticky;
-  top: -10px;
-  padding-top: 15px;
-  padding-bottom: 2px;
-  z-index: 1;
-/*  background-color: var(--background-tertiary)*/
-    background: rgba(0,0,0,0);
-    backdrop-filter: blur(5px);
-    
-}
 
   /*---------------------------------*/
  /*-----------{Bot Tags}------------*/
@@ -565,7 +600,7 @@ svg.icon-22AiRD:hover {
     backdrop-filter: blur(2px);
     left: 50%;
     transform: translate(-50%, 0);
-    padding-bottom: 13px;
+    padding-bottom: 9px;
     padding-right: 50px;
     padding-left: 50px;
 }
@@ -588,6 +623,11 @@ svg.icon-22AiRD:hover {
 }
 .cooldownWrapper-3joyFc {
   margin-right: 32px;
+}
+
+.channelTextArea-rNsIhG, .channelTextArea-2VhZ6z{
+    box-shadow: 3px 3px 5px var( --background-tertiary);
+    
 }
 /*
 .cooldownWrapper-3joyFc {
@@ -618,6 +658,10 @@ svg.icon-22AiRD:hover {
 }
 
 
+
+
+
+
   /*-----------------------------------*/
  /*-----{Hide for chat box icons}-----*/
 /*-----------------------------------*/
@@ -636,9 +680,14 @@ svg.icon-22AiRD:hover {
 }
 
 
-  /*--------------------------------*/
- /*-----{Status picker}-----*/
-/*--------------------------------*/
+
+
+
+
+
+  /*---------------------------------*/
+ /*---------{Status picker}---------*/
+/*---------------------------------*/
 .clearStatusIcon-3-MDNF,
 .scrollerBase-289Jih > [id*="status-picker-"] + .separator-2I32lJ,
 .statusItem-33LqPf > .status-1fhblQ,
@@ -660,7 +709,7 @@ svg.icon-22AiRD:hover {
 #status-picker::before {
    content: "";
    position: absolute;
-   z-index: -1;
+   z-index: 10;
    background-color: inherit;
    transform: rotate(45deg);
    padding-top: 15px;
@@ -671,13 +720,33 @@ svg.icon-22AiRD:hover {
 
 
 
+
+  /*-------------------------------------------------------------*/
+ /*----------------------{Guilds Side bar}----------------------*/
+/*-------------------------------------------------------------*/
+
+  /*----------------------------------*/
+ /*-----------{Home Icon}------------*/
+/*----------------------------------*/
+/*make home icon sticky*/
+div .tutorialContainer-1v44GL {
+  position: sticky;
+  top: -10px;
+  padding-top: 15px;
+  padding-bottom: 2px;
+  z-index: 1;
+/*  background-color: var(--background-tertiary)*/
+    background: rgba(0,0,0,0);
+    backdrop-filter: blur(5px);
+    
+}
   /*--------------------------------*/
  /*---------{Server List}----------*/
 /*--------------------------------*/
 .wrapper-1Rf91z {
   width: 70px;
-  height: calc(100% - 60px);
-}
+  height: calc(100% - 70px);
+//?}
 .wrapper-1Rf91z::after {
   position: fixed;
   content: "";
@@ -686,7 +755,6 @@ svg.icon-22AiRD:hover {
   bottom: 0;
  /* background:;  */
 }
-
   /*--------------------------------*/
  /*------{Join server button}------*/
 /*--------------------------------*/
@@ -785,3 +853,18 @@ svg.icon-22AiRD:hover {
      content: 'Packet Loss: ';
 }
  
+
+  /*--------------------------------*/
+ /*-----------{Get Font}-----------*/
+/*--------------------------------*/
+/* get the UBNT font from google API */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+::-webkit-input-placeholder, body, button, input, select, textarea {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* color the group DM dropdown sub containers*/
+.friend-3KALPe{
+  background-color: var( --background-secondary);
+  
+}
