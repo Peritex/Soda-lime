@@ -1,0 +1,64 @@
+  /*--------------------------------*/
+ /*------{Voice Chat Popup}------*/
+/*--------------------------------*/
+/* Better voice conneted */
+.ping-2NgC8E {
+    transform: scale(1.7);
+    margin-left: 5px;
+    margin-top: 11px;
+    margin-bottom: 0;
+    height: 20px;
+}
+
+.channel-1TmDQ6 {
+    margin-left: 30px;
+    margin-top: -9px;
+}
+
+.rtcConnectionStatusConnected-VRZDjy {
+    margin-left: 5px;
+}
+
+
+  /*--------------------------------*/
+ /*-----------{RTC Edit}-----------*/
+/*--------------------------------*/
+/* Better RTC Connection popout */
+.layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] {
+     left: 72px !important;
+}
+.container-2x5lvQ {
+     width: 240px;
+     box-shadow: none;
+}
+.layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] .container-2x5lvQ header {
+     background-color: var(--toast-header);
+}
+.layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] .container-2x5lvQ section {
+     background-color: var(--deprecated-panel-background);
+}
+.container-2x5lvQ section p:nth-of-type(1) {
+     font-size: 0;
+}
+.container-2x5lvQ section p:nth-of-type(2) {
+     display:none;
+}
+.container-2x5lvQ section strong {
+     font-size: 14px;
+     white-space: pre;
+}
+.container-2x5lvQ section strong::before {
+     font-weight: normal;
+}
+.container-2x5lvQ section strong:nth-of-type(1)::before {
+     content: 'Server: ';
+}
+.container-2x5lvQ section strong:nth-of-type(2)::before {
+     content: 'Average Ping: ';
+}
+.container-2x5lvQ section strong:nth-of-type(3)::before {
+     content: 'Last Ping: ';
+}
+.container-2x5lvQ section strong:nth-of-type(4)::before {
+     content: 'Packet Loss: ';
+}
