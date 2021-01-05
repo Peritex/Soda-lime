@@ -1,6 +1,6 @@
 
 @import url(https://peritex.github.io/Soda-lime/src/Format.css);
-@import url(https://peritex.github.io/Soda-lime/src/User.css);
+@import url(https://peritex.github.io/Soda-lime/src/Members.css);
 @import url(https://peritex.github.io/Soda-lime/src/User_Area.css);
 
 .theme-dark,
@@ -37,6 +37,8 @@
 	--toast-box-shadow: rgba(0, 0, 0, 0.5)!important;
 	--toast-border:  #1f1f1f22 !important;
     --seperator-color: var(--background-accent);
+    
+    
     
     --focus-primary: #e700fa;
     
@@ -559,24 +561,29 @@ div .tutorialContainer-1v44GL {
 /*--------------------------------*/
 /* Join/Create a sever */
 .tutorialContainer-SGrQ1h,
-[aria-label="Servers"] + .listItem-2P_4kh {
+[aria-label="Servers"] + .listItem-2P_4kh{
     position: fixed;
     width: 70px;
-    z-index: 100;
-    /*border-radius: var(--borders-servers); */
-    padding-top: 5px;
-    /*padding-bottom: 0px;*/
-    bottom: -48px;
-    background: #2a2a2a !important;
+    z-index: 1;
+    height: 58px;
+    overflow: hidden;
+    padding-top: 10px;
+    
+    bottom: 0px;
+    background: var( --background-primary) ;
     transition: all 150ms cubic-bezier(0.55, 0.09, 0.68, 0.53);
 }
+
+
+
 /*popup anim*/
 .tutorialContainer-SGrQ1h:hover,
 [aria-label="Servers"] + .listItem-2P_4kh:hover {
     padding-bottom: 45px;
-        background: #00000000 !important;
+    background: #00000000 !important;
     backdrop-filter: blur(5px);
     transition: all 150ms cubic-bezier(0.55, 0.09, 0.68, 0.53);
+    z-index: 3;
 }
 /* hide pill marker at side of servers for add/join */
 .tutorialContainer-SGrQ1h div .pill-3YxEhL,
@@ -609,3 +616,12 @@ div .tutorialContainer-1v44GL {
   background-color: var( --background-secondary);
   
 }
+
+
+
+
+
+
+
+
+

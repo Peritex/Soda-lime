@@ -11,7 +11,7 @@
     position: absolute;
     bottom: 0%;
     min-width: 240px;
-    
+    max-width: 240px;
     z-index: 3;
 }
   /*---------------------------------*/
@@ -24,10 +24,15 @@
     bottom: 0px;
     left: 0px;
     border-top: 2px;
-    padding: 0px 5px 5px 5px;
-    margin-left: 10px;
+    padding: 1px 5px 5px 5px;
     z-index: 5;
 }
+
+.container-3baos1 .avatarWrapper-2yR4wp .wrapper-3t9DeA{
+    margin-left: 10px;
+    
+}
+
   /*-------------------------------*/
  /*--------{User name del}--------*/
 /*-------------------------------*/
@@ -95,12 +100,12 @@
 /*---------------------------------------*/
 .powercord-spotify{
     position:fixed;
-    bottom: 58px;
+    bottom: -1px;
     left: 0px;
     width: 59px;
-    max-height: 5px;
+    max-height: 48px;
     background-color: var( --spotify-color)!important;
-    padding: 5px!important;
+    padding: 5px;
     border-top: 1px solid #333333!important;
     border-bottom: 1px solid #333333!important;
     border-left: 1px solid var(--spotify-color);
@@ -108,19 +113,18 @@
     transition: max-height .5s ease 3s, background-color .3s 3s, width .5s 1s, z-index 1s 3s;
     backdrop-filter:blur(5px);
     
-    z-index: 10;
+    z-index: 10 !important;
 }
 .powercord-spotify:hover{
     width: 300px;
     height: 100px;
-    max-height: 80px;
-    padding-left: 70px;
+    max-height: 88px;
     transition: max-height .5s ease-out .5s, background-color .5s, width .5s, z-index 10ms;
-    background-color: rgba(100,200,100,.1)!important;
+    background-color: rgba(30,216,96,.1)!important;
     z-index: 11 !important;
 }
 .powercord-spotify img{
-    border-radius:0!important
+    border-radius:0!important;
 }
 .powercord-spotify .spotify-seek-bar{
     height:4px!important;
@@ -137,12 +141,12 @@
     background-color:transparent!important
 }
 .powercord-spotify .container-3baos1 .nameTag-3uD-yy .title-eS5yk3{
-    color:#fff!important
+    color:#fff;
 }
 .powercord-spotify .container-3baos1 .nameTag-3uD-yy .subtext-3CDbHg{
-    color:#b3b3b3!important;
-    overflow-x:hidden!important;
-    text-indent:-15px!important
+    color:#b3b3b3;
+    overflow-x:hidden;
+    text-indent:-15px;
 }
 .powercord-spotify .spotify-buttons button{
     background:0 0!important;
@@ -211,6 +215,10 @@
   transition:width .2s 1s, left .2s 1s, background-color .5s 1s;
 }
 
+
+.listeningAlong-30wH70{
+    
+}
 
 
 
