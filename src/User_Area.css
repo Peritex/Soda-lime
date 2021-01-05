@@ -105,8 +105,7 @@
     max-width: 70px;
     max-height: 48px;
     background-color: var( --spotify-color)!important;
-    padding: 5px;
-    padding-left: 10px;
+    padding: 5px 5px 5px 10px;
     border-top: 1px solid #333333!important;
     border-bottom: 1px solid #333333!important;
     border-left: 1px solid var(--spotify-color);
@@ -117,7 +116,7 @@
     z-index: 10 !important;
 }
 .powercord-spotify:hover{
-    max-width: 310px;
+    max-width: 309px;
     height: 100px;
     max-height: 88px;
     transition: max-height .5s ease-out .5s, background-color .5s, max-width .5s, z-index 10ms;
