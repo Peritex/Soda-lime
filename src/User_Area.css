@@ -8,14 +8,17 @@
  /*---------------------{User area}---------------------*/
 /*-----------------------------------------------------*/
 /* channel list */
+/*
 .container-3w7J-x{
-    max-height: calc(100% - 110px);
+    max-height: calc(100% - 110px);   /*old - to del*/
 }
+*/
 .panels-j1Uci_{
-    position: absolute;
+    position: static;
     bottom: 0%;
     min-width: 240px;
     max-width: 240px;
+    background-color: var(0,0,0,0);
     z-index: 3;
 }
   /*---------------------------------*/
@@ -24,11 +27,9 @@
 .container-3baos1{
 /*    position: fixed;*/
     max-height: 55px;
-    
     bottom: 0px;
     left: 0px;
-    border-top: 2px;
-    padding: 1px 5px 5px 5px;
+    padding: 2px 5px 5px 5px;
     z-index: 5;
 }
 
@@ -193,7 +194,7 @@
 }
 .wrapper-24pKcD:hover{
     background:#2a2a2a00;
-    height: 95px;
+    height: 86px;
     
     z-index: 5;
 }

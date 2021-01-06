@@ -60,7 +60,7 @@
     --borders-cards: 0px; /*Border shapes for cards and banners. 25px for circle, 0px for square*/
     --borders-previews: 0px; /*Border shapes for previews. 25px for circle, 0px for square*/
     --borders-sidebar-and-notices: 0px; /*Shape for top left sidebar and notices border. 25px for circle, 0px for square*/
-    --borders-servers: 10%; /*Border shapes for server icons. 50% for circle, 0% for square*/
+    --borders-servers: 5%; /*Border shapes for server icons. 50% for circle, 0% for square*/
     --borders-avatars: 5%; /*Border shapes for avatars. 50% for circle, 0% for square*/
     --borders-icons: 0%; /*Border shapes for icons. 50% for circle, 0% for square*/
     --borders-labels: 0px; /*Border shapes for text and number indicators. 15px for circle, 0px for square*/
@@ -428,7 +428,6 @@ svg.icon-22AiRD:hover {
 /* Removes a stupid Container */
 .form-2fGMdU:before{
     display: none;
-    content: 
 }
 
   /*---------------------------------*/
@@ -442,7 +441,7 @@ svg.icon-22AiRD:hover {
     bottom:0%;
     width: 100% !important;
     max-width:95% !important;
-    background: rgba(26, 26, 26, 0.5) !important; 
+    background: rgba(33, 33, 33, 0.8) !important; 
     backdrop-filter: blur(2px);
     left: 50%;
     transform: translate(-50%, 0);
