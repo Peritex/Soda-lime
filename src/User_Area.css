@@ -124,7 +124,7 @@
     z-index: 11 !important;
 }
 .powercord-spotify img{
-    border-radius:0!important;
+    border-radius:0;
 }
 .powercord-spotify .spotify-seek-bar{
     height:4px!important;
@@ -138,7 +138,7 @@
     border-radius:2px;
 }
 .powercord-spotify .container-3baos1{
-    background-color:transparent!important
+    background-color:transparent;
 }
 .powercord-spotify .container-3baos1 .nameTag-3uD-yy .title-eS5yk3{
     color:#fff;

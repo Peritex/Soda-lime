@@ -120,11 +120,6 @@
         opacity: 100%;
 }
 
-/* hide notes in user popout*/
-.note-3HfJZ5{
-  display: none;
-}
-
 
 
 
@@ -622,8 +617,13 @@ div .tutorialContainer-1v44GL {
 
 
 
+  /*--------------------------------*/
+ /*-----------{Popout background blur}-----------*/
+/*--------------------------------*/
+.backdrop-1wrmKB{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(2px);
 
-
-
-
-
+    
+}

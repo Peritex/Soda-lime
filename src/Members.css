@@ -105,3 +105,8 @@
 .activityUserPopout-2yItg2 {
         background-color: var( --background-secondary);
 }
+
+/* hide notes in user popout*/
+.note-3HfJZ5, .bodyTitle-Y0qMQz{
+  display: none;
+}
