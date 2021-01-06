@@ -121,8 +121,7 @@
 }
 .powercord-spotify:hover{
     width: 289px;
-    height: 100px;
-    max-height: 88px;
+    max-height: 100px;
     transition: max-height .5s ease-out .5s, background-color .5s, width .5s, z-index 10ms;
     background-color: rgba(30,216,96,.1)!important;
     z-index: 11 !important;
