@@ -214,12 +214,13 @@
 .panel-24C3ux{
   overflow: hidden;
   padding: 5px 8px;
-  margin-bottom: 37px;
-  backdrop-filter:blur(5px);
   z-index: 1;
-  transition:width .2s 1s, left .2s 1s, background-color .5s 1s;
 }
 
+/* stream game pic*/
+.gameIconWrapper-1YByCI{
+    display: none;
+}
 
 .listeningAlong-30wH70{
     
