@@ -10,15 +10,17 @@
 /* channel list */
 /*
 .container-3w7J-x{
-    max-height: calc(100% - 110px);   /*old - to del*/
+    max-height: calc(100% - 110px); 
 }
 */
+
+
 .panels-j1Uci_{
     position: static;
     bottom: 0%;
     min-width: 240px;
     max-width: 240px;
-    background-color: var(0,0,0,0);
+    background-color: var(0,0,0,0) !important;
     z-index: 3;
 }
   /*---------------------------------*/
