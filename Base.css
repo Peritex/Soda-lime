@@ -2,6 +2,7 @@
 @import url(https://peritex.github.io/Soda-lime/src/Format.css);
 @import url(https://peritex.github.io/Soda-lime/src/Members.css);
 @import url(https://peritex.github.io/Soda-lime/src/User_Area.css);
+@import url(https://peritex.github.io/Soda-lime/src/Popouts.css);
 
 .theme-dark,
 :root {
@@ -42,8 +43,9 @@
     
     --focus-primary: #e700fa;
     
-    --toast-blur: 3.5px;
-    --tooltip-blur: 5px;
+    --blur-popout: 3px;
+    --blur-toast: 3.5px;
+    --blur-tooltip: 5px;
     
     
     --borders-buttons-rounded: 3px; /*Border shapes for rounded buttons. 25px for circle, 0px for square*/
@@ -120,37 +122,11 @@
         opacity: 100%;
 }
 
-
-
-
-
-
-  /*----------------------------------*/
- /*-----------{Blur Toast}-----------*/
-/*----------------------------------*/
-/*frost the toast bg */
-.powercord-toast{
- backdrop-filter:blur( var(--toast-blur));
-  
+/*fix friend list bg*/
+.peopleList-3c4jOR{
+    background-color: var( --background-primary);
 }
 
-  /*----------------------------------*/
- /*--------{tooltip frosting}--------*/
-/*----------------------------------*/
-#app-mount .tooltip-2QfLtc,
-#app-mount .subscribeTooltipWrapper-1JoUuw,
-#app-mount .tooltip-1_vJJI {
-    background: rgba(0,0,0,0);
-    backdrop-filter: blur(var( --tooltip-blur));
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);    
-}
-
-  /*----------------------------------*/
- /*-------{Hide tooltip arrow}-------*/
-/*----------------------------------*/
-#app-mount .tooltipBlack-PPG47z .tooltipPointer-3ZfirK {
-  display: none;
-}
 
 
 
@@ -207,11 +183,6 @@
 
 
 
-
-
-
-
-
   /*--------------------------------*/
  /*-----------{Top Bar}------------*/
 /*--------------------------------*/
@@ -235,7 +206,7 @@
 	top: calc(var(--TB-position-top, 0px) - 1px);
 	right: var(--TB-position-right, 0);
 	height: var(--TB-height, 48px);
-	width: var(--TB-width, 60px);
+	width: var(--TB-width, 55px);
 }
 /*Min Max Close Buttons hover */
 .platform-win .winButton-iRh8-Z:not(.winButtonClose-1HsbF-):hover {
@@ -243,7 +214,7 @@
 }
 /*Title bar content */
 .platform-win .container-1r6BKw {
-	padding-right: var(--TB-header-padding, 125px)
+	padding-right: var(--TB-header-padding, 115px)
 }
 /* Discord title del*/
 .platform-win .wordmarkWindows-1v0lYD {
@@ -264,11 +235,11 @@
   }
   @keyframes Bop {
     0% {
-      transform: rotateX(0deg);
+      transform: rotateY(0deg);
     }
 
     100% {
-      transform: rotateX(360deg);
+      transform: rotateY(360deg);
     }
 }
 /*ring the mute bell*/
@@ -295,17 +266,6 @@
 
 
 
-
-
-  /*-------------------------------------*/
- /*-----------{Pind Message}------------*/
-/*-------------------------------------*/
-/* pind message center frost*/
-.messagesPopoutWrap-1MQ1bW{
-  background:rgba(0,0,0,0);
-  backdrop-filter:blur(5px);
-  width: 620px;
-}
 
 
 
@@ -335,7 +295,7 @@
 
 
 
-
+/*top bar contaner bg*/
 .children-19S4PO, .toolbar-1t6TWx {
     background-color: rgba(0,0,0,0.2);
     border-radius: var( --borders-top-bar);
