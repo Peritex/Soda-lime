@@ -64,6 +64,12 @@
     overflow: visible !important;
     opacity: 1 !important;
 }
+/*alow user area buttons to flex to number of children*/
+.panels-j1Uci_ .container-3baos1 .flex-1O1GKY{
+    flex: auto;
+    justify-content: space-around;
+}
+
   /*---------------------------------*/
  /*------{Cant copy usernames}------*/
 /*---------------------------------*/
