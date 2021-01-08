@@ -1,0 +1,94 @@
+  /*--------------------------------------------*/
+ /*-----------{Pind Message Popout}------------*/
+/*--------------------------------------------*/
+/* pind message center frost*/
+.messagesPopoutWrap-1MQ1bW{
+  background:rgba(0,0,0,0);
+  backdrop-filter:blur(var( --blur-popout));
+    box-shadow: 2px 2px 5px #000
+/*  width: 620px;*/
+}
+/*darker header, footer and message*/
+.header-ykumBX, .footer-1kmXd4, .messageGroupWrapper-o-Zw7G{
+    background-color: rgba(0,0,0,0.5)
+}
+
+  /*------------------------------------*/
+ /*-----------{DM's Popout}------------*/
+/*------------------------------------*/
+/*DM popout*/
+.popout-103y-5{
+    background-color: rgba(0, 0, 0, 0) !important;
+    backdrop-filter:blur(var( --blur-popout));
+    box-shadow: 2px 2px 5px #000 !important;
+}
+
+.header-1TKi98, .footer-1eyGBa, .friend-3KALPe{
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
+
+  /*-------------------------------------*/
+ /*-----------{Inbox Popout}------------*/
+/*-------------------------------------*/
+/*inbox messages*/
+.channelHeader-3Gd2xq{
+    background-color: rgba(19,19,19,0.5);
+}
+.messageContainer-gbhlwo{
+    background-color: rgba(33,33,33, 0.5);
+}
+
+
+/*inbox unreads*/
+.recentMentionsPopout-3rCiI6{
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter:blur(var( --blur-popout));
+    box-shadow: 2px 2px 5px #000;
+    
+}
+/*unread msg content*/
+.messages-3G3erD{
+    background-color: rgba(33,33,33, 0.5);
+}
+
+
+
+  /*------------------------------------*/
+ /*-----------{Context Popout}------------*/
+/*------------------------------------*/
+/*Popup context menus*/
+.layer-v9HyYc *[role="menu"]{
+    background-color: rgba(66,66,66,0.1);
+    backdrop-filter:blur(var( --blur-tooltip));
+    box-shadow: 2px 2px 5px #000;
+}
+
+
+
+  /*----------------------------------*/
+ /*-----------{Blur Toast}-----------*/
+/*----------------------------------*/
+/*frost the toast bg */
+.powercord-toast{
+ backdrop-filter:blur( var(--blur-toast));
+  
+}
+
+  /*----------------------------------*/
+ /*--------{tooltip frosting}--------*/
+/*----------------------------------*/
+#app-mount .tooltip-2QfLtc,
+#app-mount .subscribeTooltipWrapper-1JoUuw,
+#app-mount .tooltip-1_vJJI {
+    background: rgba(0,0,0,0);
+    backdrop-filter: blur(var( --blur-tooltip));
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);    
+}
+
+  /*----------------------------------*/
+ /*-------{Hide tooltip arrow}-------*/
+/*----------------------------------*/
+#app-mount .tooltipBlack-PPG47z .tooltipPointer-3ZfirK {
+  display: none;
+}
