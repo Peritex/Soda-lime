@@ -10,15 +10,17 @@
 /* channel list */
 /*
 .container-3w7J-x{
-    max-height: calc(100% - 110px);   /*old - to del*/
+    max-height: calc(100% - 110px); 
 }
 */
+
+
 .panels-j1Uci_{
     position: static;
     bottom: 0%;
     min-width: 240px;
     max-width: 240px;
-    background-color: var(0,0,0,0);
+    background-color: var(0,0,0,0) !important;
     z-index: 3;
 }
   /*---------------------------------*/
@@ -214,12 +216,13 @@
 .panel-24C3ux{
   overflow: hidden;
   padding: 5px 8px;
-  margin-bottom: 37px;
-  backdrop-filter:blur(5px);
   z-index: 1;
-  transition:width .2s 1s, left .2s 1s, background-color .5s 1s;
 }
 
+/* stream game pic*/
+.gameIconWrapper-1YByCI{
+    display: none;
+}
 
 .listeningAlong-30wH70{
     
