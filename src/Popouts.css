@@ -68,6 +68,7 @@
 */
 .item-1tOPte, .menu-3sdvDG.styleFlexible-wGDiIL, .submenu-2-ysNh.menu-3sdvDG {
     background-color: rgba(66,66,66, 0.1);
+    backdrop-filter:blur(3px);
 }
 /*
 .submenu-2-ysNh.menu-3sdvDG {
