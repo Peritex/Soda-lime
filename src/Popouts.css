@@ -58,7 +58,8 @@
  /*-----------{Context Popout}------------*/
 /*------------------------------------*/
 /*Popup context menus*/
-.layer-v9HyYc *[role="menu"]{
+/*.layer-v9HyYc *[role="menu"]*/
+#app-mount .menu-3sdvDG{
     background-color: rgba(66,66,66,0.1);
     backdrop-filter:blur(var( --blur-tooltip));
     box-shadow: 2px 2px 5px #000;

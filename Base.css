@@ -201,7 +201,9 @@
 
 
 
-
+  /*-------------------------------------------------------------------*/
+ /*----------------------------{TiTle Bar}----------------------------*/
+/*-------------------------------------------------------------------*/
 
   /*--------------------------------*/
  /*-----------{Top Bar}------------*/
@@ -281,22 +283,6 @@
 .iconWrapper-2OrFZ1[aria-label="Help"]{
     display:none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -477,10 +463,20 @@ div .tutorialContainer-1v44GL {
   /*--------------------------------*/
  /*-----------{Popout background blur}-----------*/
 /*--------------------------------*/
-.backdrop-1wrmKB{
+.backdrop-1wrmKB, .backdropWithLayer-3_uhz4{
     opacity: 1;
-    background-color: rgba(0, 0, 0, .5);
-    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, .5) !important;
+    backdrop-filter: blur(3px);
 
     
 }
+
+.inner-1ilYF7{
+    box-shadow: 2px 2px 8px #000;
+}
+
+..modal-yWgWj-{
+    background-color: var( --background-primary) !important;
+}
+
+
