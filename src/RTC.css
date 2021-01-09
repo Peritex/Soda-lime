@@ -24,6 +24,7 @@
  /*-----------{RTC Edit}-----------*/
 /*--------------------------------*/
 /* Better RTC Connection popout */
+/*
 .layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] {
      left: 72px !important;
 }
@@ -37,6 +38,7 @@
 .layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] .container-2x5lvQ section {
      background-color: var(--deprecated-panel-background);
 }
+*/
 .container-2x5lvQ section p:nth-of-type(1) {
      font-size: 0;
 }
