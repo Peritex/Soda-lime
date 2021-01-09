@@ -3,6 +3,7 @@
 @import url(https://peritex.github.io/Soda-lime/src/Members.css);
 @import url(https://peritex.github.io/Soda-lime/src/User_Area.css);
 @import url(https://peritex.github.io/Soda-lime/src/Popouts.css);
+@import url(https://peritex.github.io/Soda-lime/src/Chat_Box.css);
 
 .theme-dark,
 :root {
@@ -86,6 +87,7 @@
     --borders-editors: 3px; /*Border shapes for editors workspace. 25px for circle, 0px for square*/
     --borders-top-bar: 0px; /*Border shapes for the items in the top menu.*/
     --borders-user-area: 0px; /*Border shapes of the ussr list.*/
+    --borders-PnP: 3px;
     
     --user-anim-speed: 1s;
     
@@ -114,18 +116,39 @@
 
 /*better PnP*/
 .pictureInPictureWindow-1B5qSe{
-    width: 10%;
-    height: 10%;
-    opacity: 50%;
+    opacity: 60%;
 }
 .pictureInPictureWindow-1B5qSe:hover{
         opacity: 100%;
 }
+.pictureInPictureVideo-2iKsGg{
+    width: 240px;
+    height: 135px;
+}
+
 
 /*fix friend list bg*/
 .peopleList-3c4jOR{
     background-color: var( --background-primary);
 }
+
+
+
+  /*---------------------------------*/
+ /*-----------{Bot Tags}------------*/
+/*---------------------------------*/
+.botTagRegular-2HEhHi {
+    transition: .5s;
+    background: rgba(30,0,27,0.1);
+    color: #ffffff;
+}
+.botTagRegular-2HEhHi:hover {
+    transition: .5s;
+    background: linear-gradient(320deg, rgb(103,58,183), rgb(63,81,181));
+    color: #ffffff;
+}
+
+
 
 
 
@@ -268,21 +291,6 @@
 
 
 
-  /*---------------------------------*/
- /*-----------{Bot Tags}------------*/
-/*---------------------------------*/
-.botTagRegular-2HEhHi {
-    transition: .5s;
-    background: rgba(30,0,27,0.1);
-    color: #ffffff;
-}
-.botTagRegular-2HEhHi:hover {
-    transition: .5s;
-    background: linear-gradient(320deg, rgb(103,58,183), rgb(63,81,181));
-    color: #ffffff;
-}
-
-
 
 
 
@@ -311,6 +319,8 @@
     right: 10px !important;
 }
 
+
+/*hide search till clicked*/
 .searchBar-3dMhjb{
     width:28px;
     transition: width 0.5s ease-out;
@@ -361,116 +371,7 @@ svg.icon-22AiRD:hover {
 
 
 
-  /*---------------------------------------------------------------------*/
- /*---------------------------{Msg box Tweeks}--------------------------*/
-/*---------------------------------------------------------------------*/
 
-/*top of chat box*/
-.channelTextArea-rNsIhG{
-  background-color: #1a1a1a;
-}
-.channelTextArea-rNsIhG:hover{
-  background-color: #000000;
-}
-
-.channelTextArea-rNsIhG, .popout_7205, .form-2fGMdU  {
-  padding-top:3px;
-  margin-bottom:0;
-}
-
-
-  /*--------------------------------*/
- /*--------{frost chat box}--------*/
-/*--------------------------------*/
-/* Removes a stupid Container */
-.form-2fGMdU:before{
-    display: none;
-}
-
-  /*---------------------------------*/
- /*-------{frost chat box BG}-------*/
-/*---------------------------------*/
-/* New Position to remove the Gray Background for a Blur Background / Chat Width */
-.form-2fGMdU {
-    position:absolute;
-    display: flex;
-    flex-direction: column-reverse;
-    bottom:0%;
-    width: 100% !important;
-    max-width:95% !important;
-    background: rgba(33, 33, 33, 0.8) !important; 
-    backdrop-filter: blur(2px);
-    left: 50%;
-    transform: translate(-50%, 0);
-    padding-bottom: 9px;
-    padding-right: 50px;
-    padding-left: 50px;
-}
-
-  /*---------------------------------------*/
- /*-----{Fix "is typing" hidding msg}-----*/
-/*---------------------------------------*/
-/* Text Container is on Bottom, so Chat Write Box Hide some Msg, its a Fix */
-.disableScrollAnchor-3V9UtP {
-    padding-bottom:48px;
-}
-
-  /*--------------------------------*/
- /*--------{frost chat box}--------*/
-/*--------------------------------*/
-/* Fixed someone Typing etc for The Blur Container */
-.typing-2GQL18, .base-gE7OpD {
-    position: relative;
-    margin-left: 30px;
-}
-.cooldownWrapper-3joyFc {
-  margin-right: 32px;
-}
-
-.channelTextArea-rNsIhG, .channelTextArea-2VhZ6z{
-    box-shadow: 3px 3px 5px var( --background-tertiary);
-    
-}
-
-  /*--------------------------------*/
- /*-----{Fix scrollbar hight}-----*/
-/*--------------------------------*/
-.messagesWrapper-1sRNjr ::-webkit-scrollbar-track  {
-    margin-bottom: 73px !important;
-}
-
-  /*--------------------------------*/
- /*-----{Fix jump to new msg}-----*/
-/*--------------------------------*/
-.jumpToPresentBar-G1R9s6, .barBase-1c2Rfb {
-    position: absolute;
-    top:0;
-    height: 10px;
-    width: 100%;
-    margin-left: -18px !important;
-    background-color: #e5454555;
-    backdrop-filter:blur(var( --tooltip-blur));
-}
-.jumpToPresentBar-G1R9s6:active, .barBase-1c2Rfb:active {
-  margin-bottom: 60px;
-}
-
-
-  /*-----------------------------------*/
- /*-----{Hide for chat box icons}-----*/
-/*-----------------------------------*/
-.buttons-3JBrkn {
-    max-width: 40px;
-    transition: max-width ease-in-out 2s;
-    
-}
-.buttons-3JBrkn:hover {
-    max-width: 1800px;
-}
-/*Nitro gift del*/
-.button-38aScr[aria-label='Send a gift'] {
-  display: none !important;
-}
 
 
 
