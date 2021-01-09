@@ -59,11 +59,25 @@
 /*------------------------------------*/
 /*Popup context menus*/
 /*.layer-v9HyYc *[role="menu"]*/
+/*
 #app-mount .menu-3sdvDG{
     background-color: rgba(66,66,66,0.1);
     backdrop-filter:blur(var( --blur-tooltip));
     box-shadow: 2px 2px 5px #000;
 }
+*/
+.item-1tOPte, .menu-3sdvDG.styleFlexible-wGDiIL {
+    background-color: fuchsia;
+}
+/*
+.submenu-2-ysNh.menu-3sdvDG {
+   
+}
+*/
+.item-1tOPte.labelContainer-1BLJti.colorDefault-2K3EoJ.focused-3afm-j {
+    left: -1.5px;
+}
+
 
 
 

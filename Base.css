@@ -316,9 +316,11 @@
     width: 2px;
     height: 20px;
 }
+/*
 svg > .updateIconForeground-3tnNZn {
   fill: var(--interactive-normal);
 }
+*/
 svg:hover > .updateIconForeground-3tnNZn {
   fill: var(--interactive-hover);
 }
