@@ -65,10 +65,12 @@
     opacity: 1 !important;
 }
 /*alow user area buttons to flex to number of children*/
+/*
 .panels-j1Uci_ .container-3baos1 .flex-1O1GKY{
     flex: auto !important;
     justify-content: space-around;
 }
+*/
 
   /*---------------------------------*/
  /*------{Cant copy usernames}------*/
@@ -97,6 +99,7 @@
     backdrop-filter: blur(5px);
 }
 
+/*
 #status-picker::before {
    content: "";
    position: absolute;
@@ -107,6 +110,7 @@
    padding-left: 10px;
    margin-left: 13px;
 }
+*/
 
 
   /*---------------------------------------*/
