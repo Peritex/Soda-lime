@@ -59,17 +59,17 @@
 /*------------------------------------*/
 /*Popup context menus*/
 #app-mount .menu-3sdvDG{
-/*    background-color: rgba(66,66,66,0.1);*/
+/*    background-color: rgba(66,66,66,0.3);*/
 /*    backdrop-filter:blur(var( --blur-tooltip));*/
 /*    box-shadow: 2px 2px 5px #000;*/
 }
-.menu-3sdvDG.styleFlexible-wGDiIL, .submenu-2-ysNh.menu-3sdvDG {
-    background-color: rgba(66,66,66, 0.5);
+.menu-3sdvDG.styleFlexible-wGDiIL, .submenu-2-ysNh.menu-3sdvDG, .menu-3sdvDG.styleFixed-sX-yHV {
+    background-color: rgba(66,66,66, 0.3);
 /*    backdrop-filter:blur(3px);*/
     box-shadow: 2px 2px 5px #000;
 }
 .item-1tOPte{
-    background-color: rgba(66,66,66,0.1);
+/*    background-color: rgba(66,66,66,0.1);*/
     backdrop-filter:blur(3px);
 }
 
