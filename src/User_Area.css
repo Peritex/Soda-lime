@@ -20,7 +20,7 @@
     bottom: 0%;
     min-width: 240px;
     max-width: 240px;
-    background-color: var(0,0,0,0) !important;
+/*    background-color: var(0,0,0,0) !important;*/
     z-index: 3;
 }
   /*---------------------------------*/
@@ -35,11 +35,21 @@
     margin: 0;
     z-index: 5;
 }
-
-.container-3baos1 .avatarWrapper-2yR4wp .wrapper-3t9DeA{
-    margin-left: 10px;
-    
+/*pic*/
+.avatar-SmRMf2{
+    margin-left: 8px;
+    margin-right: 9px;
 }
+/*pic wrapper*/
+.avatarWrapper-2yR4wp{
+    margin: unset;
+}
+/*
+.container-3baos1 .avatarWrapper-2yR4wp .wrapper-3t9DeA{
+    margin-left: 8px;
+    margin-right: 8px;    
+}
+*/
 
   /*-------------------------------*/
  /*--------{User name del}--------*/
@@ -120,10 +130,10 @@
     position:fixed;
     bottom: -1px;
     left: 0px;
-    width: 49px;
+    width: 59px;
     max-height: 49px;
     background-color: var( --spotify-color)!important;
-    padding: 5px 5px 5px 15px;
+    padding: 5px;
     border-top: 1px solid #333333!important;
     border-bottom: 1px solid #333333!important;
     border-left: 1px solid var(--spotify-color);
@@ -134,7 +144,7 @@
     z-index: 10 !important;
 }
 .powercord-spotify:hover{
-    width: 289px;
+    width: 299px;
     max-height: 100px;
     transition: max-height .5s ease-out .5s, background-color .5s, width .5s, z-index 10ms;
     background-color: rgba(30,216,96,.1)!important;
@@ -142,6 +152,9 @@
 }
 .powercord-spotify img{
     border-radius:0;
+}
+.powercord-spotify .spotify-seek{
+    margin-bottom: 5px;
 }
 .powercord-spotify .spotify-seek-bar{
     height:4px!important;
