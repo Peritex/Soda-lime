@@ -88,6 +88,7 @@
     --borders-top-bar: 0px; /*Border shapes for the items in the top menu.*/
     --borders-user-area: 0px; /*Border shapes of the ussr list.*/
     --borders-PnP: 3px;
+    --border-spotify; 3px;
     
     --user-anim-speed: 1s;
     
@@ -141,19 +142,6 @@
     background-color: #43b58133;
     backdrop-filter:blur(3px);
     
-}
-
-
-
-
-
-.avatar-SmRMf2{
-    margin-left: 8px;
-    margin-right: 8px;
-}
-
-.avatarWrapper-2yR4wp{
-    margin: unset;
 }
 
 
@@ -456,11 +444,11 @@ div .tutorialContainer-1v44GL {
 [aria-label="Servers"] + .listItem-2P_4kh .pill-3YxEhL {
     display:none;
 }
-/* move top new indicator down to fit style*/
+/* move top "new" indicator down to fit style*/
 .unreadMentionsIndicatorTop-gA6RCh{
     margin-top: 65px;
 }
-/* make bottom new indicator alow spotifiy to overlap*/
+/* make bottom "new" indicator alow spotifiy to overlap*/
 .unreadMentionsIndicatorBottom-BXS58x{
     z-index: 2 !important;    
 }
