@@ -134,7 +134,7 @@
 }
 
 
-
+/*fix the top notice bar*/
 .powercord-notice{
     position: fixed;
     left: 25%;
@@ -143,6 +143,8 @@
     backdrop-filter:blur(3px);
     
 }
+
+
 
 
 
@@ -500,4 +502,40 @@ div .tutorialContainer-1v44GL {
 }
 
 */
+
+
+  /*------------------------------------*/
+ /*-----------{Context Popout}------------*/
+/*------------------------------------*/
+/*Popup context menus*/
+#app-mount .menu-3sdvDG{
+/*    background-color: rgba(66,66,66,0.3);*/
+/*    backdrop-filter:blur(var( --blur-tooltip));*/
+/*    box-shadow: 2px 2px 5px #000;*/
+}
+.menu-3sdvDG.styleFlexible-wGDiIL, .submenu-2-ysNh.menu-3sdvDG, .menu-3sdvDG.styleFixed-sX-yHV {
+    background-color: rgba(66,66,66, 0.3);
+/*    backdrop-filter:blur(3px);*/
+    box-shadow: 2px 2px 5px #000;
+}
+.item-1tOPte{
+/*    background-color: rgba(66,66,66,0.1);*/
+    backdrop-filter:blur(3px);
+}
+
+/*
+.submenu-2-ysNh.menu-3sdvDG {
+   
+}
+*/
+.item-1tOPte.labelContainer-1BLJti.colorDefault-2K3EoJ.focused-3afm-j {
+    left: -1.5px;
+}
+
+
+
+
+
+
+
 
