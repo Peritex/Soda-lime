@@ -152,6 +152,7 @@
 }
 .powercord-spotify img{
     border-radius: var( --border-spotify) !important;
+    margin-left: 9px;
 }
 .powercord-spotify .spotify-seek{
     margin-bottom: 5px;
