@@ -4,14 +4,11 @@
 /* Cool Member List */
  .membersWrap-2h-GB4 {
     min-width: unset;
-    max-width: 70px;
+    max-width: 50px;
     justify-content: right;
     transition: max-width var(--user-anim-speed) ease 1s;
 }
  
- .members-1998pB {
-
- }
  
  .membersWrap-2h-GB4:hover {
     max-width: 100%;
@@ -57,13 +54,12 @@
     height: 30px;
  }
 
-.members-1998pB {
-  border-radius: var( --borders-user-area) !important;
+.membersWrap-2h-GB4 .members-1998pB {
+    left: 25px;
+    margin-right: 20px;
+    border-radius: var( --borders-user-area) !important;
 }
-.membersWrap-2h-GB4, .members-1998pB {
-  left: 15px;
-  margin-right: 10px
-}
+
 .chat-3bRxxu {
   background: var(--background-tertiary);
 }
