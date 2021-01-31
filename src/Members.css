@@ -2,18 +2,15 @@
  /*--------{popout members list}--------*/
 /*-------------------------------------*/
 /* Cool Member List */
- .membersWrap-2h-GB4 {
+ .membersWrap-2h-GB4 .members-1998pB{
     min-width: unset;
     max-width: 70px;
     justify-content: right;
     transition: max-width var(--user-anim-speed) ease 1s;
 }
  
- .members-1998pB {
-
- }
  
- .membersWrap-2h-GB4:hover {
+ .membersWrap-2h-GB4 .members-1998pB:hover {
     max-width: 100%;
    transition: max-width var(--user-anim-speed) ease 0.5s;
  }
@@ -42,14 +39,19 @@
  }
  
  .membersWrap-2h-GB4:hover .membersGroup-v9BXpm {
-    transform: translateX(-6px);
+    transform: translateX(-10px);
  }
  
  .membersWrap-2h-GB4 .membersGroup-v9BXpm {
     cursor: default;
     transform: translateX(45px);
     transition: transform var(--user-anim-speed) 0.5s;
-    overflow: visible;
+    overflow: hidden;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(90deg, transparent, var(--gradient1), var(--gradient2), transparent);
+    border-image-slice: 1;
+    padding: 20px 5px 18px 25px;
+    height: 30px;
  }
 
 .members-1998pB {

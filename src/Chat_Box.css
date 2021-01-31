@@ -7,7 +7,7 @@
   background-color: #1a1a1a;
 }
 .channelTextArea-rNsIhG:hover{
-  background-color: #000000;
+  background-color: #00ff9c;
 }
 
 .channelTextArea-rNsIhG, .popout_7205, .form-2fGMdU  {
@@ -36,7 +36,7 @@
     width: 100% !important;
     max-width:95% !important;
     background: rgba(33, 33, 33, 0.8) !important; 
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(var( --blur-tooltip));
     left: 50%;
     transform: translate(-50%, 0);
     padding-bottom: 9px;
@@ -86,7 +86,7 @@
     width: 100%;
     margin-left: -18px !important;
     background-color: #e5454555;
-    backdrop-filter:blur(var( --tooltip-blur));
+    backdrop-filter:blur(var( --blur-tooltip));
 }
 .jumpToPresentBar-G1R9s6:active, .barBase-1c2Rfb:active {
   margin-bottom: 60px;
