@@ -40,6 +40,14 @@
 	--toast-border:  #1f1f1f22 !important;
     --seperator-color: var(--background-accent);
     
+	--color-violet: #ff009c; /*First Gradient Color*/	
+	--color-blue: #009cff; /*Second Gradient Color*/	
+    --color-green: #00ff9c;
+    --color-orange: #ff9c00;
+    --color-lime: #9cff00;
+    --color-purple: #9c00ff;
+
+    --gradient1: linear-gradient(90deg, transparent, var(--color-violet), var(--color-blue), transparent);
     
     
     --focus-primary: #e700fa;
@@ -47,6 +55,7 @@
     --blur-popout: 3px;
     --blur-toast: 3.5px;
     --blur-tooltip: 5px;
+    --blur-msgbox: 5px;
     
     
     --borders-buttons-rounded: 3px; /*Border shapes for rounded buttons. 25px for circle, 0px for square*/
@@ -92,7 +101,7 @@
     
     --user-anim-speed: 1s;
     
-    --gradient: linear-gradient(var(--gradient-direction), rgb(var(--gradient-primary)), rgb(var(--gradient-secondary)));
+
 }
 
 
@@ -135,7 +144,7 @@
 
 
 /*fix the top notice bar*/
-.powercord-notice{
+.powercord-notice, #app-mount .notice-3bPHh-{
     position: fixed;
     left: 25%;
     width: 50%;
@@ -382,57 +391,89 @@ svg.icon-22AiRD:hover {
  /*----------------------{Guilds Side bar}----------------------*/
 /*-------------------------------------------------------------*/
 
-  /*----------------------------------*/
- /*-----------{Home Icon}------------*/
-/*----------------------------------*/
-/*make home icon sticky*/
-div .tutorialContainer-1v44GL {
-  position: sticky;
-  top: -10px;
-  padding-top: 15px;
-  padding-bottom: 2px;
-  z-index: 1;
-/*  background-color: var(--background-tertiary)*/
-    background: rgba(0,0,0,0);
-    backdrop-filter: blur(5px);
-    
-}
   /*--------------------------------*/
  /*---------{Server List}----------*/
 /*--------------------------------*/
 .wrapper-1Rf91z {
   width: 70px;
-  height: calc(100% - 70px);
-//?}
+/*  height: calc(100% - 70px);*/
+}
+/*
 .wrapper-1Rf91z::after {
   position: fixed;
   content: "";
   width: 100%;
   height: 80px;
-  bottom: 0;
- /* background:;  */
+  bottom: 0; 
 }
+*/
+.scroller-2TZvBN{
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 50px;
+}
+
+.scroller-2TZvBN .guildSeparator-3s64Iy{
+    display: none;
+}
+  /*----------------------------------*/
+ /*-----------{Home Icon}------------*/
+/*----------------------------------*/
+/*make home icon sticky*/
+.scroller-2TZvBN .tutorialContainer-1v44GL {
+    position: sticky;
+    top: -10px;
+    padding-top: 15px;
+    padding-bottom: 2px;
+    z-index: 1;
+/*  background-color: var(--background-tertiary)*/
+    background: rgba(0,0,0,0);
+    backdrop-filter: blur(5px);
+    
+    order: -3;
+}
+
+
+/*
+#online-count{
+    position: sticky;
+}
+*/
+
+.scroller-2TZvBN > .listItem-2P_4kh{
+    position: sticky;
+    order: -2;
+    top:62px;
+    backdrop-filter: blur(5px);
+    border-bottom: 2px #c9c9c9 solid;
+    
+    z-index: 1;
+}
+
   /*--------------------------------*/
  /*------{Join server button}------*/
 /*--------------------------------*/
 /* Join/Create a sever */
-.tutorialContainer-SGrQ1h,
-[aria-label="Servers"] + .listItem-2P_4kh{
-    position: fixed;
-    width: 70px;
-    z-index: 1;
-    height: 58px;
-    overflow: hidden;
-    padding-top: 10px;
-    
-    bottom: 0px;
-    background: var( --background-primary) ;
-    transition: all 150ms cubic-bezier(0.55, 0.09, 0.68, 0.53);
+.scroller-2TZvBN .tutorialContainer-SGrQ1h{
+    order: -1;
 }
+
+/*.scroller-2TZvBN:hover .tutorialContainer-SGrQ1h,*/
+/*[aria-label="Servers"] + .listItem-2P_4kh{*/
+/*    position: fixed;*/
+/*    width: 70px;*/
+/*    z-index: 1;*/
+/*    height: 58px;*/
+/*    overflow: hidden;*/
+/*    padding-top: 10px;*/
+/*    background: var( --background-primary) ;*/
+/*    transition: all 150ms cubic-bezier(0.55, 0.09, 0.68, 0.53);*/
+/*}*/
 
 
 
 /*popup anim*/
+/*
 .tutorialContainer-SGrQ1h:hover,
 [aria-label="Servers"] + .listItem-2P_4kh:hover {
     padding-bottom: 45px;
@@ -441,9 +482,14 @@ div .tutorialContainer-1v44GL {
     transition: all 150ms cubic-bezier(0.55, 0.09, 0.68, 0.53);
     z-index: 3;
 }
+*/
+
+
+
+
 /* hide pill marker at side of servers for add/join */
 .tutorialContainer-SGrQ1h div .pill-3YxEhL,
-[aria-label="Servers"] + .listItem-2P_4kh .pill-3YxEhL {
+.listItem-2P_4kh .pill-3YxEhL {
     display:none;
 }
 /* move top "new" indicator down to fit style*/
@@ -453,6 +499,7 @@ div .tutorialContainer-1v44GL {
 /* make bottom "new" indicator alow spotifiy to overlap*/
 .unreadMentionsIndicatorBottom-BXS58x{
     z-index: 2 !important;    
+    bottom: 60px;
 }
 
 
@@ -482,9 +529,7 @@ div .tutorialContainer-1v44GL {
 .backdrop-1wrmKB, .backdropWithLayer-3_uhz4{
     opacity: 1;
     background-color: rgba(0, 0, 0, .3) !important;
-    backdrop-filter: blur(10px);
-
-    
+    backdrop-filter: blur(10px);   
 }
 
 .inner-1ilYF7{
@@ -534,6 +579,11 @@ div .tutorialContainer-1v44GL {
     background-color: rgba(33,33,33, .7);
 }
 */
+
+
+
+
+
 
 
 

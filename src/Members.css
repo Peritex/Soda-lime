@@ -2,15 +2,18 @@
  /*--------{popout members list}--------*/
 /*-------------------------------------*/
 /* Cool Member List */
- .membersWrap-2h-GB4 .members-1998pB{
+ .membersWrap-2h-GB4 {
     min-width: unset;
     max-width: 70px;
     justify-content: right;
     transition: max-width var(--user-anim-speed) ease 1s;
 }
  
+ .members-1998pB {
+
+ }
  
- .membersWrap-2h-GB4 .members-1998pB:hover {
+ .membersWrap-2h-GB4:hover {
     max-width: 100%;
    transition: max-width var(--user-anim-speed) ease 0.5s;
  }
