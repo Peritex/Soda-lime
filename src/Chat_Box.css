@@ -7,7 +7,7 @@
   background-color: #1a1a1a;
 }
 .channelTextArea-rNsIhG:hover{
-  background-color: #00ff9c;
+  background-image: var(--gradient1);
 }
 
 .channelTextArea-rNsIhG, .popout_7205, .form-2fGMdU  {
