@@ -7,6 +7,7 @@
     max-width: 50px;
     justify-content: right;
     transition: max-width var(--user-anim-speed) ease 1s;
+     margin-left: 20px;
 }
  
  
@@ -55,8 +56,7 @@
  }
 
 .membersWrap-2h-GB4 .members-1998pB {
-    left: 25px;
-    margin-right: 20px;
+    left: 5px;
     border-radius: var( --borders-user-area) !important;
 }
 
