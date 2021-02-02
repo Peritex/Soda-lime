@@ -152,8 +152,10 @@ button,
    border-radius: 0 0 var(--borders-buttons-rounded) var(--borders-buttons-rounded);
 }
 #app-mount .jumpToPresentBar-G1R9s6 {
+/*
    bottom: -8px;
    padding-bottom: 16px;
+*/
 }
 #app-mount .form-2fGMdU::before {
    display: none;
