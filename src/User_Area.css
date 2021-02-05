@@ -233,8 +233,10 @@
   padding: 0px 8px;
   padding-bottom: 8px;
 }
-
-
+/*hide noise button*/
+.container-1giJp5 button[aria-label="Noise Suppression powered by Krisp"]{
+    display: none;
+}
 
   /*--------------------------------------------*/
  /*------------{Screen share Panel}------------*/
