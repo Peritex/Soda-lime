@@ -48,6 +48,7 @@
     --color-purple: #9c00ff;
 
     --gradient1: linear-gradient(90deg, transparent, var(--color-violet), var(--color-blue), transparent);
+    --gradient2: linear-gradient(300deg, transparent, var(--color-orange), var(--color-orange), var(--color-purple));
     
     
     --focus-primary: #e700fa;
@@ -188,19 +189,22 @@
   background:rgb(130,130,130,0.15);
   /*adds minor grey-ish filter to differentiate spoilted text from normal text*/
 }
-.contents-2mQqc9 .spoilerText-3p6IlD.hidden-HHr2R9>.inlineContent-3ZjPuv{
-  filter: blur(3px);
+.contents-2mQqc9 .spoilerText-3p6IlD.hidden-HHr2R9>.inlineContent-3ZjPuv, .spoiler-1PPAUc.hiddenSpoilers-1ksnR6{
+  filter: blur(5px);
   /*adds blur filter when text is left alone*/
-  opacity: .5;
+  opacity: 1;
   /*makes blurred text fully opaque*/
 }
-.contents-2mQqc9 .spoilerText-3p6IlD.hidden-HHr2R9:hover > .inlineContent-3ZjPuv{
+.contents-2mQqc9 .spoilerText-3p6IlD.hidden-HHr2R9:hover > .inlineContent-3ZjPuv,.spoilerContainer-331r0R:hover .spoiler-1PPAUc.hiddenSpoilers-1ksnR6{
   filter:none;
   /*removes blur filter on hover*/
   opacity: 1;
   /*makes text opacity look like normal, non-spoiled text on hover*/
 }
-
+/*hide the spoiler badge on images*/
+.spoilerContainer-331r0R:hover .spoilerWarning-2aAZq1{
+    opacity: 0;
+}
 
   /*------------------------------------------*/
  /*-----------{@Mentiond in chat}------------*/
@@ -343,7 +347,7 @@
 svg > .updateIconForeground-3tnNZn {
   fill: var(--color-green);
 }
-svg:hover > .updateIconForeground-3tnNZn {
+.iconWrapper-2OrFZ1:hover svg > .updateIconForeground-3tnNZn {
   fill: var(--color-lime);
 }
 svg:active > .updateIconForeground-3tnNZn {
@@ -378,7 +382,12 @@ svg.icon-22AiRD:hover {
     cursor: pointer;
 }
 
-
+.toolbar-1t6TWx .iconWrapper-2OrFZ1 .iconBadge-qZ4Ksk{
+    background-color: var(--color-orange);
+}
+.toolbar-1t6TWx .iconWrapper-2OrFZ1 svg > .strikethrough-3Wiitd{
+    color: var(--color-orange);
+}
 
 
 
@@ -393,7 +402,7 @@ svg.icon-22AiRD:hover {
   /*--------------------------------*/
  /*---------{Server List}----------*/
 /*--------------------------------*/
-.wrapper-1Rf91z {
+.wrapper-1Rf91z.guilds-1SWlCJ {
   width: 70px;
 /*  height: calc(100% - 70px);*/
 }
@@ -409,12 +418,23 @@ svg.icon-22AiRD:hover {
 .scroller-2TZvBN{
     display: flex;
     flex-flow: column;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
-.scroller-2TZvBN .guildSeparator-3s64Iy{
+.guilds-1SWlCJ .scroller-2TZvBN .guildSeparator-3s64Iy{
     display: none;
 }
+.guilds-1SWlCJ::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: inherit;
+    height: 60px;
+    backdrop-filter: blur(5px);        
+        
+}
+
+
   /*----------------------------------*/
  /*-----------{Home Icon}------------*/
 /*----------------------------------*/
@@ -432,14 +452,6 @@ svg.icon-22AiRD:hover {
     order: -3;
 }
 
-
-/*
-#online-count{
-    position: sticky;
-}
-*/
-
-
 .scroller-2TZvBN > .listItem-2P_4kh{
     position: sticky;
     order: -2;
@@ -448,7 +460,6 @@ svg.icon-22AiRD:hover {
     z-index: 1;
 }
 
-
   /*--------------------------------*/
  /*------{Join server button}------*/
 /*--------------------------------*/
@@ -456,35 +467,6 @@ svg.icon-22AiRD:hover {
 .scroller-2TZvBN .tutorialContainer-SGrQ1h{
     order: -1;
 }
-
-/*.scroller-2TZvBN:hover .tutorialContainer-SGrQ1h,*/
-/*[aria-label="Servers"] + .listItem-2P_4kh{*/
-/*    position: fixed;*/
-/*    width: 70px;*/
-/*    z-index: 1;*/
-/*    height: 58px;*/
-/*    overflow: hidden;*/
-/*    padding-top: 10px;*/
-/*    background: var( --background-primary) ;*/
-/*    transition: all 150ms cubic-bezier(0.55, 0.09, 0.68, 0.53);*/
-/*}*/
-
-
-
-/*popup anim*/
-/*
-.tutorialContainer-SGrQ1h:hover,
-[aria-label="Servers"] + .listItem-2P_4kh:hover {
-    padding-bottom: 45px;
-    background: #00000000 !important;
-    backdrop-filter: blur(5px);
-    transition: all 150ms cubic-bezier(0.55, 0.09, 0.68, 0.53);
-    z-index: 3;
-}
-*/
-
-
-
 
 /* hide pill marker at side of servers for add/join */
 .tutorialContainer-SGrQ1h div .pill-3YxEhL,
@@ -500,6 +482,9 @@ svg.icon-22AiRD:hover {
     z-index: 2 !important;    
     bottom: 60px;
 }
+
+
+
 
 
  
@@ -590,10 +575,11 @@ svg.icon-22AiRD:hover {
 
 
 
-
+/*channel new mention*/
 .mention-1f5kbO {
     background-color: var(--color-orange) 
 }
+/*server number badge*/
 .numberBadge-2s8kKX{
     background-color: var(--color-orange) !important
 }
@@ -608,8 +594,36 @@ svg.icon-22AiRD:hover {
 }
 */
 
-.barBase-1c2Rfb{
-    background-color: rgba(var(--color-orange), 0.8);
+.newMessagesBar-265mhP{
+    position: absolute;
+/*    top: 0;*/
+    background-color: transparent;
+    
+    justify-content: space-between;
+    box-shadow: unset;
+}
+
+.barButtonMain-3K-jeJ{
+    flex: 0 1 auto;
+    background-color: rgba(255,156,0,.3);
+    background-image: unset;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 2px 2px 20px -5px #000
+}
+.barButtonMain-3K-jeJ:hover{
+    transition: background-image 2.5s ease;
+/*    background-color: transparent;*/
+    background-image: var(--gradient2);
+}
+
+.barButtonAlt-mYL1lj{
+    background-color: rgba(255,156,0,.3);
+    border-radius: 0 0 3px 3px;
+    
+}
+.barButtonAlt-mYL1lj:active{
+    background-color: var(--color-green);
+    
 }
 
 .unread-1xRYoj{
