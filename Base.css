@@ -49,6 +49,7 @@
 
     --gradient1: linear-gradient(90deg, transparent, var(--color-violet), var(--color-blue), transparent);
     --gradient2: linear-gradient(300deg, transparent, var(--color-orange), var(--color-orange), var(--color-purple));
+    --gradient3: linear-gradient(90deg, transparent, var(--color-purple), var(--color-green), transparent);
     
     
     --focus-primary: #e700fa;
