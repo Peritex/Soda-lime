@@ -142,6 +142,8 @@
 /*fix friend list bg*/
 .peopleList-3c4jOR{
     background-color: var( --background-primary);
+.peopleList-3c4jOR, .container-1D34oG{
+    background-color: var( --background-primary) !important;
 }
 
 
