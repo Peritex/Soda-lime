@@ -7,12 +7,6 @@
 /*-----------------------------------------------------*/
  /*---------------------{User area}---------------------*/
 /*-----------------------------------------------------*/
-/* channel list */
-/*
-.container-3w7J-x{
-    max-height: calc(100% - 110px); 
-}
-*/
 
 
 .panels-j1Uci_{
@@ -20,8 +14,12 @@
     bottom: 0%;
     min-width: 240px;
     max-width: 240px;
-/*    background-color: var(0,0,0,0) !important;*/
+    background-color: var( --background-secondary);
     z-index: 3;
+    
+    border-top: 1px solid;
+    border-image: var(--gradient3);
+    border-image-slice: 1;
 }
   /*---------------------------------*/
  /*------------{Profile}------------*/
@@ -223,6 +221,10 @@
     max-width: 240px;
     padding: 0px 8px;
     padding-bottom: 7px;
+    
+    border-bottom: 1px solid;
+    border-image: var(--gradient3);
+    border-image-slice: 1;
 }
 /*VC cam/share screen button */
 .actionButtons-14eAc_{
@@ -249,10 +251,13 @@
  /*------------{Screen share Panel}------------*/
 /*--------------------------------------------*/
 /* Streaming panel anim */
-.panel-24C3ux{
-  overflow: hidden;
-  padding: 5px 8px;
-  z-index: 1;
+.activityPanel-28dQGo{
+    overflow: hidden;
+    padding: 5px 8px;
+    
+    border-bottom: 1px solid;
+    border-image: var(--gradient3);
+    border-image-slice: 1;
 }
 
 /* stream game pic*/
