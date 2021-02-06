@@ -228,14 +228,15 @@
 }
 /*VC cam/share screen button */
 .actionButtons-14eAc_{
-    transition: height .5s cubic-bezier(0.7, 0.1, 0.7, 0.1) .5s;
+    transition: .5s cubic-bezier(0.7, 0.1, 0.7, 0.1) .5s;
     height: 0px;
     overflow-y: hidden;
     margin-top: 0px;
 }
 /*show VC buttons on hover*/
 .wrapper-24pKcD:hover .actionButtons-14eAc_{
-    transition: height .5s cubic-bezier(0.2, 0.8, 0.3, 1);
+    transition: .5s cubic-bezier(0.2, 0.8, 0.3, 1);
+    margin-top: 7px;
     height: 32px;
 }
 /*hide noise button*/
