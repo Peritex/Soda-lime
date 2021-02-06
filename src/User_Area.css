@@ -210,40 +210,37 @@
   /*------------------------------------------*/
  /*------------{Voice Chat Panel}------------*/
 /*------------------------------------------*/
-/*.wrapper-24pKcD:not(:empty){*/
-/*
-    height: 45px;
+/*Set VC wrapper to resize */
+.wrapper-24pKcD:not(:empty){
+    height: auto;
     overflow: hidden;
     width: 240px;
 }
-*/
-/*
-.wrapper-24pKcD:hover{
-    height: 86px;
-}
-*/
-
-/*internal container text*/
-/*
+/*VC div content*/ /*flex grow and stack buttons on top*/
 .container-1giJp5{
     display: flex;
     flex-wrap: wrap-reverse;
     max-width: 240px;
     padding: 0px 8px;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
 }
-*/
-
-/*
-.wrapper-24pKcD:hover .container-1giJp5{
-    transition: .2s ease .7s;
-    flex-wrap: wrap-reverse;
+/*VC cam/share screen button */
+.actionButtons-14eAc_{
+    transition: height .2s ease .7s;
+    height: 0px;
+    overflow-y: hidden;
+    margin-top: 0px;
 }
-*/
+/*show VC buttons on hover*/
+.wrapper-24pKcD:hover .actionButtons-14eAc_{
+    transition: height .2s ease .7s;
+    height: 32px;
+}
 /*hide noise button*/
 .container-1giJp5 button[aria-label="Noise Suppression powered by Krisp"]{
     display: none;
 }
+/*stop disconnect button going out of bounds*/
 .container-1giJp5 div:not(.actionButtons-14eAc_){
     max-width:  -webkit-fill-available;
 }
