@@ -166,7 +166,7 @@
     background:#404040;
 }
 .powercord-spotify .spotify-seek-bar-progress{
-    background:#b3b3b3;;
+    background:#b3b3b3;
     border-radius:2px;
 }
 .powercord-spotify .container-3baos1{
@@ -274,4 +274,17 @@
 }
 
 
+
+  /*--------------------------------------------*/
+ /*---------------{Listen along}---------------*/
+/*--------------------------------------------*/
+.listeningAlong-30wH70{
+    border-bottom: 1px solid;
+    border-image: var(--gradient3);
+    border-image-slice: 1;
+}
+
+.listeningAlong-30wH70 .icons-2uekgw button{
+    display: none;
+}
 
