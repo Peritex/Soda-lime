@@ -38,18 +38,18 @@
 	--toast-contents: #1a1a1a66 !important;
 	--toast-box-shadow: rgba(0, 0, 0, 0.5)!important;
 	--toast-border:  #1f1f1f22 !important;
-    --seperator-color: var(--background-accent);
+    	--seperator-color: var(--background-accent);
     
 	--color-violet: #ff009c; /*First Gradient Color*/	
 	--color-blue: #009cff; /*Second Gradient Color*/	
-    --color-green: #00ff9c;
-    --color-orange: #ff9c00;
-    --color-lime: #9cff00;
-    --color-purple: #9c00ff;
+    	--color-green: #00ff9c;
+    	--color-orange: #ff9c00;
+    	--color-lime: #9cff00;
+    	--color-purple: #9c00ff;
 
-    --gradient1: linear-gradient(90deg, transparent, var(--color-violet), var(--color-blue), transparent);
-    --gradient2: linear-gradient(300deg, transparent, var(--color-orange), var(--color-orange), var(--color-purple));
-    --gradient3: linear-gradient(90deg, transparent, var(--color-purple), var(--color-green), transparent);
+    	--gradient1: linear-gradient(90deg, transparent, var(--color-violet), var(--color-blue), transparent);
+    	--gradient2: linear-gradient(300deg, transparent, var(--color-orange), var(--color-orange), var(--color-purple));
+   	--gradient3: linear-gradient(90deg, transparent, var(--color-purple), var(--color-green), transparent);
     
     
     --focus-primary: #e700fa;
@@ -142,6 +142,7 @@
 /*fix friend list bg*/
 .peopleList-3c4jOR{
     background-color: var( --background-primary);
+}
 .peopleList-3c4jOR, .container-1D34oG{
     background-color: var( --background-primary) !important;
 }
@@ -529,7 +530,7 @@ svg.icon-22AiRD:hover {
     box-shadow: 2px 2px 8px #000;
 }
 
-..modal-yWgWj-{
+
 .modal-yWgWj-, .root-1gCeng{
     background-color: var( --background-primary) !important;
 }
