@@ -34,14 +34,14 @@
     flex-direction: column-reverse;
     bottom:0%;
     width: 100% !important;
-    max-width:95% !important;
-    background: rgba(33, 33, 33, 0.8) !important; 
+    max-width:-webkit-fill-available !important;
+    background: rgba(33, 33, 33, 0.5) !important; 
     backdrop-filter: blur(var( --blur-tooltip));
     left: 50%;
     transform: translate(-50%, 0);
     padding-bottom: 9px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 70px;
+    padding-left: 70px;
 }
 
   /*---------------------------------------*/
