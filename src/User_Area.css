@@ -4,7 +4,33 @@
     left:70px;
 }
 
+
+  /*-----------------------------------------------------*/
+ /*---------------------{side bar}---------------------*/
 /*-----------------------------------------------------*/
+.sidebar-2K8pFh{
+  width:0px;
+  transition:.5s ease 1s;
+}
+.sidebar-2K8pFh
+
+.platform-win .base-3dtUhz{
+  border-radius: 8px 0 0;
+}
+.wrapper-1Rf91z:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh{
+  width:240px;
+  transition:.5s ease;
+}
+.sidebar-2K8pFh:hover{
+  width:240px;
+  transition:.5s ease;
+}
+
+
+
+
+
+  /*-----------------------------------------------------*/
  /*---------------------{User area}---------------------*/
 /*-----------------------------------------------------*/
 
@@ -233,7 +259,7 @@
 .actionButtons-14eAc_{
     transition: .5s cubic-bezier(0.7, 0.1, 0.7, 0.1) .5s;
     height: 0px;
-    overflow-y: hidden;
+    overflow: hidden;
     margin-top: 0px;
 }
 /*show VC buttons on hover*/
