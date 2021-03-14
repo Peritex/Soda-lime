@@ -38,10 +38,10 @@
 	--toast-contents: #1a1a1a66 !important;
 	--toast-box-shadow: rgba(0, 0, 0, 0.5)!important;
 	--toast-border:  #1f1f1f22 !important;
-    --seperator-color: var(--background-accent);
-    
-	--color-violet: #ff009c; /*First Gradient Color*/	
-	--color-blue: #009cff; /*Second Gradient Color*/	
+    	--seperator-color: var(--background-accent);
+
+	--color-violet: #ff009c; /*First Gradient Color*/
+	--color-blue: #009cff; /*Second Gradient Color*/
     --color-green: #00ff9c;
     --color-orange: #ff9c00;
     --color-lime: #9cff00;
@@ -51,18 +51,18 @@
     --gradient2: linear-gradient(300deg, transparent, var(--color-orange), var(--color-orange), var(--color-purple));
     --gradient3: linear-gradient(90deg, transparent, var(--color-purple), var(--color-green), transparent);
 
-    
+
     --gradientR1: radial-gradient(var(--color-green), transparent);
 
-    
+
     --focus-primary: #e700fa;
-    
+
     --blur-popout: 3px;
     --blur-toast: 3.5px;
     --blur-tooltip: 5px;
     --blur-msgbox: 5px;
-    
-    
+
+
     --borders-buttons-rounded: 3px; /*Border shapes for rounded buttons. 25px for circle, 0px for square*/
     --borders-buttons-circle: 5px; /*Border shapes for circle buttons. 25px for circle, 0px for square*/
     --borders-switches: 3px; /*Border shapes for switches. 15px for circle, 0px for square*/
@@ -103,9 +103,9 @@
     --borders-user-area: 0px; /*Border shapes of the ussr list.*/
     --borders-PnP: 3px;
     --border-spotify; 3px;
-    
+
     --user-anim-speed: 1.5s;
-    
+
 
 }
 
@@ -125,7 +125,7 @@
 /*move icons in server menu to the frount */
 .iconContainer-2-XQPY {
     order: -1;
-    margin-right: 8px; 
+    margin-right: 8px;
     margin-left: 0px;
 }
 
@@ -143,6 +143,9 @@
 
 
 /*fix friend list bg*/
+.peopleList-3c4jOR{
+    background-color: var( --background-primary);
+}
 .peopleList-3c4jOR, .container-1D34oG{
     background-color: var( --background-primary) !important;
 }
@@ -155,7 +158,7 @@
     width: 50%;
     background-color: #43b58133;
     backdrop-filter:blur(3px);
-    
+
 }
 
 
@@ -416,7 +419,7 @@ svg.icon-22AiRD:hover {
   content: "";
   width: 100%;
   height: 80px;
-  bottom: 0; 
+  bottom: 0;
 }
 */
 .scroller-2TZvBN{
@@ -434,8 +437,8 @@ svg.icon-22AiRD:hover {
     bottom: 0px;
     width: inherit;
     height: 60px;
-    backdrop-filter: blur(5px);        
-        
+    backdrop-filter: blur(5px);
+
 }
 
 
@@ -449,10 +452,10 @@ svg.icon-22AiRD:hover {
     padding-top: 15px;
     padding-bottom: 2px;
     z-index: 1;
-    
+
     background: rgba(0,0,0,0);
     backdrop-filter: blur(5px);
-    
+
     order: -3;
 }
 
@@ -467,7 +470,7 @@ svg.icon-22AiRD:hover {
 .homeIcon-tEMBK1{
     width: 80%;
     height: 80%;
-    
+
     background-image: url(https://peritex.github.io/Soda-lime/src/svg/home-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -511,7 +514,7 @@ svg.icon-22AiRD:hover {
 }
 /* make bottom "new" indicator alow spotifiy to overlap*/
 .unreadMentionsIndicatorBottom-BXS58x{
-    z-index: 2 !important;    
+    z-index: 2 !important;
     bottom: 60px;
 }
 
@@ -519,7 +522,7 @@ svg.icon-22AiRD:hover {
 
 
 
- 
+
 
   /*--------------------------------*/
  /*-----------{Get Font}-----------*/
@@ -538,7 +541,7 @@ svg.icon-22AiRD:hover {
 /* color the group DM dropdown sub containers*/
 .friend-3KALPe{
   background-color: var( --background-secondary);
-  
+
 }
 
 
@@ -550,7 +553,7 @@ svg.icon-22AiRD:hover {
 .backdrop-1wrmKB, .backdropWithLayer-3_uhz4{
     opacity: 1;
     background-color: rgba(0, 0, 0, .3) !important;
-    backdrop-filter: blur(10px);   
+    backdrop-filter: blur(10px);
 }
 
 .inner-1ilYF7{
@@ -609,7 +612,7 @@ svg.icon-22AiRD:hover {
 
 /*channel new mention*/
 .mention-1f5kbO {
-    background-color: var(--color-orange) 
+    background-color: var(--color-orange)
 }
 /*server number badge*/
 .numberBadge-2s8kKX{
@@ -630,7 +633,7 @@ svg.icon-22AiRD:hover {
     position: absolute;
 /*    top: 0;*/
     background-color: transparent;
-    
+
     justify-content: space-between;
     box-shadow: unset;
 }
@@ -652,7 +655,7 @@ svg.icon-22AiRD:hover {
     background-color: rgba(255,156,0,.8);
     border-radius: 0 0 3px 3px;
     backdrop-filter: blur(5px);
-    
+
 }
 .barButtonAlt-mYL1lj:active{
     background-color: var(--color-green);
@@ -660,10 +663,5 @@ svg.icon-22AiRD:hover {
 }
 
 .unread-1xRYoj{
-    background-color: var(--color-orange);   
+    background-color: var(--color-orange);
 }
-
-
-
-
-
