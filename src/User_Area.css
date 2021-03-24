@@ -17,7 +17,8 @@
 .platform-win .base-3dtUhz{
   border-radius: 8px 0 0;
 }
-.wrapper-1Rf91z:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh{
+/*.wrapper-1Rf91z old */
+.wrapper-3NnKdC:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh{
   width:240px;
   transition:.5s ease;
 }
