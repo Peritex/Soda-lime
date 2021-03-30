@@ -409,7 +409,7 @@ svg.icon-22AiRD:hover {
   /*--------------------------------*/
  /*---------{Server List}----------*/
 /*--------------------------------*/
-.wrapper-1Rf91z.guilds-1SWlCJ {
+.wrapper-3NnKdC.guilds-1SWlCJ {
   width: 70px;
 /*  height: calc(100% - 70px);*/
 }
@@ -446,28 +446,26 @@ svg.icon-22AiRD:hover {
  /*-----------{Home Icon}------------*/
 /*----------------------------------*/
 /*make home icon sticky*/
-.scroller-2TZvBN .tutorialContainer-1v44GL {
+.scroller-1Bvpku .tutorialContainer-2sGCg9 {
     position: sticky;
-    top: -10px;
-    padding-top: 15px;
+    top: -5px;
+    padding-top: 7px;
     padding-bottom: 2px;
     z-index: 1;
-
     background: rgba(0,0,0,0);
     backdrop-filter: blur(5px);
-
     order: -3;
 }
-
-.scroller-2TZvBN > .listItem-2P_4kh{
+/*list divider*/
+.scroller-1Bvpku > .listItem-2P_4kh{
     position: sticky;
     order: -2;
     top:62px;
     backdrop-filter: blur(5px);
     z-index: 1;
 }
-
-.homeIcon-tEMBK1{
+/*home button svg*/
+.homeIcon-FuNwkv{
     width: 80%;
     height: 80%;
 
@@ -476,8 +474,8 @@ svg.icon-22AiRD:hover {
     background-position: center;
     fill: #000;
 }
-
-.homeIcon-tEMBK1 path{
+/*remover discord icon */
+.homeIcon-FuNwkv path{
     display: none
 }
 
@@ -509,11 +507,11 @@ svg.icon-22AiRD:hover {
     display:none;
 }
 /* move top "new" indicator down to fit style*/
-.unreadMentionsIndicatorTop-gA6RCh{
+.unreadMentionsIndicatorTop-2-tcdU{
     margin-top: 65px;
 }
 /* make bottom "new" indicator alow spotifiy to overlap*/
-.unreadMentionsIndicatorBottom-BXS58x{
+.unreadMentionsIndicatorBottom-2mDYbI{
     z-index: 2 !important;
     bottom: 60px;
 }
