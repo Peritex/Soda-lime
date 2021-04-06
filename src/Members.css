@@ -6,14 +6,14 @@
      min-width: unset;
      max-width: 50px;
      justify-content: right;
-     transition: max-width var(--user-anim-speed) cubic-bezier(0.2, 0.9, 0.3, 1.3) 1s;
+     transition: max-width var(--user-anim-speed) cubic-bezier(0.4, 0, 0.2, 1) 1s;
      margin-left: 20px;
 }
  
  
  .membersWrap-2h-GB4:hover {
      max-width: 100%;
-     transition: max-width var(--user-anim-speed) cubic-bezier(0.3, 1.2, 0.8, 0.6) 0.5s;
+     transition: max-width var(--user-anim-speed) cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
  }
  
  .membersWrap-2h-GB4 .membersGroup-v9BXpm::after {
