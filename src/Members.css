@@ -107,6 +107,7 @@
 }
 
 /*grow img on hover*/
+.headerTop-3C2Zn0 .customStatus-1bh2V9 img{transition: 1s ease;}
 .headerTop-3C2Zn0 .customStatus-1bh2V9 img:hover{
     transition: 1s ease;
     width: 120px;
@@ -126,6 +127,7 @@
     height:auto;
   	max-height: 120px;
     overflow: hidden auto;
+    padding: 8px 16px;
 }
 .activityUserPopout-2yItg2::-webkit-scrollbar {
     width: 8px;
@@ -147,16 +149,18 @@
 
 
 
-
-
-
   /*---------------------------------*/
  /*--------{Ritch presens}--------*/
 /*---------------------------------*/
 .activityUserPopout-2yItg2 {
-    background-color: transparent;
+    background-color: rgba(0,0,0,.2);
 }
 
+
+
+.userPopout-3XzG_A .body-3iLsc4{
+    padding: 4px 16px;
+}
 
 
 
@@ -167,7 +171,7 @@
 }
 
 /*remove protip*/
-.protip-YaFfgO{
+.userPopout-3XzG_A .footer-1fjuF6{
     display: none;
 }
 
