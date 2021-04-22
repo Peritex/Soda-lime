@@ -4,6 +4,7 @@
 @import url(https://peritex.github.io/Soda-lime/src/User_Area.css);
 @import url(https://peritex.github.io/Soda-lime/src/Popouts.css);
 @import url(https://peritex.github.io/Soda-lime/src/Chat_Box.css);
+@import url(https://peritex.github.io/Soda-lime/src/Server.css);
 
 .theme-dark,
 :root {
@@ -109,6 +110,11 @@
 
 }
 
+
+.VC-Timer{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
 
 
   /*---------------------------------*/
@@ -402,119 +408,7 @@ svg.icon-22AiRD:hover {
 
 
 
-  /*-------------------------------------------------------------*/
- /*----------------------{Guilds Side bar}----------------------*/
-/*-------------------------------------------------------------*/
 
-  /*--------------------------------*/
- /*---------{Server List}----------*/
-/*--------------------------------*/
-.wrapper-3NnKdC.guilds-1SWlCJ {
-  width: 70px;
-/*  height: calc(100% - 70px);*/
-}
-/*
-.wrapper-1Rf91z::after {
-  position: fixed;
-  content: "";
-  width: 100%;
-  height: 80px;
-  bottom: 0;
-}
-*/
-.scroller-2TZvBN{
-    display: flex;
-    flex-flow: column;
-    padding-bottom: 60px;
-}
-
-.guilds-1SWlCJ .scroller-2TZvBN .guildSeparator-3s64Iy{
-    display: none;
-}
-.guilds-1SWlCJ::after{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    width: inherit;
-    height: 60px;
-    backdrop-filter: blur(5px);
-
-}
-
-
-  /*----------------------------------*/
- /*-----------{Home Icon}------------*/
-/*----------------------------------*/
-/*make home icon sticky*/
-.scroller-1Bvpku .tutorialContainer-2sGCg9 {
-    position: sticky;
-    top: -5px;
-    padding-top: 7px;
-    padding-bottom: 2px;
-    z-index: 1;
-    background: rgba(0,0,0,0);
-    backdrop-filter: blur(5px);
-    order: -3;
-}
-/*list divider*/
-.scroller-1Bvpku > .listItem-2P_4kh{
-    position: sticky;
-    order: -2;
-    top:62px;
-    backdrop-filter: blur(5px);
-    z-index: 1;
-}
-/*home button svg*/
-.homeIcon-FuNwkv{
-    width: 80%;
-    height: 80%;
-
-    background-image: url(https://peritex.github.io/Soda-lime/src/svg/home-icon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    fill: #000;
-}
-/*remover discord icon */
-.homeIcon-FuNwkv path{
-    display: none
-}
-
-.wrapper-1BJsBx .childWrapper-anI2G9{
-    background-color: var(--color-purple);
-}
-
-.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9{
-    background-color: var(--color-blue);
-}
-
-.wrapper-1BJsBx:hover .childWrapper-anI2G9{
-    background-image: var(--gradientR1);
-}
-
-
-
-  /*--------------------------------*/
- /*------{Join server button}------*/
-/*--------------------------------*/
-/* Join/Create a sever */
-.scroller-2TZvBN .tutorialContainer-SGrQ1h{
-/*    order: -1;*/
-}
-
-/* hide pill marker at side of servers for add/join */
-.tutorialContainer-SGrQ1h div .pill-3YxEhL,
-.listItem-2P_4kh .pill-3YxEhL {
-    display:none;
-}
-/* move top "new" indicator down to fit style*/
-.unreadMentionsIndicatorTop-2-tcdU{
-    margin-top: 65px;
-}
-/* make bottom "new" indicator alow spotifiy to overlap*/
-.unreadMentionsIndicatorBottom-2mDYbI{
-    z-index: 2 !important;
-    bottom: 60px;
-}
 
 
 
@@ -545,9 +439,9 @@ svg.icon-22AiRD:hover {
 
 
 
-  /*--------------------------------*/
+  /*----------------------------------------------*/
  /*-----------{Popout background blur}-----------*/
-/*--------------------------------*/
+/*----------------------------------------------*/
 .backdrop-1wrmKB, .backdropWithLayer-3_uhz4{
     opacity: 1;
     background-color: rgba(0, 0, 0, .3) !important;
@@ -597,10 +491,6 @@ svg.icon-22AiRD:hover {
 
 
 
-
-
-
-
 ::-webkit-scrollbar-thumb {
     border-radius: 25px;
     background-color: var(--color-purple) !important;
@@ -608,58 +498,38 @@ svg.icon-22AiRD:hover {
 
 
 
-/*channel new mention*/
-.mention-1f5kbO {
-    background-color: var(--color-orange)
-}
-/*server number badge*/
-.numberBadge-2s8kKX{
-    background-color: var(--color-orange) !important
-}
+
 
 
 
 
 /*
-
-.jumpToPresentBar-G1R9s6, .barBase-1c2Rfb{
-    background-color: rgba(rgb(var(--color-orange)), 0.9)
-}
+.root-SR8cQa>.topSectionSpotify-1lI0-P{
+  background: linear-gradient(90deg, lightgreen, transparent);
+ }
+ .root-SR8cQa>.topSectionPlaying-1J5E4n {
+   background: linear-gradient(90deg, lightblue, transparent);
+ }
+ .root-SR8cQa>.topSectionXbox-3fWLjS {
+   background: linear-gradient(90deg, green, transparent);
+ }
+ .root-SR8cQa>.topSectionStreaming-1Tpf5X {
+   background: linear-gradient(90deg, purple, transparent);
+ }
 */
 
-.newMessagesBar-265mhP{
-    position: absolute;
-/*    top: 0;*/
-    background-color: transparent;
-
-    justify-content: space-between;
-    box-shadow: unset;
-}
-
-.barButtonMain-3K-jeJ{
-    flex: 0 1 auto;
-    background-color: rgba(255,156,0,.8);
-    background-image: unset;
-    border-radius: 0 0 3px 3px;
-    box-shadow: 2px 2px 20px -5px #000
-}
-.barButtonMain-3K-jeJ:hover{
-    transition: background-image 2.5s ease;
-/*    background-color: transparent;*/
-    background-image: var(--gradient2);
-}
-
-.barButtonAlt-mYL1lj{
-    background-color: rgba(255,156,0,.8);
-    border-radius: 0 0 3px 3px;
-    backdrop-filter: blur(5px);
-
-}
-.barButtonAlt-mYL1lj:active{
-    background-color: var(--color-green);
-    color: black;
-}
-
-.unread-1xRYoj{
-    background-color: var(--color-orange);
-}
+  /*user pop-out*/ 
+/*
+ .userPopout-3XzG_A .headerSpotify-zpWxgT {
+   background: radial-gradient(at 100% 0%, lightgreen, transparent);
+ }
+ .userPopout-3XzG_A .headerPlaying-j0WQBV {
+   background: radial-gradient(at 100% 0%, lightblue, transparent);
+ }
+ .userPopout-3XzG_A .headerXbox-3G-4PF {
+   background: radial-gradient(at 100% 0%, green , transparent);
+ }
+ .userPopout-3XzG_A .headerStreaming-2FjmGz {
+  background: radial-gradient(at 100% 0%, purple, transparent);
+ }
+*/
