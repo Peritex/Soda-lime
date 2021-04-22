@@ -1,0 +1,137 @@
+  /*-------------------------------------------------------------*/
+ /*----------------------{Guilds Side bar}----------------------*/
+/*-------------------------------------------------------------*/
+
+  /*--------------------------------*/
+ /*---------{Server List}----------*/
+/*--------------------------------*/
+.wrapper-1Rf91z, .wrapper-3NnKdC.guilds-1SWlCJ {
+  width: 70px;
+}
+
+.scroller-2TZvBN, .scroller-1Bvpku{
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+
+.guilds-1SWlCJ .scroller-2TZvBN .guildSeparator-3s64Iy{
+    display: none;
+}
+.guilds-1SWlCJ::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: inherit;
+    height: 60px;
+    backdrop-filter: blur(5px);
+
+}
+
+
+  /*----------------------------------*/
+ /*-----------{Home Icon}------------*/
+/*----------------------------------*/
+/*make home icon sticky*/
+.scroller-1Bvpku .tutorialContainer-2sGCg9 {
+    position: sticky;
+    top: -5px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    z-index: 1;
+    background: rgba(0,0,0,0);
+    backdrop-filter: blur(5px);
+    order: -3;
+}
+/*list divider*/
+.scroller-1Bvpku > .listItem-2P_4kh{
+    position: sticky;
+    order: -2;
+    top:62px;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+/*home button svg*/
+.homeIcon-FuNwkv{
+    width: 80%;
+    height: 80%;
+
+    background-image: url(https://peritex.github.io/Soda-lime/src/svg/home-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: #000;
+}
+/*remover discord icon */
+.homeIcon-FuNwkv path{
+    display: none
+}
+
+.wrapper-1BJsBx .childWrapper-anI2G9{
+    background-color: var(--color-purple);
+}
+
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9{
+    background-color: var(--color-blue);
+}
+
+.wrapper-1BJsBx:hover .childWrapper-anI2G9{
+    background-image: var(--gradientR1);
+}
+
+
+
+  /*--------------------------------*/
+ /*------{Join server button}------*/
+/*--------------------------------*/
+/* Join/Create a sever */
+.scroller-2TZvBN .tutorialContainer-SGrQ1h{
+/*    order: -1;*/
+}
+
+/* hide pill marker at side of servers for add/join */
+.tutorialContainer-SGrQ1h div .pill-3YxEhL,
+.listItem-2P_4kh .pill-3YxEhL {
+    display:none;
+}
+/* move top "new" indicator down to fit style*/
+.unreadMentionsIndicatorTop-2-tcdU{
+    margin-top: 65px;
+}
+/* make bottom "new" indicator alow spotifiy to overlap*/
+.unreadMentionsIndicatorBottom-2mDYbI{
+    z-index: 2 !important;
+    bottom: 60px;
+}
+
+
+
+
+/*guilds new unread*/
+
+.unreadTop-3rAB3r, .unreadBottom-1_LF_w{
+    width:240px;
+    border-radius: 0 !important;
+    padding: 0;
+}
+.unreadTop-3rAB3r .bar-30k2ka:not(.mention-1f5kbO), .unreadTop-3rAB3r .bar-30k2ka.mention-1f5kbO{
+    border-radius: 0 !important;
+    background: linear-gradient(#f04747, transparent);
+    box-shadow: none;
+}
+.unreadBottom-1_LF_w  .bar-30k2ka:not(.mention-1f5kbO), .unreadBottom-1_LF_w  .bar-30k2ka.mention-1f5kbO{
+    border-radius: 0px  !important;
+    background: linear-gradient(0deg, #f04747, transparent);
+    box-shadow: none;
+}
+.unreadMentionsIndicatorBottom-2mDYbI, .unreadMentionsIndicatorTop-2-tcdU{
+    padding:0px;
+    height:24px;
+}
+.unreadMentionsIndicatorBottom-2mDYbI .unreadMentionsBar-1Bu1dC{
+    border-radius: 0px !important;
+    background: linear-gradient(0deg, #f04747, transparent);
+}
+.unreadMentionsIndicatorTop-2-tcdU .unreadMentionsBar-1Bu1dC{
+    border-radius: 0 !important;
+    background: linear-gradient(#f04747, transparent);
+}
