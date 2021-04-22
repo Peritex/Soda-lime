@@ -179,8 +179,11 @@
     z-index: 11 !important;
 }
 .powercord-spotify img{
+    width: 48px;
+    height: 48px;
     border-radius: var( --border-spotify) !important;
-    margin-left: 9px;
+    margin-bottom: 4px;
+    margin-left: 0;
 }
 .powercord-spotify .spotify-seek{
     margin-bottom: 5px;
