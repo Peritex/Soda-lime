@@ -170,8 +170,13 @@
     display: none;
 }
 
+.userPopout-3XzG_A .footer-1fjuF6 .input-2_SIlA{
+    background-color: rgba(0,0,0,.5);
+    box-shadow: black 2px 2px 5px 0px;
+}
+
 /*remove protip*/
-.userPopout-3XzG_A .footer-1fjuF6{
+.userPopout-3XzG_A .footer-1fjuF6 .protip-YaFfgO{
     display: none;
 }
 
