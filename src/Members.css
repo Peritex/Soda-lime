@@ -8,11 +8,12 @@
      justify-content: right;
      transition: max-width var(--user-anim-speed) cubic-bezier(0.4, 0, 0.2, 1) 1s;
      margin-left: 20px;
+     margin-right: 5px;
 }
  
  
  .membersWrap-2h-GB4:hover {
-     max-width: 100%;
+     max-width: 240px;
      transition: max-width var(--user-anim-speed) cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
  }
  
