@@ -5,6 +5,7 @@
 @import url(https://peritex.github.io/Soda-lime/src/Popouts.css);
 @import url(https://peritex.github.io/Soda-lime/src/Chat_Box.css);
 @import url(https://peritex.github.io/Soda-lime/src/Server.css);
+@import url(https://peritex.github.io/Soda-lime/src/TitleBar.css);
 
 .theme-dark,
 :root {
@@ -39,73 +40,73 @@
 	--toast-contents: #1a1a1a66 !important;
 	--toast-box-shadow: rgba(0, 0, 0, 0.5)!important;
 	--toast-border:  #1f1f1f22 !important;
-    	--seperator-color: var(--background-accent);
+  --seperator-color: var(--background-accent);
 
 	--color-violet: #ff009c; /*First Gradient Color*/
 	--color-blue: #009cff; /*Second Gradient Color*/
-    --color-green: #00ff9c;
-    --color-orange: #ff9c00;
-    --color-lime: #9cff00;
-    --color-purple: #9c00ff;
+  --color-green: #00ff9c;
+  --color-orange: #ff9c00;
+  --color-lime: #9cff00;
+  --color-purple: #9c00ff;
 
-    --gradient1: linear-gradient(90deg, transparent, var(--color-violet), var(--color-blue), transparent);
-    --gradient2: linear-gradient(300deg, transparent, var(--color-orange), var(--color-orange), var(--color-purple));
-    --gradient3: linear-gradient(90deg, transparent, var(--color-purple), var(--color-green), transparent);
-
-
-    --gradientR1: radial-gradient(var(--color-green), transparent);
+  --gradient1: linear-gradient(90deg, transparent, var(--color-violet), var(--color-blue), transparent);
+  --gradient2: linear-gradient(300deg, transparent, var(--color-orange), var(--color-orange), var(--color-purple));
+  --gradient3: linear-gradient(90deg, transparent, var(--color-purple), var(--color-green), transparent);
 
 
-    --focus-primary: #e700fa;
-
-    --blur-popout: 3px;
-    --blur-toast: 3.5px;
-    --blur-tooltip: 5px;
-    --blur-msgbox: 5px;
+  --gradientR1: radial-gradient(var(--color-green), transparent);
 
 
-    --borders-buttons-rounded: 3px; /*Border shapes for rounded buttons. 25px for circle, 0px for square*/
-    --borders-buttons-circle: 5px; /*Border shapes for circle buttons. 25px for circle, 0px for square*/
-    --borders-switches: 3px; /*Border shapes for switches. 15px for circle, 0px for square*/
-    --borders-checkboxes: 0%; /*Border shapes for checkboxes. 50% for circle, 0% for square*/
-    --borders-slider-bars: 2px; /*Border shapes for slider bars. 5px for circle, 0px for square*/
-    --borders-slider-grabbers: 2px; /*Border shapes for slider grabbers. 8px for circle, 0px for square*/
-    --borders-progress-bars: 0px; /*Border shapes for progress bars. 5px for circle, 0px for square*/
-    --borders-inputs: 0px; /*Border shapes for inputs. 25px for circle, 0px for square*/
-    --borders-contexts: 5px; /*Border shapes for context menus. 25px for circle, 0px for square*/
-    --borders-popouts: 3px; /*Border shapes for popouts. 25px for circle, 0px for square*/
-    --borders-modals: 3px; /*Border shapes for modals. 25px for circle, 0px for square*/
-    --borders-cards: 0px; /*Border shapes for cards and banners. 25px for circle, 0px for square*/
-    --borders-previews: 0px; /*Border shapes for previews. 25px for circle, 0px for square*/
-    --borders-sidebar-and-notices: 0px; /*Shape for top left sidebar and notices border. 25px for circle, 0px for square*/
-    --borders-servers: 5%; /*Border shapes for server icons. 50% for circle, 0% for square*/
-    --borders-avatars: 5%; /*Border shapes for avatars. 50% for circle, 0% for square*/
-    --borders-icons: 0%; /*Border shapes for icons. 50% for circle, 0% for square*/
-    --borders-labels: 0px; /*Border shapes for text and number indicators. 15px for circle, 0px for square*/
-    --borders-pills: 3px; /*Border shapes for unread badges and selected server pills. 5px for circle, 0px for square*/
-    --borders-lines: 0px; /*Border shapes for lines when you drag categories or channels. 2px for circle, 0px for square*/
-    --borders-role-outlines: 3px; /*Border shapes for roles outlines. 10px for circle, 0px for square*/
-    --borders-role-dots: 0px; /*Border shapes for roles dots. 10px for circle, 0px for square*/
-    --borders-tags: 5px; /*Border shapes for tags. 10px for circle, 0px for square*/
-    --borders-messages: 0px; /*Border shapes for hovered or highlighted messages. 25px for circle, 0px for square*/
-    --borders-files: 0px; /*Border shapes for images, videos, audios and gifs. 25px for circle, 0px for square*/
-    --borders-mentions: 0px; /*Border shapes for mentions. 10px for circle, 0px for square*/
-    --borders-reactions: 0px; /*Border shapes for reactions. 10px for circle, 0px for square*/
-    --borders-codes: 5px; /*Border shapes for codes and codeblocks. 10px for circle, 0px for square*/
-    --borders-embeds: 5px; /*Border shapes for embeds. 25px for circle, 0px for square*/
-    --borders-replies: 0px; /*Shape for top left replies border. 15px for circle, 0px for square*/
-    --borders-quotes: 0px; /*Border shapes for quote icon. 2px for circle, 0px for square*/
-    --borders-spoilers: 0px; /*Border shapes for spoilers. 10px for circle, 0px for square*/
-    --borders-toasts: 0px; /*Border shapes for toasts. 25px for circle, 0px for square*/
-    --borders-tooltips: 3px; /*Border shapes for tooltips. 25px for circle, 0px for square*/
-    --borders-scrollbars: 5px; /*Border shapes for scrollbars. 10px for circle, 0px for square*/
-    --borders-editors: 3px; /*Border shapes for editors workspace. 25px for circle, 0px for square*/
-    --borders-top-bar: 0px; /*Border shapes for the items in the top menu.*/
-    --borders-user-area: 0px; /*Border shapes of the ussr list.*/
-    --borders-PnP: 3px;
-    --border-spotify: 3px;
+  --focus-primary: #e700fa;
 
-    --user-anim-speed: 1.5s;
+  --blur-popout: 3px;
+  --blur-toast: 3.5px;
+  --blur-tooltip: 5px;
+  --blur-msgbox: 5px;
+
+
+  --borders-buttons-rounded: 3px; /*Border shapes for rounded buttons. 25px for circle, 0px for square*/
+  --borders-buttons-circle: 5px; /*Border shapes for circle buttons. 25px for circle, 0px for square*/
+  --borders-switches: 3px; /*Border shapes for switches. 15px for circle, 0px for square*/
+  --borders-checkboxes: 0%; /*Border shapes for checkboxes. 50% for circle, 0% for square*/
+  --borders-slider-bars: 2px; /*Border shapes for slider bars. 5px for circle, 0px for square*/
+  --borders-slider-grabbers: 2px; /*Border shapes for slider grabbers. 8px for circle, 0px for square*/
+  --borders-progress-bars: 0px; /*Border shapes for progress bars. 5px for circle, 0px for square*/
+  --borders-inputs: 0px; /*Border shapes for inputs. 25px for circle, 0px for square*/
+  --borders-contexts: 5px; /*Border shapes for context menus. 25px for circle, 0px for square*/
+  --borders-popouts: 3px; /*Border shapes for popouts. 25px for circle, 0px for square*/
+  --borders-modals: 3px; /*Border shapes for modals. 25px for circle, 0px for square*/
+  --borders-cards: 0px; /*Border shapes for cards and banners. 25px for circle, 0px for square*/
+  --borders-previews: 0px; /*Border shapes for previews. 25px for circle, 0px for square*/
+  --borders-sidebar-and-notices: 0px; /*Shape for top left sidebar and notices border. 25px for circle, 0px for square*/
+  --borders-servers: 5%; /*Border shapes for server icons. 50% for circle, 0% for square*/
+  --borders-avatars: 5%; /*Border shapes for avatars. 50% for circle, 0% for square*/
+  --borders-icons: 0%; /*Border shapes for icons. 50% for circle, 0% for square*/
+  --borders-labels: 0px; /*Border shapes for text and number indicators. 15px for circle, 0px for square*/
+  --borders-pills: 3px; /*Border shapes for unread badges and selected server pills. 5px for circle, 0px for square*/
+  --borders-lines: 0px; /*Border shapes for lines when you drag categories or channels. 2px for circle, 0px for square*/
+  --borders-role-outlines: 3px; /*Border shapes for roles outlines. 10px for circle, 0px for square*/
+  --borders-role-dots: 0px; /*Border shapes for roles dots. 10px for circle, 0px for square*/
+  --borders-tags: 5px; /*Border shapes for tags. 10px for circle, 0px for square*/
+  --borders-messages: 0px; /*Border shapes for hovered or highlighted messages. 25px for circle, 0px for square*/
+  --borders-files: 0px; /*Border shapes for images, videos, audios and gifs. 25px for circle, 0px for square*/
+  --borders-mentions: 0px; /*Border shapes for mentions. 10px for circle, 0px for square*/
+  --borders-reactions: 0px; /*Border shapes for reactions. 10px for circle, 0px for square*/
+  --borders-codes: 5px; /*Border shapes for codes and codeblocks. 10px for circle, 0px for square*/
+  --borders-embeds: 5px; /*Border shapes for embeds. 25px for circle, 0px for square*/
+  --borders-replies: 0px; /*Shape for top left replies border. 15px for circle, 0px for square*/
+  --borders-quotes: 0px; /*Border shapes for quote icon. 2px for circle, 0px for square*/
+  --borders-spoilers: 0px; /*Border shapes for spoilers. 10px for circle, 0px for square*/
+  --borders-toasts: 0px; /*Border shapes for toasts. 25px for circle, 0px for square*/
+  --borders-tooltips: 3px; /*Border shapes for tooltips. 25px for circle, 0px for square*/
+  --borders-scrollbars: 5px; /*Border shapes for scrollbars. 10px for circle, 0px for square*/
+  --borders-editors: 3px; /*Border shapes for editors workspace. 25px for circle, 0px for square*/
+  --borders-top-bar: 0px; /*Border shapes for the items in the top menu.*/
+  --borders-user-area: 0px; /*Border shapes of the ussr list.*/
+  --borders-PnP: 3px;
+  --border-spotify: 3px;
+
+  --user-anim-speed: 1.5s;
 
 
 }
@@ -140,7 +141,7 @@
     opacity: 60%;
 }
 .pictureInPictureWindow-1B5qSe:hover{
-        opacity: 100%;
+  opacity: 100%;
 }
 .pictureInPictureVideo-2iKsGg{
     width: 240px;
@@ -238,175 +239,6 @@
     border-left: 3px solid rgba(180, 180, 180, 0.4);
     border-radius: 0;
 }
-
-
-
-  /*-------------------------------------------------------------------*/
- /*----------------------------{TiTle Bar}----------------------------*/
-/*-------------------------------------------------------------------*/
-
-  /*--------------------------------*/
- /*-----------{Top Bar}------------*/
-/*--------------------------------*/
-
-/*Min Max close contaner*/
-.platform-win .typeWindows-1za-n7 {
-	margin-top: 0;
-	position: absolute;
-	top: 1px;
-	left: 0;
-	width: 100%;
-	background: 0 0;
-}
-/*close button del*/
-.platform-win .winButtonClose-1HsbF- {
-    display:none;
-}
-/*Min Max Close Buttons*/
-.platform-win .winButton-iRh8-Z {
-	position: relative;
-	top: calc(var(--TB-position-top, 0px) - 1px);
-	right: var(--TB-position-right, 0);
-	height: var(--TB-height, 48px);
-	width: var(--TB-width, 55px);
-}
-/*Min Max Close Buttons hover */
-.platform-win .winButton-iRh8-Z:not(.winButtonClose-1HsbF-):hover {
-	background-color: var( --background-modifier-selected);
-}
-/*Title bar content */
-.platform-win .container-1r6BKw {
-	padding-right: var(--TB-header-padding, 115px)
-}
-/* Discord title del*/
-.platform-win .wordmarkWindows-1v0lYD {
-	display: none;
-}
-
-.platform-win #app-mount.bd-detached-editor .winButton-iRh8-Z {
-	right: 30%
-}
-
-
-  /*-------------------------------------------*/
- /*-----------{TopBar Button Anim}------------*/
-/*-------------------------------------------*/
-/*anim TopBar buttons*/
-.iconWrapper-2OrFZ1:hover {
-    animation: Bop 1s 6;
-  }
-  @keyframes Bop {
-    0% {
-      transform: rotateY(0deg);
-    }
-
-    100% {
-      transform: rotateY(360deg);
-    }
-}
-/*ring the mute bell*/
-.iconWrapper-2OrFZ1[role="switch"]:hover {
-    animation: Ring 0.15s 6;
-  }
-  @keyframes Ring {
-    0% {
-      transform: rotate(-7deg);
-    }
-    50% {
-      transform: rotate(7deg);
-    }
-    100% {
-      transform: rotate(-7deg);
-    }
-}
-/*TopBar help button del*/
-.iconWrapper-2OrFZ1[aria-label="Help"]{
-    display:none;
-}
-
-
-
-/*top bar contaner bg*/
-.children-19S4PO, .toolbar-1t6TWx {
-    background-color: rgba(0,0,0,0.2);
-    border-radius: var( --borders-top-bar);
-    padding: 5px;
-    height: auto;
-    margin: 3px !important;
-}
-.children-19S4PO::after {
-  display: none;
-}
-.children-19S4PO {
-    margin-right: 20px;
-}
-
-.toolbar-1t6TWx {
-    right: 10px !important;
-}
-
-
-/*hide search till clicked*/
-.searchBar-3dMhjb{
-    width:28px;
-    transition: width 0.5s ease-out;
-}
-
-.divider-3FBTu8 {
-    width: 2px;
-    height: 20px;
-}
-
-svg > .updateIconForeground-3tnNZn {
-    fill: var(--color-green);
-}
-.iconWrapper-2OrFZ1:hover svg > .updateIconForeground-3tnNZn {
-    fill: var(--color-lime);
-}
-svg:active > .updateIconForeground-3tnNZn {
-    fill: var(--interactive-active);
-}
-svg.icon-3cZ1F_ > path {
-    fill: var(--interactive-normal);
-}
-svg.icon-22AiRD {
-    color: var(--interactive-normal);
-}
-svg.icon-22AiRD:hover {
-    color: var(--interactive-hover);
-}
-.topic-TCb_qw {
-    color: var(--interactive-normal) !important;
-}
-.title-29uC1r {
-    color: var(--interactive-normal);
-}
-.title-29uC1r:hover {
-    color: var(--interactive-hover);
-}
-.status-1XNdyw:hover {
-    filter: brightness(1.5)!important
-}
-.channelName-qsg_a_ > div > .input-2A_zIr {
-    box-shadow: none !important;
-}
-
-.search-2oPWTC .icon-38sknP {
-    cursor: pointer;
-}
-
-.toolbar-1t6TWx .iconWrapper-2OrFZ1 .iconBadge-qZ4Ksk{
-    background-color: var(--color-orange);
-}
-.toolbar-1t6TWx .iconWrapper-2OrFZ1 svg > .strikethrough-3Wiitd{
-    color: var(--color-orange);
-}
-
-
-
-
-
-
 
 
 
