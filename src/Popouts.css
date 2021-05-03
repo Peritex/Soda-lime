@@ -54,8 +54,22 @@
 }
 
 
+  /*----------------------------------------------*/
+ /*-----------{Popout background blur}-----------*/
+/*----------------------------------------------*/
+.backdrop-1wrmKB, .backdropWithLayer-3_uhz4{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .3) !important;
+    backdrop-filter: blur(10px);
+}
 
+.inner-1ilYF7{
+    box-shadow: 2px 2px 8px #000;
+}
 
+.modal-yWgWj-, .root-1gCeng{
+    background-color: var( --background-primary) !important;
+}
 
 
 
@@ -85,4 +99,86 @@
 /*----------------------------------*/
 #app-mount .tooltipBlack-PPG47z .tooltipPointer-3ZfirK {
   display: none;
+}
+
+
+
+
+
+  /*---------------------------------------------------------------------------------------*/
+ /*-----------------------------------{search drop box}-----------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+
+  /*---------------------------------------*/
+ /*-----------{search drop box}-----------*/
+/*---------------------------------------*/
+.theme-dark .container-3ayLPN{
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+.option-96V44q:after{
+  display: none;
+}
+
+
+
+
+  /*----------------------------------------*/
+ /*------------{search results}------------*/
+/*----------------------------------------*/
+.theme-dark .container-3ayLPN{
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+.option-96V44q:after{
+  display: none;
+}
+
+.searchResultsWrap-3-pOjs{
+  width: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  overflow: hidden;
+  right: 0px;
+  height: 100%;
+  background-color: rgba(0,0,0,0.1);
+  backdrop-filter: blur(5px);
+}
+.searchResultsWrap-3-pOjs .searchHeader-2XoQg7{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.searchResultGroup-1DphGG .channelName-1JRO3C{
+  background: transparent;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: var(--header-primary);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+  margin-bottom: 8px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  z-index: 1;
+  border-bottom: 2px solid;
+  border-image: var(--gradient1);
+  border-image-slice: 1;
+}
+
+.searchResultGroup-1DphGG .searchResult-9tQ1uo{
+  background-color: rgba(0, 0, 0, 0.2);
 }

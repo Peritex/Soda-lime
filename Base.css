@@ -270,25 +270,6 @@
 
 
 
-
-  /*----------------------------------------------*/
- /*-----------{Popout background blur}-----------*/
-/*----------------------------------------------*/
-.backdrop-1wrmKB, .backdropWithLayer-3_uhz4{
-    opacity: 1;
-    background-color: rgba(0, 0, 0, .3) !important;
-    backdrop-filter: blur(10px);
-}
-
-.inner-1ilYF7{
-    box-shadow: 2px 2px 8px #000;
-}
-
-.modal-yWgWj-, .root-1gCeng{
-    background-color: var( --background-primary) !important;
-}
-
-
 /*
 .layer-v9HyYc{
     position:inherit;
@@ -297,9 +278,9 @@
 */
 
 
-  /*------------------------------------*/
+  /*---------------------------------------*/
  /*-----------{Context Popout}------------*/
-/*------------------------------------*/
+/*---------------------------------------*/
 /*Popup context menus*/
 
 .menu-3sdvDG.styleFlexible-wGDiIL, .submenu-2-ysNh.menu-3sdvDG, .menu-3sdvDG.styleFixed-sX-yHV {
