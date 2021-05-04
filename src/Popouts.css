@@ -59,7 +59,7 @@
 /*----------------------------------------------*/
 .backdrop-1wrmKB, .backdropWithLayer-3_uhz4{
     opacity: 1;
-    background-color: rgba(0, 0, 0, .3) !important;
+    background-color: transparent !important;
     backdrop-filter: blur(10px);
 }
 
@@ -67,9 +67,19 @@
     box-shadow: 2px 2px 12px 3px #000;
 }
 
-.modal-yWgWj-, .root-1gCeng{
-    background-color: var( --background-primary) !important;
+.theme-dark .root-1gCeng, .modal-yWgWj-{
+    background-color: var( --background-primary);
+    backdrop-filter: blur(10px);
 }
+/* update */
+.modal-3O0aXp{
+  background-color: rgba(50, 50, 50, 0.1);
+}
+.theme-dark .footer-2gL1pp{
+    background-color: rgba(0,0,0,0.2);
+}
+
+
 /* upload */
 .theme-dark .uploadModal-2ifh8j .uploadModal-2ifh8j{
     background-color: rgba(100,100,100, 0.2);
