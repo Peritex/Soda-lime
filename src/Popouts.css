@@ -64,15 +64,19 @@
 }
 
 .inner-1ilYF7{
-    box-shadow: 2px 2px 8px #000;
+    box-shadow: 2px 2px 12px 3px #000;
 }
 
 .modal-yWgWj-, .root-1gCeng{
     background-color: var( --background-primary) !important;
 }
-
-
-
+/* upload */
+.theme-dark .uploadModal-2ifh8j .uploadModal-2ifh8j{
+    background-color: rgba(100,100,100, 0.2);
+}
+.theme-dark .uploadModal-2ifh8j .footer-3mqk7D{
+    background-color: rgba(0,0,0,0.2);
+}
 
   /*----------------------------------*/
  /*-----------{Blur Toast}-----------*/
