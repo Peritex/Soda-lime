@@ -59,7 +59,7 @@
 
   --focus-primary: #e700fa;
 
-  --blur-popout: 3px;
+  --blur-popout: 10px;
   --blur-toast: 3.5px;
   --blur-tooltip: 5px;
   --blur-msgbox: 5px;
