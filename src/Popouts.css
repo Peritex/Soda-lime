@@ -1,16 +1,28 @@
-  /*--------------------------------------------*/
+/* top shelf popouts  */
+.messagesPopoutWrap-1MQ1bW{
+  background:rgba(200, 200, 200, 0.05);
+  backdrop-filter:blur(var( --blur-popout));
+    box-shadow: 2px 2px 15px 5px #000
+/*  width: 620px;*/
+} 
+ 
+ 
+ /*--------------------------------------------*/
  /*-----------{Pind Message Popout}------------*/
 /*--------------------------------------------*/
 /* pind message center frost*/
-.messagesPopoutWrap-1MQ1bW{
-  background:rgba(0,0,0,0);
-  backdrop-filter:blur(var( --blur-popout));
-    box-shadow: 2px 2px 5px #000
-/*  width: 620px;*/
-}
+
 /*darker header, footer and message*/
 .header-ykumBX, .footer-1kmXd4, .messageGroupWrapper-o-Zw7G{
     background-color: rgba(0,0,0,0.5)
+}
+/* make footer small */
+.footer-1kmXd4{
+  height: 0px;
+}
+/* hide protip in footer */
+.footer-1kmXd4 .block-2RXqH9{
+  display: none;
 }
 
   /*------------------------------------*/
@@ -31,23 +43,21 @@
   /*-------------------------------------*/
  /*-----------{Inbox Popout}------------*/
 /*-------------------------------------*/
-/*inbox messages*/
+/* inbox msg contaners */
+.recentMentionsPopout-3rCiI6 .scroller-tlc3kG,.recentMentionsPopout-3rCiI6 .scroller-2UmRce{
+    padding-top: 10px;
+}
+
+/*inbox mentions*/
 .channelHeader-3Gd2xq{
-    background-color: rgba(19,19,19,0.8);
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(var( --blur-popout));
 }
 .messageContainer-gbhlwo{
-    background-color: rgba(33,33,33, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 
-/*inbox unreads*/
-.recentMentionsPopout-3rCiI6{
-    background-color: rgba(0, 0, 0, 0);
-    backdrop-filter:blur(var( --blur-popout));
-    box-shadow: 2px 2px 5px #000;
-    
-}
 /*unread msg content*/
 .messages-3G3erD{
     background-color: rgba(33,33,33, 0.5);
@@ -67,10 +77,12 @@
     box-shadow: 2px 2px 12px 3px #000;
 }
 
+/* catch all for fullscreen popups */
 .theme-dark .root-1gCeng, .modal-yWgWj-{
-    background-color: var( --background-primary);
+    background-color: rgba(50, 50, 50, 0.1);
     backdrop-filter: blur(10px);
 }
+
 /* update */
 .modal-3O0aXp{
   background-color: rgba(50, 50, 50, 0.1);
@@ -78,7 +90,6 @@
 .theme-dark .footer-2gL1pp{
     background-color: rgba(0,0,0,0.2);
 }
-
 
 /* upload */
 .theme-dark .uploadModal-2ifh8j .uploadModal-2ifh8j{
@@ -133,8 +144,6 @@
 .option-96V44q:after{
   display: none;
 }
-
-
 
 
   /*----------------------------------------*/
