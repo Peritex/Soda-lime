@@ -158,18 +158,6 @@
 }
 
 
-/*fix the top notice bar*/
-.powercord-notice, #app-mount .notice-3bPHh-{
-    position: fixed;
-    left: 25%;
-    width: 50%;
-    background-color: #43b58133;
-    backdrop-filter:blur(3px);
-
-}
-
-
-
 
 
   /*---------------------------------*/
@@ -185,9 +173,6 @@
     background: linear-gradient(320deg, rgb(103,58,183), rgb(63,81,181));
     color: #ffffff;
 }
-
-
-
 
 
 
@@ -222,7 +207,7 @@
 
   /*------------------------------------------*/
  /*-----------{@Mentiond in chat}------------*/
-/*--------------------=========-------------*/
+/*------------------------------------------*/
 /*sets the hightlight color from yellow to black*/
 .message-2qnXI6.mentioned-xhSam7 {
   background: rgba(0, 0, 0, 0.3);
@@ -243,11 +228,6 @@
 
 
 
-
-
-
-
-
   /*--------------------------------*/
  /*-----------{Get Font}-----------*/
 /*--------------------------------*/
@@ -260,22 +240,12 @@
 
 
 
-
-
 /* color the group DM dropdown sub containers*/
 .friend-3KALPe{
   background-color: var( --background-secondary);
-
 }
 
 
-
-/*
-.layer-v9HyYc{
-    position:inherit;
-}
-
-*/
 
 
   /*---------------------------------------*/
@@ -308,41 +278,3 @@
     border-radius: 25px;
     background-color: var(--color-purple) !important;
 }
-
-
-
-
-
-
-
-
-/*
-.root-SR8cQa>.topSectionSpotify-1lI0-P{
-  background: linear-gradient(90deg, lightgreen, transparent);
- }
- .root-SR8cQa>.topSectionPlaying-1J5E4n {
-   background: linear-gradient(90deg, lightblue, transparent);
- }
- .root-SR8cQa>.topSectionXbox-3fWLjS {
-   background: linear-gradient(90deg, green, transparent);
- }
- .root-SR8cQa>.topSectionStreaming-1Tpf5X {
-   background: linear-gradient(90deg, purple, transparent);
- }
-*/
-
-  /*user pop-out*/ 
-/*
- .userPopout-3XzG_A .headerSpotify-zpWxgT {
-   background: radial-gradient(at 100% 0%, lightgreen, transparent);
- }
- .userPopout-3XzG_A .headerPlaying-j0WQBV {
-   background: radial-gradient(at 100% 0%, lightblue, transparent);
- }
- .userPopout-3XzG_A .headerXbox-3G-4PF {
-   background: radial-gradient(at 100% 0%, green , transparent);
- }
- .userPopout-3XzG_A .headerStreaming-2FjmGz {
-  background: radial-gradient(at 100% 0%, purple, transparent);
- }
-*/

@@ -159,6 +159,20 @@
 }
 
   /*----------------------------------*/
+ /*--------{Top Notice bat}--------*/
+/*----------------------------------*/
+.powercord-notice, #app-mount .notice-3bPHh-{
+    position: fixed;
+    left: 25%;
+    width: 50%;
+    background-color: #43b58133;
+    backdrop-filter:blur(3px);
+}
+
+
+
+
+  /*----------------------------------*/
  /*--------{tooltip frosting}--------*/
 /*----------------------------------*/
 #app-mount .tooltip-2QfLtc,
