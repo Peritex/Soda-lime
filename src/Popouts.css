@@ -1,5 +1,5 @@
 /* top shelf popouts  */
-.messagesPopoutWrap-1MQ1bW{
+.messagesPopoutWrap-1MQ1bW, .recentMentionsPopout-3rCiI6 {
   background:rgba(200, 200, 200, 0.05);
   backdrop-filter:blur(var( --blur-popout));
     box-shadow: 2px 2px 15px 5px #000
@@ -44,7 +44,7 @@
  /*-----------{Inbox Popout}------------*/
 /*-------------------------------------*/
 /* inbox msg contaners */
-.recentMentionsPopout-3rCiI6 .scroller-tlc3kG,.recentMentionsPopout-3rCiI6 .scroller-2UmRce{
+.recentMentionsPopout-3rCiI6 .scroller-tlc3kG, .recentMentionsPopout-3rCiI6 .scroller-2UmRce{
     padding-top: 10px;
 }
 
