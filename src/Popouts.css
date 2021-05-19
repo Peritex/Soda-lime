@@ -122,13 +122,14 @@
   min-width: 223px;
   width: 320px;
   right: 65px;
-  top: 55px;
+  top: 75px;
   bottom: unset !important;
   z-index: 999;  
 }
 .powercord-toast .header {
     display: flex;
-    flex-grow: 1;
+    flex: 1;
+    align-self: center;
     color: var(--text-normal);
     font-weight: 600;
     font-size: 16px;
@@ -137,17 +138,17 @@
     box-shadow: 0 2px 3px 0 var(--toast-box-shadow);
     border-radius: 5px 5px 0 0;
     padding: 12px 20px;
-    width: max-content;
+    max-width: 100%;
 }
 .powercord-toast .contents {
     display: flex;
+    flex: 1;
+    align-self: center;
     border-radius: 0 0 5px 5px;
     text-align: center;
     justify-content: flex-end;
     flex-direction: column;
     padding: 10px 0 0 10px;
-    width: 70%;
-    flex-grow: 1;
 }
 .powercord-toast .buttons {
     box-sizing: border-box;
