@@ -125,7 +125,7 @@
 #powercord-updater .header {
     display: flex;
     flex: 1;
-    align-self: center;
+    align-self: stretch;
     box-shadow: 0 2px 3px 0 var(--toast-box-shadow);
     max-width: 100%;
 }
