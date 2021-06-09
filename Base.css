@@ -97,7 +97,7 @@
   --borders-replies: 0px; /*Shape for top left replies border. 15px for circle, 0px for square*/
   --borders-quotes: 0px; /*Border shapes for quote icon. 2px for circle, 0px for square*/
   --borders-spoilers: 0px; /*Border shapes for spoilers. 10px for circle, 0px for square*/
-  --borders-toasts: 0px; /*Border shapes for toasts. 25px for circle, 0px for square*/
+  --borders-toasts: 3px; /*Border shapes for toasts. 25px for circle, 0px for square*/
   --borders-tooltips: 3px; /*Border shapes for tooltips. 25px for circle, 0px for square*/
   --borders-scrollbars: 5px; /*Border shapes for scrollbars. 10px for circle, 0px for square*/
   --borders-editors: 3px; /*Border shapes for editors workspace. 25px for circle, 0px for square*/
