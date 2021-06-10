@@ -57,6 +57,7 @@
 /*---------------------------------*/
 .container-3baos1{
     display: flex;
+    flex: 1 1 auto;
     max-height: 55px;
     bottom: 0px;
     left: 0px;
