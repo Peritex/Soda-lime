@@ -41,13 +41,14 @@
 .panels-j1Uci_{
     position: static;
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-content: flex-start;
     bottom: 0%;
     min-width: 0px;
     max-width: 240px;
     background-color: var( --background-secondary);
-    z-index: 3;
-    
+    z-index: 3;  
     border-top: 1px solid;
     border-image: var(--gradient3);
     border-image-slice: 1;
@@ -94,6 +95,12 @@
   /*---------------------------------*/
  /*--------{User tray icons}--------*/
 /*---------------------------------*/
+.panels-j1Uci_ > .container-3baos1 > .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignStretch-DpGPf3.noWrap-3jynv6{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .panels-j1Uci_ .container-3baos1 button[aria-checked="false"],
 .panels-j1Uci_ .container-3baos1 button:not([role="switch"]){
     transition: 0.2s ease-in-out;
@@ -103,7 +110,7 @@
 }
 .panels-j1Uci_ .container-3baos1:hover button.button-14-BFJ {
     transition: 0.2s ease-in-out;
-    width: 45px !important;
+    width: auto !important;
     overflow: visible !important;
     opacity: 1 !important;
 }
@@ -250,7 +257,7 @@
 .wrapper-24pKcD:not(:empty){
     height: auto;
     overflow: hidden;
-    width: 240px;
+    /* width: 240px; */
 }
 /*VC div content*/ /*flex grow and stack buttons on top*/
 .container-1giJp5{
