@@ -95,10 +95,22 @@
   /*---------------------------------*/
  /*--------{User tray icons}--------*/
 /*---------------------------------*/
-.panels-j1Uci_ > .container-3baos1 > .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignStretch-DpGPf3.noWrap-3jynv6{
+.panels-j1Uci_ > .container-3baos1:hover > .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignStretch-DpGPf3.noWrap-3jynv6{
     flex: 1 1 auto !important;
     display: flex;
     justify-content: space-evenly;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+.panels-j1Uci_ > .container-3baos1:hover > .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignStretch-DpGPf3.noWrap-3jynv6{
+    transition: ease-in-out 0.5s;
+    -webkit-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -ms-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
 }
 
 .panels-j1Uci_ .container-3baos1 button[aria-checked="false"],
@@ -113,6 +125,10 @@
     width: auto !important;
     overflow: visible !important;
     opacity: 1 !important;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
 }
 /*alow user area buttons to flex to number of children*/
 /*
