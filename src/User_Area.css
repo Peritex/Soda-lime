@@ -271,16 +271,18 @@
     border-image: var(--gradient3);
     border-image-slice: 1;
 }
-
+/* flex box inside container-1giJp5 */
+.container-1giJp5 .connection-3KRENF{
+    width: -webkit-fill-available;
+}
+/* VC inside this div */
 .container-1giJp5 .inner-tyMogq{
     padding: 5px 0px 0px 5px;
 }
-
+/* voice status text and icon */
 .container-1giJp5 .rtcConnectionStatus-2-jIsi{
     padding-bottom: 7px;
 }
-
-
 
 /*VC cam/share screen button */
 .actionButtons-14eAc_{
