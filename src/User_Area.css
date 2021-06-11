@@ -96,7 +96,7 @@
  /*--------{User tray icons}--------*/
 /*---------------------------------*/
 .panels-j1Uci_ > .container-3baos1 > .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignStretch-DpGPf3.noWrap-3jynv6{
-    flex: 1 1 auto;
+    flex: 1 1 auto !important;
     display: flex;
     justify-content: space-evenly;
 }
@@ -271,6 +271,17 @@
     border-image: var(--gradient3);
     border-image-slice: 1;
 }
+
+.container-1giJp5 .inner-tyMogq{
+    padding: 5px 0px 0px 5px;
+}
+
+.container-1giJp5 .rtcConnectionStatus-2-jIsi{
+    padding-bottom: 7px;
+}
+
+
+
 /*VC cam/share screen button */
 .actionButtons-14eAc_{
     transition: .5s cubic-bezier(0.7, 0.1, 0.7, 0.1) .5s;
@@ -289,7 +300,7 @@
     display: none;
 }
 /*stop disconnect button going out of bounds*/
-.container-1giJp5 div:not(.actionButtons-14eAc_){
+.container-1giJp5 a > div:not(.actionButtons-14eAc_){
     max-width:  -webkit-fill-available;
 }
 
