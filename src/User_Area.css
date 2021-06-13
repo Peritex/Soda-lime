@@ -302,6 +302,7 @@
 
 /*VC cam/share screen button */
 .actionButtons-14eAc_{
+    flex: 1 1 auto;
     transition: .5s cubic-bezier(0.7, 0.1, 0.7, 0.1) .5s;
     height: 0px;
     overflow: hidden;
