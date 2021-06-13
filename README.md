@@ -5,6 +5,7 @@ C:\Users\"your user"\AppData\Roaming\discordcanary
 
 the addition of line 11 and 12 (MIN_WIDTH, MIN_HIGHT)
 example below
+
 {
   "BACKGROUND_COLOR": "#202225",
   "IS_MAXIMIZED": false,
@@ -12,8 +13,8 @@ example below
   "MIN_WIDTH": 0,
   "MIN_HEIGHT": 0,
   "WINDOW_BOUNDS": {
-    "x": 1116,
-    "y": 548,
+    "x": 1200,
+    "y": 550,
     "width": 940,
     "height": 650
   }
