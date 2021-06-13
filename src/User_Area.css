@@ -321,6 +321,10 @@
 .container-1giJp5 a > div:not(.actionButtons-14eAc_){
     max-width:  -webkit-fill-available;
 }
+.container-1giJp5 > .actionButtons-14eAc_ .lookFilled-1Gx00P > .contents-18-Yxp
+{
+    width: 20px;
+}
 
   /*--------------------------------------------*/
  /*------------{Screen share Panel}------------*/
