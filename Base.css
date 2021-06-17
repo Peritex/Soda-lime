@@ -285,7 +285,7 @@
 
 
 
-
+/* make the top 4 in home buttons */
 #private-channels > [class*="content-"] {
     display: flex;
     flex-wrap: wrap;
@@ -323,12 +323,8 @@
 }
 
 
-
-
-
-
-
-@media screen and (min-width: 0px) and (max-width: 900px) {
+/* handle screen size element removal */
+@media screen and (min-width: 0px) and (max-width: 750px) {
   .membersWrap-2h-GB4 { display: none;}
   .selected-1GqIat { display: none;}
   .toolbar-1t6TWx .clickable-3rdHwn:nth-last-child(4) { display: none;}
@@ -344,13 +340,37 @@
 
 /* Sidebar Left 941 - 1000 */
 @media screen and (min-width: 701px) and (max-width: 850px) {
-  .panels-j1Uci_  { position: fixed; bottom: -999px;}
-  .chat-3bRxxu { margin-left: 0px;}
-  .sidebar-2K8pFh { width: 0px;}
-  .sidebar-2K8pFh .thin-1ybCId { display: none;}
-  .sidebar-2K8pFh  { padding: 0px !important;}
-  .toolbar-1t6TWx { display: none;}
-  .children-19S4PO { margin-right: 10px;}
+  /* .panels-j1Uci_  { position: fixed; bottom: -999px;} */
+  .chat-3bRxxu{ margin-left: 0px; }
+  .sidebar-2K8pFh{ width: 0px; }
+  .topic-TCb_qw.expandable-9fI_e3{ display: none; }
+  .children-19S4PO{ margin-right: 10px; }
+  .wrapper-3NnKdC:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh{
+    width:200px;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+  }
+  .sidebar-2K8pFh:hover{
+    width:200px;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+  }
+  .sidebar-2K8pFh{
+     padding: 0px !important;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+  }
+  /* .sidebar-2K8pFh .thin-1ybCId{ display: none; } */
+  /* .toolbar-1t6TWx { display: none;} */
 }
 
 /* Sidebar Left 0 - 940 */
