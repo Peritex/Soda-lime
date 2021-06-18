@@ -82,7 +82,8 @@
 }
 
 /* user popup header */
-.userPopout-xaxa6l > .headerNormal-1mX3KY{
+.userPopout-xaxa6l > .headerNormal-1mX3KY,
+.userPopout-xaxa6l > .headerNormal-1mX3KY > .headerTop-2cWpdB{
     background-color: transparent;
 
 }

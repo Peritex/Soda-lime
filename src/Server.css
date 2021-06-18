@@ -109,7 +109,7 @@
 /*guilds new unread*/
 
 .unreadTop-3rAB3r, .unreadBottom-1_LF_w{
-    width:240px;
+    width:auto;
     border-radius: 0 !important;
     padding: 0;
 }
