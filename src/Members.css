@@ -77,16 +77,26 @@
 /*---------------------------------------*/
 
 .userPopout-xaxa6l{
-    background-color: transparent;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 250px;
+    max-width: 300px;
+    background-color: rgba(0,0,0,.2);
+    box-shadow: 2px 2px 10px 2px;
     backdrop-filter:blur(5px);
 }
 
 /* user popup header */
 .userPopout-xaxa6l > .headerNormal-1mX3KY,
-.userPopout-xaxa6l > .headerNormal-1mX3KY > .headerTop-2cWpdB{
+.userPopout-xaxa6l > .headerNormal-1mX3KY .headerTop-2cWpdB{
     background-color: transparent;
 
 }
+.headerTop-2cWpdB{
+    padding: 27px 10px 16px 22px;
+}
+
 
 /* user popup main body */
 .userPopout-xaxa6l > .body-3HBlXn{
@@ -97,8 +107,30 @@
 .userPopout-xaxa6l >.footer-1N3bR3{
     background-color: transparent;
 }
+/* user name and tag container */
+.headerText-15Q25Z{
+    display: flex;
+    flex: auto;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+}
+/* user tag text */
+.headerTag-16AlQV{
+    align-self: center;
+    text-align: center;
+    padding-left: 32px;
+    padding-bottom: 5px;
+}
+
+/* msg box */
+.input-2_SIlA{
+    background-color: rgba(0,0,0,.2);
+}
 
 
+
+
+/* old */
 .headerTop-3C2Zn0 {
     min-height: 250px;
     padding: 0 0 10px;
