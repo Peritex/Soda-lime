@@ -106,10 +106,14 @@
 }
 /* name, tag and status box */
 .headerNormal-1mX3KY .headerTop-2cWpdB{
-    margin-top: 16px;
-    padding: 16px;
+    /* margin-top: 16px; */
+    padding: 32px;
 
     text-align: right;
+}
+/* badges */
+.headerTop-2cWpdB .profileBadges-3cJaE1{
+    top: -6px;
 }
 /* img box */
 .headerNormal-1mX3KY .avatarPositionNormal-aZjAsn{
