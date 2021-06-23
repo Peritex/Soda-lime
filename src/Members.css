@@ -90,37 +90,36 @@
 }
 
 /* user popup header */
-.userPopout-xaxa6l > .headerNormal-1mX3KY,
-.userPopout-xaxa6l > .headerNormal-1mX3KY .headerTop-2cWpdB{
+.userPopout-xaxa6l > .headerNormal-3KXFBt,
+.userPopout-xaxa6l > .headerTop-3vNv-a{
     background-color: transparent;
-
 }
-
 
 /* ------------- */
 /* header */
 
-.headerNormal-1mX3KY .popoutBanner-19WKGg{
+.headerNormal-3KXFBt .popoutBanner-19WKGg{
     width: 0px !important;
     height: 0px !important;
 }
+
 /* name, tag and status box */
-.headerNormal-1mX3KY .headerTop-2cWpdB{
+.userPopout-xaxa6l .headerTop-3vNv-a{
     /* margin-top: 16px; */
     padding: 32px;
 
     text-align: right;
 }
 /* badges */
-.headerTop-2cWpdB .profileBadges-3cJaE1{
+.headerTop-3vNv-a .profileBadges-3cJaE1{
     top: -6px;
 }
 /* img box */
-.headerNormal-1mX3KY .avatarPositionNormal-aZjAsn{
+.avatarPositionNormal-aZjAsn{
     top: -40px;
 }
 /* img hover mask */
-.headerNormal-1mX3KY .avatarHint-2A3RNb foreignObject{
+.avatarHint-2A3RNb foreignObject{
     transform: translate(-12px, -15px) scale(1.3);
     -webkit-transform: translate(-12px, -15px) scale(1.3);
     -moz-transform: translate(-12px, -15px) scale(1.3);
@@ -128,30 +127,24 @@
     -o-transform: translate(-12px, -15px) scale(1.3);
 }
 /* img hover text */
-.headerNormal-1mX3KY .avatarHint-2A3RNb .avatarHintInner-1TvA8u{
+.avatarHint-2A3RNb .avatarHintInner-1TvA8u{
     font-size: 9px;
 }
 /* user tag text */
-.headerTop-2cWpdB .headerTagWithNickname-1SDMpI{
+.userPopout-xaxa6l .headerTagWithNickname-3l_x6x{
     margin-left: 90px;
     padding-left: 8px;
     padding-bottom: 5px;
     
 }
 /* user name and tag container */
-.headerTop-2cWpdB .headerText-15Q25Z{
+.userPopout-xaxa6l .headerText-1vVs-U{
     display: flex;
     flex: auto;
     flex-direction: column-reverse;
     align-content: flex-end;
-
     text-align: right;
 }
-
-.headerTagNoNickname-1VyQza
-
-
-
 
 /* user popup main body */
 .userPopout-xaxa6l > .body-3HBlXn{
@@ -159,10 +152,9 @@
 }
 
 /* user popup footer, has message box */
-.userPopout-xaxa6l >.footer-1N3bR3{
+.userPopout-xaxa6l > .footer-1N3bR3{
     background-color: transparent;
 }
-
 
 /* msg box */
 .input-2_SIlA{
@@ -251,8 +243,6 @@
     background-color: rgba(0,0,0,.2);
 }
 
-
-
 .userPopout-3XzG_A .body-3iLsc4{
     padding: 4px 16px;
 }
@@ -261,14 +251,10 @@
 
 
 /* hide notes in user popout*/
-.note-1MiCN7, .bodyTitle-3FWCs2{
+.userPopout-xaxa6l .note-1oo11U, .userPopout-xaxa6l .bodyTitle-1ySSKn{
     display: none;
 }
 
-.userPopout-3XzG_A .footer-1fjuF6 .input-2_SIlA{
-    background-color: rgba(0,0,0,.5);
-    box-shadow: black 2px 2px 5px 0px;
-}
 
 /*remove protip*/
 .userPopout-xaxa6l .footer-1N3bR3 .protip-2urNh2{
