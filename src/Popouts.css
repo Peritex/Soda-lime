@@ -146,8 +146,10 @@
 /*----------------------------------*/
 .powercord-notice, #app-mount .notice-3bPHh-{
     position: fixed;
-    left: 25%;
-    width: 50%;
+    right: 0;
+    top: 49px;
+    width: 65%;
+    min-width: 570px;
     background-color: #43b58133;
     backdrop-filter:blur(3px);
 }
