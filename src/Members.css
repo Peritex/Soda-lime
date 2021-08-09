@@ -312,17 +312,19 @@
      display: table;
      margin-bottom: 15px;
      font-size: 16px;
-     margin-left: 8px
+     margin-left: 8px;
  }
 
  .theme-dark .root-1gCeng .tabBarContainer-37hZsr {
-     top: 100px;
+     top: 150px;
+     width: 30%;
      position: relative;
  }
 
  .nameTag-ECvD8P {
      top: 80px;
-     left: 20px
+     left: 20px;
+     width: 30%;
  }
 
  .top-28JiJ- .item-PXvHYJ,
