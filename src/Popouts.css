@@ -1,175 +1,211 @@
 /* top shelf popouts  */
-.messagesPopoutWrap-1MQ1bW, .recentMentionsPopout-3rCiI6 {
-  background:rgba(200, 200, 200, 0.05);
-  backdrop-filter:blur(var( --blur-popout));
-    box-shadow: 2px 2px 15px 5px #000
-/*  width: 620px;*/
-} 
- 
- 
- /*--------------------------------------------*/
- /*-----------{Pind Message Popout}------------*/
+.messagesPopoutWrap-1MQ1bW,
+.recentMentionsPopout-3rCiI6 {
+  background: rgba(200, 200, 200, 0.05);
+  backdrop-filter: blur(var(--blur-popout));
+  box-shadow: 2px 2px 15px 5px #000
+    /*  width: 620px;*/
+}
+
+
+/*--------------------------------------------*/
+/*-----------{Pind Message Popout}------------*/
 /*--------------------------------------------*/
 /* pind message center frost*/
 
 /*darker header, footer and message*/
-.header-ykumBX, .footer-1kmXd4, .messageGroupWrapper-o-Zw7G{
-    background-color: rgba(0,0,0,0.5)
+.header-ykumBX,
+.footer-1kmXd4,
+.messageGroupWrapper-o-Zw7G {
+  background-color: rgba(0, 0, 0, 0.5)
 }
+
 /* make footer small */
-.footer-1kmXd4{
+.footer-1kmXd4 {
   height: 0px;
 }
+
 /* hide protip in footer */
-.footer-1kmXd4 .block-2RXqH9{
+.footer-1kmXd4 .block-2RXqH9 {
   display: none;
 }
 
-  /*------------------------------------*/
- /*-----------{DM's Popout}------------*/
+/*------------------------------------*/
+/*-----------{DM's Popout}------------*/
 /*------------------------------------*/
 /*DM popout*/
-.popout-103y-5{
-    background-color: rgba(0, 0, 0, 0) !important;
-    backdrop-filter:blur(var( --blur-popout));
-    box-shadow: 2px 2px 5px #000 !important;
+.popout-103y-5 {
+  background-color: rgba(0, 0, 0, 0) !important;
+  backdrop-filter: blur(var(--blur-popout));
+  box-shadow: 2px 2px 5px #000 !important;
 }
 
-.header-1TKi98, .footer-1eyGBa, .friend-3KALPe{
-    background-color: rgba(0,0,0,0.5) !important;
+.header-1TKi98,
+.footer-1eyGBa,
+.friend-3KALPe {
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 
-  /*-------------------------------------*/
- /*-----------{Inbox Popout}------------*/
+/*-------------------------------------*/
+/*-----------{Inbox Popout}------------*/
 /*-------------------------------------*/
 /* inbox msg contaners */
-.recentMentionsPopout-3rCiI6 .scroller-tlc3kG, .recentMentionsPopout-3rCiI6 .scroller-2UmRce{
-    padding-top: 10px;
+.recentMentionsPopout-3rCiI6 .scroller-tlc3kG,
+.recentMentionsPopout-3rCiI6 .scroller-2UmRce {
+  padding-top: 10px;
 }
 
 /*inbox mentions*/
-.channelHeader-3Gd2xq{
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(var( --blur-popout));
+.channelHeader-3Gd2xq {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(var(--blur-popout));
 }
-.messageContainer-gbhlwo{
-    background-color: rgba(0, 0, 0, 0.2);
+
+.messageContainer-gbhlwo {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 
 /*unread msg content*/
-.messages-3G3erD{
-    background-color: rgba(33,33,33, 0.5);
+.messages-3G3erD {
+  background-color: rgba(33, 33, 33, 0.5);
 }
 
 
-  /*----------------------------------------------*/
- /*-----------{Popout background blur}-----------*/
 /*----------------------------------------------*/
-.backdrop-1wrmKB, .backdropWithLayer-3_uhz4{
-    opacity: 1;
-    background-color: transparent !important;
-    backdrop-filter: blur(10px);
+/*-----------{Popout background blur}-----------*/
+/*----------------------------------------------*/
+.backdrop-1wrmKB,
+.backdropWithLayer-3_uhz4 {
+  opacity: 1;
+  background-color: transparent !important;
+  backdrop-filter: blur(10px);
 }
 
-.inner-1ilYF7{
-    box-shadow: 2px 2px 12px 3px #000;
+.inner-1ilYF7 {
+  box-shadow: 2px 2px 12px 3px #000;
 }
 
 /* catch all for fullscreen popups */
-.theme-dark .root-1gCeng, .modal-yWgWj-{
-    background-color: rgba(50, 50, 50, 0.1);
-    backdrop-filter: blur(10px);
+.theme-dark .root-1gCeng,
+.modal-yWgWj- {
+  background-color: rgba(50, 50, 50, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 /* update */
-.modal-3O0aXp{
+.modal-3O0aXp {
   background-color: rgba(50, 50, 50, 0.1);
 }
-.theme-dark .footer-2gL1pp{
-    background-color: rgba(0,0,0,0.2);
+
+.theme-dark .footer-2gL1pp {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* upload */
-.theme-dark .uploadModal-2ifh8j .uploadModal-2ifh8j{
-    background-color: rgba(100,100,100, 0.2);
-}
-.theme-dark .uploadModal-2ifh8j .footer-3mqk7D{
-  background-color: rgba(0,0,0,0.2);
+.theme-dark .uploadModal-2ifh8j .uploadModal-2ifh8j {
+  background-color: rgba(100, 100, 100, 0.2);
 }
 
-  /*----------------------------------*/
- /*-----------{Blur Toast}-----------*/
-/*----------------------------------*/
+.theme-dark .uploadModal-2ifh8j .footer-3mqk7D {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*---------------------------------------*/
+/*-----------{Powercord Toast}-----------*/
+/*---------------------------------------*/
 /*frost the toast bg */
 #powercord-updater{
-  backdrop-filter:blur( var(--blur-toast));
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex: 1;
-  align-self: auto;
-  background-image: linear-gradient(0deg, #ed424540, transparent 15%);
-  box-shadow: 3px 3px 10px 5px var(--toast-box-shadow);
   position: absolute;
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-self: auto;
+
+  backdrop-filter: blur(var(--blur-toast));
+  background-image: linear-gradient(0deg, #00ff9c30, transparent 20%);
+  box-shadow: 3px 3px 10px 5px var(--toast-box-shadow);
+  animation: slide-in 0.5s ease, shake 1.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+
+  max-width: 600px;
+  min-width: 0px;
+  width: 45px;
+  height: 45px;
+  right: 65px;
+  bottom: 10px !important;
+}
+
+#powercord-updater .header > div{
+  transform:transform(-7px, 5px) scale(1.5) ;
+  -webkit-transform:transform(-7px, 5px) scale(1.5) ;
+  -moz-transform:transform(-7px, 5px) scale(1.5) ;
+  -ms-transform:transform(-7px, 5px) scale(1.5) ;
+  -o-transform:transform(-7px, 5px) scale(1.5) ;
+}
+
+#powercord-updater:hover {
   animation: slide-in 0.5s ease, shake 1.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   max-width: 600px;
   min-width: 223px;
   width: unset;
-  right: 65px;
-  top: 75px;
-  bottom: unset !important;
+  -webkit-animation: slide-in 0.5s ease, shake 1.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
+
+
+
 
 #powercord-updater .header {
-    display: flex;
-    flex: 1;
-    align-self: stretch;
-    box-shadow: 0 2px 3px 0 var(--toast-box-shadow);
-    max-width: 100%;
+  display: flex;
+  flex: 1;
+  align-self: stretch;
+  box-shadow: 0 2px 3px 0 var(--toast-box-shadow);
+  max-width: 100%;
 }
 
-#powercord-updater .contents{
+#powercord-updater .contents {
   display: none;
 }
 
 #powercord-updater .buttons {
-    flex-direction: row-reverse;
-    display: flex;
-    margin-top: 10px;
-    align-items: center;
+  flex-direction: row-reverse;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
 }
 
-  /*----------------------------------*/
- /*--------{Top Notice bat}--------*/
 /*----------------------------------*/
-.powercord-notice, #app-mount .notice-3bPHh-{
-    position: fixed;
-    right: 0;
-    top: 49px;
-    width: 65%;
-    min-width: 570px;
-    background-color: #43b58133;
-    backdrop-filter:blur(3px);
+/*--------{Top Notice bat}--------*/
+/*----------------------------------*/
+.powercord-notice,
+#app-mount .notice-3bPHh- {
+  position: fixed;
+  right: 0;
+  top: 49px;
+  width: 65%;
+  min-width: 570px;
+  background-color: #43b58133;
+  backdrop-filter: blur(3px);
 }
 
 
 
 
-  /*----------------------------------*/
- /*--------{tooltip frosting}--------*/
+/*----------------------------------*/
+/*--------{tooltip frosting}--------*/
 /*----------------------------------*/
 #app-mount .tooltip-2QfLtc,
 #app-mount .subscribeTooltipWrapper-1JoUuw,
 #app-mount .tooltip-1_vJJI {
-    background: rgba(0,0,0,0);
-    backdrop-filter: blur(var( --blur-tooltip));
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);    
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(var(--blur-tooltip));
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-  /*----------------------------------*/
- /*-------{Hide tooltip arrow}-------*/
+/*----------------------------------*/
+/*-------{Hide tooltip arrow}-------*/
 /*----------------------------------*/
 #app-mount .tooltipBlack-PPG47z .tooltipPointer-3ZfirK {
   display: none;
@@ -179,34 +215,36 @@
 
 
 
-  /*---------------------------------------------------------------------------------------*/
- /*-----------------------------------{search drop box}-----------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*-----------------------------------{search drop box}-----------------------------------*/
 /*---------------------------------------------------------------------------------------*/
 
-  /*---------------------------------------*/
- /*-----------{search drop box}-----------*/
 /*---------------------------------------*/
-.theme-dark .container-3ayLPN{
+/*-----------{search drop box}-----------*/
+/*---------------------------------------*/
+.theme-dark .container-3ayLPN {
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
 }
-.option-96V44q:after{
+
+.option-96V44q:after {
   display: none;
 }
 
 
-  /*----------------------------------------*/
- /*------------{search results}------------*/
 /*----------------------------------------*/
-.theme-dark .container-3ayLPN{
+/*------------{search results}------------*/
+/*----------------------------------------*/
+.theme-dark .container-3ayLPN {
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
 }
-.option-96V44q:after{
+
+.option-96V44q:after {
   display: none;
 }
 
-.searchResultsWrap-3-pOjs{
+.searchResultsWrap-3-pOjs {
   width: 420px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,14 +260,15 @@
   overflow: hidden;
   right: 0px;
   height: 100%;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
 }
-.searchResultsWrap-3-pOjs .searchHeader-2XoQg7{
+
+.searchResultsWrap-3-pOjs .searchHeader-2XoQg7 {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.searchResultGroup-1DphGG .channelName-1JRO3C{
+.searchResultGroup-1DphGG .channelName-1JRO3C {
   background: transparent;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -251,6 +290,6 @@
   border-image-slice: 1;
 }
 
-.searchResultGroup-1DphGG .searchResult-9tQ1uo{
+.searchResultGroup-1DphGG .searchResult-9tQ1uo {
   background-color: rgba(0, 0, 0, 0.2);
 }
