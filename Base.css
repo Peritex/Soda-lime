@@ -281,39 +281,64 @@
 
 
 
+/* Channel msg animation */
+@keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+      -webkit-transform: translateX(50px);
+      -moz-transform: translateX(50px);
+      -ms-transform: translateX(50px);
+      -o-transform: translateX(50px);
+  }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+  }
+}
+.message-2qnXI6 {
+  animation: slide-up 0.4s ease;
+  -webkit-animation: slide-up 0.4s ease;
+}
+
+
 
 
 
 
 /* make the top 4 in home buttons */
 #private-channels > [class*="content-"] {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 #private-channels > [class*="content-"] > a:not([href*="/channels/@me/"]) {
-    flex-grow: 1;
-    margin-top: 8px !important; 
-    margin-left: 0;
+  flex-grow: 1;
+  margin-top: 8px !important; 
+  margin-left: 0;
 }
 #private-channels > [class*="content-"] > a:not([href*="/channels/@me/"]):first-of-type {
-    margin-left: 8px !important;
+  margin-left: 8px !important;
 }
 #private-channels > [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="layout-"] {
-    justify-content: center;
-    padding: 0 !important;
+  justify-content: center;
+  padding: 0 !important;
 }
 #private-channels > [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="avatar-"] {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 #private-channels > [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="content-"] {
-    display: none;
+  display: none;
 }
 #private-channels > [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="children-"] {
-    position: absolute;
-    transform: translate(4px, 8px);
-    box-shadow: 0 0 0 3px var(--background-secondary);
-    border-radius: 100px;
+  position: absolute;
+  transform: translate(4px, 8px);
+  box-shadow: 0 0 0 3px var(--background-secondary);
+  border-radius: 100px;
 }
 #private-channels > [class*="content-"] > h2 {
     width: 100%;
