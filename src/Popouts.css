@@ -138,12 +138,12 @@
   bottom: 10px !important;
 }
 
-#powercord-updater .header>div {
-  transform: transform(-7px, 5px) scale(1.5);
-  -webkit-transform: transform(-7px, 5px) scale(1.5);
-  -moz-transform: transform(-7px, 5px) scale(1.5);
-  -ms-transform: transform(-7px, 5px) scale(1.5);
-  -o-transform: transform(-7px, 5px) scale(1.5);
+#powercord-updater .header .icon {
+  transform: matrix(1.5, 0, 0, 1.5, -7, 5);
+  -webkit-transform: matrix(1.5, 0, 0, 1.5, -7, 5);
+  -moz-transform: matrix(1.5, 0, 0, 1.5, -7, 5);
+  -ms-transform: matrix(1.5, 0, 0, 1.5, -7, 5);
+  -o-transform: matrix(1.5, 0, 0, 1.5, -7, 5);
 }
 
 #powercord-updater:hover .header>div {
