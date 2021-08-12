@@ -116,7 +116,7 @@
 /*-----------{Powercord Toast}-----------*/
 /*---------------------------------------*/
 /*frost the toast bg */
-#powercord-updater{
+#powercord-updater {
   position: absolute;
   display: flex;
   flex: 1;
@@ -138,14 +138,15 @@
   bottom: 10px !important;
 }
 
-#powercord-updater .header > div{
-  transform:transform(-7px, 5px) scale(1.5) ;
-  -webkit-transform:transform(-7px, 5px) scale(1.5) ;
-  -moz-transform:transform(-7px, 5px) scale(1.5) ;
-  -ms-transform:transform(-7px, 5px) scale(1.5) ;
-  -o-transform:transform(-7px, 5px) scale(1.5) ;
+#powercord-updater .header>div {
+  transform: transform(-7px, 5px) scale(1.5);
+  -webkit-transform: transform(-7px, 5px) scale(1.5);
+  -moz-transform: transform(-7px, 5px) scale(1.5);
+  -ms-transform: transform(-7px, 5px) scale(1.5);
+  -o-transform: transform(-7px, 5px) scale(1.5);
 }
-#powercord-updater:hover .header > div{
+
+#powercord-updater:hover .header>div {
   transform: unset;
   -webkit-transform: unset;
   -moz-transform: unset;
@@ -156,10 +157,12 @@
 
 #powercord-updater:hover {
   animation: slide-in 0.5s ease, shake 1.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  -webkit-animation: slide-in 0.5s ease, shake 1.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   max-width: 600px;
   min-width: 223px;
   width: unset;
-  -webkit-animation: slide-in 0.5s ease, shake 1.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  height: unset;
+
 }
 
 
