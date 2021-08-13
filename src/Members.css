@@ -155,7 +155,7 @@
 /* user name and tag container */
 .userPopout-xaxa6l .headerText-1vVs-U {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     flex: auto;
     align-content: flex-end;
     text-align: right;
