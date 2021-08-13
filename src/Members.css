@@ -156,9 +156,9 @@
 .userPopout-xaxa6l .headerText-1vVs-U {
     display: flex;
     flex: auto;
-    flex-direction: column-reverse;
     align-content: flex-end;
     text-align: right;
+    margin-left: 100px;
 }
 
 /* user popup main body */
