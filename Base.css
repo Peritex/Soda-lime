@@ -108,6 +108,7 @@
 
   --user-anim-speed: 1.5s;
 
+  --thread-width: 240px;
 
 }
 
@@ -309,7 +310,9 @@
 
 
 
-
+  /*------------------------------------------------------------------------*/
+ /*-------------------------{home menu buttons}----------------------------*/
+/*------------------------------------------------------------------------*/
 /* make the top 4 in home buttons */
 #private-channels > [class*="content-"] {
   display: flex;
@@ -348,19 +351,95 @@
 }
 
 
-
-
-
+/*TODO:: move to thread.css*/
 
   /*---------------------------------------------------------------------*/
- /*--------------------------{screen size rules}--------------------------*/
+ /*-----------------------------{Theads}--------------------------------*/
 /*---------------------------------------------------------------------*/
+/* theads */
+/* .chat-3bRxxu.threadSidebarOpen-vdkwIh {
+    resize: horizontal;
+    min-width: 400px;
+    max-width: calc(100vw - var(--thread-width) - 72px - 400px);
+} */
+.chat-3bRxxu:not(.threadSidebarOpen-vdkwIh) {
+    width: unset !important;
+    flex: 1 1 auto;
+}
+.threadSidebar-1o3BTy {
+    min-width: 400px;
+    width: 33vw;
+    flex: 1 1 auto;
+}
+
+@media (max-width: 1150px){
+  .threadSidebar-1o3BTy {
+    max-width: 70px;
+    min-width: unset;
+    background-color: transparent;
+    backdrop-filter: blur(3px) !important;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
+
+    scrollbar-width: 0px;
+  }
+  .threadSidebar-1o3BTy:hover {
+    max-width: 33vw;
+    /*min-width: 350px;*/
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
+
+    scrollbar-width: 3px;
+  }
+  .threadSidebar-1o3BTy .toolbar-1t6TWx{
+    display: none;
+  }
+  /* .threadSidebar-1o3BTy:hover .container-1r6BKw{
+    opacity: 1;
+  } */
+
+  /* main section */
+  .threadSidebar-1o3BTy .chatContent-a9vAAp{
+    background-color: transparent;
+  }
+  /* msg scroller */
+  .threadSidebar-1o3BTy .scrollerContent-WzeG7R{
+    min-width: 350px;
+  }
+  /* msg text container */
+  .threadSidebar-1o3BTy .scrollerInner-2YIMLh>div>.contents-2mQqc9{
+    background-color:rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  .threadSidebar-1o3BTy .scroller-2LSbBU::-webkit-scrollbar{
+    width: 0px;
+  }
+  .threadSidebar-1o3BTy:hover .scroller-2LSbBU::-webkit-scrollbar{
+    width: 12px;
+  }
+
+}
+
+
+  /*-----------------------------------------------------------------------*/
+ /*--------------------------{screen size rules}--------------------------*/
+/*-----------------------------------------------------------------------*/
 
 /* handle screen size element removal */
-@media screen and (min-width: 0px) and (max-width: 750px) {
-  .membersWrap-2h-GB4 { display: none;}
-  .selected-1GqIat { display: none;}
-  .toolbar-1t6TWx .clickable-3rdHwn:nth-last-child(4) { display: none;}
+
+
+@media screen and (min-width: 1200px){
+  .membersWrap-2h-GB4{ max-width: 300px}
 }
 
 /* Sidebar Left 1001 - 1200 */
@@ -407,6 +486,14 @@
   /* .sidebar-2K8pFh .thin-1ybCId{ display: none; } */
   /* .toolbar-1t6TWx { display: none;} */
 }
+
+/* hide members list */
+@media screen and (min-width: 0px) and (max-width: 750px) {
+  .membersWrap-2h-GB4 { display: none;}
+  .selected-1GqIat { display: none;}
+  .toolbar-1t6TWx .clickable-3rdHwn:nth-last-child(4) { display: none;}
+}
+
 
 /* Sidebar Left 0 - 940 */
 @media screen and (min-width: 0px) and (max-width: 700px) {
