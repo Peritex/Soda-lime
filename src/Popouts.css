@@ -78,9 +78,9 @@
 /*----------------------------------------------*/
 .backdrop-1wrmKB,
 .backdropWithLayer-3_uhz4 {
-  opacity: 1;
+  opacity: 1 !important;
   background-color: transparent !important;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px) grayscale(0.8);
 }
 
 .inner-1ilYF7 {
