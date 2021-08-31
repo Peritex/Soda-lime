@@ -6,6 +6,8 @@
 @import url(https://peritex.github.io/Soda-lime/src/Chat_Box.css);
 @import url(https://peritex.github.io/Soda-lime/src/Server.css);
 @import url(https://peritex.github.io/Soda-lime/src/TitleBar.css);
+/* get the UBNT font from google API */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 .theme-dark,
 :root {
@@ -118,6 +120,21 @@
     margin-top: 0px;
 }
 
+  /*--------------------------------*/
+ /*-----------{Set Font}-----------*/
+/*--------------------------------*/
+
+/* text fonts/size */
+::-webkit-input-placeholder{ font-family: 'Ubuntu'; }
+body { font-family: 'Ubuntu'; 
+  /* font-size: 14px; */  }
+span{ font-family: 'Ubuntu'; }
+h1{ font-family: 'Ubuntu'; }
+h2{ font-family: 'Ubuntu'; }
+h3{ font-family: 'Ubuntu'; }
+
+
+
 
   /*---------------------------------*/
  /*--------{some snip snips}--------*/
@@ -224,18 +241,6 @@
     padding-bottom:10px !important;
     border-left: 3px solid rgba(180, 180, 180, 0.4);
     border-radius: 0;
-}
-
-
-
-
-  /*--------------------------------*/
- /*-----------{Get Font}-----------*/
-/*--------------------------------*/
-/* get the UBNT font from google API */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-::-webkit-input-placeholder, body, button, input, select, textarea {
-    font-family: 'Ubuntu', sans-serif;
 }
 
 
