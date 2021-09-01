@@ -158,6 +158,7 @@ svg.icon-22AiRD:hover {
     color: var(--interactive-hover);
 }
 .topic-TCb_qw {
+    -webkit-app-region: no-drag;
     color: var(--interactive-normal) !important;
 }
 .title-29uC1r {
