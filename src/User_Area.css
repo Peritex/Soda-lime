@@ -34,14 +34,7 @@
 } */
 
 
-.containerDefault--pIXnN:hover {
-    transform: scale(1.02);
-    transition: .1s ease;
-    box-shadow: 0px 2px 5px 0px rgb(11 11 11);
-}
-.containerDefault--pIXnN {
-    transition: 0.5s ease;
-}
+
 
 
 
