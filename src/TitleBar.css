@@ -184,3 +184,9 @@ svg.icon-22AiRD:hover {
 .toolbar-1t6TWx .iconWrapper-2OrFZ1 svg > .strikethrough-3Wiitd{
     color: var(--color-orange);
 }
+
+
+/* library buttons no-drag */
+.item-PXvHYJ.themed-OHr7kt, .libraryFilter-31ZUa2{
+    -webkit-app-region: no-drag;
+}

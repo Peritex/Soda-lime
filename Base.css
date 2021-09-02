@@ -447,7 +447,7 @@ h3{ font-family: 'Ubuntu'; }
   .membersWrap-2h-GB4{ max-width: 300px}
 }
 
-/* Sidebar Left 1001 - 1200 */
+/* Sidebar Left 850 - 1000 */
 @media screen and (min-width: 851px) and (max-width: 1000px) {
   .sidebar-2K8pFh,
   .sidebar-2K8pFh .thin-1ybCId { width: 200px !important;}
@@ -456,7 +456,7 @@ h3{ font-family: 'Ubuntu'; }
   /* .panels-j1Uci_  .avatarWrapper-2yR4wp { margin-right: 20px;} */
 } 
 
-/* Sidebar Left 941 - 1000 */
+/* Sidebar Left 700 - 850 */
 @media screen and (min-width: 701px) and (max-width: 850px) {
   /* .panels-j1Uci_  { position: fixed; bottom: -999px;} */
   .powercord-spotify:hover { width: 259px !important}
@@ -492,7 +492,8 @@ h3{ font-family: 'Ubuntu'; }
   /* .toolbar-1t6TWx { display: none;} */
 }
 
-/* hide members list */
+
+/* hide members list  0 - 750*/
 @media screen and (min-width: 0px) and (max-width: 750px) {
   .membersWrap-2h-GB4 { display: none;}
   .selected-1GqIat { display: none;}
@@ -500,7 +501,7 @@ h3{ font-family: 'Ubuntu'; }
 }
 
 
-/* Sidebar Left 0 - 940 */
+/* Sidebar Left 0 - 700 */
 @media screen and (min-width: 0px) and (max-width: 700px) {
   .panels-j1Uci_  { position: fixed; bottom: -999px;}
   .chat-3bRxxu { margin-left: 0px;}
@@ -510,14 +511,4 @@ h3{ font-family: 'Ubuntu'; }
   .toolbar-1t6TWx { display: none;}
   .children-19S4PO { margin-right: 10px;}
   .wrapper-3NnKdC { display: none;}
-}
-
-
-.content-1x5b-n:hover {
-    transform: scale(1.02);
-    transition: .1s ease;
-    box-shadow: 0px 2px 5px 0px rgb(11 11 11);
-}
-.content-1x5b-n {
-    transition: 0.5s ease;
 }
