@@ -348,7 +348,11 @@ button,
 #app-mount .themedPopout-1TrfdI,
 #app-mount .exampleModal-2X2Vf8,
 #app-mount #permissions-modal-wrapper #permissions-modal {
-   border-radius: var(--borders-modals);
+   border-radius: var(--borders-modals) !important;
+   -webkit-border-radius: var(--borders-modals) !important;
+   -moz-border-radius: var(--borders-modals) !important;
+   -ms-border-radius: var(--borders-modals) !important;
+   -o-border-radius: var(--borders-modals) !important;
 }
 #app-mount .header-1TKi98 {
    border-radius: var(--borders-modals) var(--borders-modals) 0 0;

@@ -43,7 +43,11 @@
 .header-1TKi98,
 .footer-1eyGBa,
 .friend-3KALPe {
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-top: 2px;
+   border-top-style: solid;
+   border-image: var(--gradient2);
+   border-image-slice: 1;
+   padding-top: 14px;
 }
 
 
