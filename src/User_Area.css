@@ -30,7 +30,7 @@
   -o-transition:.5s ease;
 } */
 
-.content-1x5b-n:hover {
+.content-1x5b-n:hover,.content-1Wq3SX:hover {
     transition: 50ms ease;
     box-shadow: 0px 2px 5px 0px rgb(11 11 11);
     transform: scale(1.05);
@@ -43,14 +43,14 @@
     -ms-transition: 50ms ease;
     -o-transition: 50ms ease;
 }
-.content-1x5b-n {
+.content-1x5b-n,.content-1Wq3SX {
     transition: 750ms ease;
     -webkit-transition: 750ms ease;
     -moz-transition: 750ms ease;
     -ms-transition: 750ms ease;
     -o-transition: 750ms ease;
 }
-
+/* .content-3YMskv */
 
 
 
