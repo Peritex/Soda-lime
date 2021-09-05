@@ -138,7 +138,7 @@
 .headerNormal-3KXFBt .popoutBanner-19WKGg {
     background-image: var(--gradient1);
     /* width: 0px !important; */
-    height: 0px !important;
+    height: 1px !important;
 }
 
 /* name, tag and status box */
