@@ -79,21 +79,33 @@
   /*--------------------------------*/
  /*-----{Fix jump to new msg}-----*/
 /*--------------------------------*/
-.jumpToPresentBar-G1R9s6, .barBase-1c2Rfb {
-/*
-    position: absolute;
-    top:0;
-    height: 10px;
-    width: 100%;
-    margin-left: -18px !important;
-    background-color: #e5454555;
-    backdrop-filter:blur(var( --blur-tooltip));
-*/
+.theme-dark #app-mount .jumpToPresentBar-G1R9s6 {
+    bottom: unset;
+    top: 20px;
+    left: 0;
+    padding: 0;
+    right: unset;
+    border-radius: 0 3px 2px 0;
+    border-top: 1px;
+    border-image: var(--gradient2);
+    border-style: solid;
+    border-image-slice: 1;
+    background-color: var(--background-primary);
+    opacity: .75;
 }
-.jumpToPresentBar-G1R9s6:active, .barBase-1c2Rfb:active {
-/*  margin-bottom: 60px;*/
-}
+.theme-dark #app-mount .newMessagesBar-265mhP{
+    top: 20px;
+    left: unset;
+    right: 0;
+    border-radius: 0 3px 2px 0;
+    border-top: 1px;
+    border-image: var(--gradient2);
+    border-style: solid;
+    border-image-slice: 1;
+    background-color: var(--background-primary);
+    opacity: .75;
 
+}
 
   /*-----------------------------------*/
  /*-----{Hide for chat box icons}-----*/
