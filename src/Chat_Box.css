@@ -93,7 +93,8 @@
     background-color: var(--background-primary);
     opacity: .75;
 }
-.theme-dark #app-mount .jumpToPresentBar-G1R9s6:hover{
+.theme-dark #app-mount .jumpToPresentBar-G1R9s6:hover,
+.theme-dark #app-mount .newMessagesBar-265mhP:hover{
   opacity: 1;
 }
 
