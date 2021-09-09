@@ -38,16 +38,16 @@
   background-color: rgba(0, 0, 0, 0) !important;
   backdrop-filter: blur(var(--blur-popout));
   box-shadow: 2px 2px 5px #000 !important;
+  border-top: 1px;
+  border-top-style: solid;
+  border-image: var(--gradient2);
+  border-image-slice: 1;
 }
 
 .header-1TKi98,
 .footer-1eyGBa,
 .friend-3KALPe {
-  border-top: 2px;
-   border-top-style: solid;
-   border-image: var(--gradient2);
-   border-image-slice: 1;
-   padding-top: 14px;
+  padding-top: 14px;
 }
 
 
