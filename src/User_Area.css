@@ -6,30 +6,6 @@
   /*-----------------------------------------------------*/
  /*---------------------{side bar}---------------------*/
 /*-----------------------------------------------------*/
-
-/* working on new CSS */
-/* .sidebar-2K8pFh{
-  width:0px;
-  transition:.5s ease 1s;
-}
-.sidebar-2K8pFh
-
-.platform-win .base-3dtUhz{
-  border-radius: 8px 0 0;
-}
-.wrapper-3NnKdC:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh{
-  width:240px;
-  transition:.5s ease;
-}
-.sidebar-2K8pFh:hover{
-  width:240px;
-  transition:.5s ease;
-  -webkit-transition:.5s ease;
-  -moz-transition:.5s ease;
-  -ms-transition:.5s ease;
-  -o-transition:.5s ease;
-} */
-
 .content-1x5b-n:hover,.content-1Wq3SX:hover {
     transition: 50ms ease;
     box-shadow: 0px 2px 5px 0px rgb(11 11 11);
@@ -141,7 +117,8 @@
     overflow: hidden !important;
     opacity: 0 !important;
 }
-.panels-j1Uci_ .container-3baos1:hover button.button-14-BFJ {
+.panels-j1Uci_ .container-3baos1:hover button.button-14-BFJ,
+.panels-j1Uci_ .container-3baos1 button[aria-label="Show Game Activity"] {
     transition: 0.2s ease-in-out;
     width: auto !important;
     overflow: visible !important;
