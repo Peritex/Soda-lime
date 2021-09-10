@@ -71,7 +71,7 @@
  /*-----------{TopBar Button Anim}------------*/
 /*-------------------------------------------*/
 /*anim TopBar buttons*/
-.iconWrapper-2OrFZ1:hover {
+.iconWrapper-2OrFZ1:hover:not(.soda-arrow) {
     animation: Bop 1s 6;
   }
   @keyframes Bop {
