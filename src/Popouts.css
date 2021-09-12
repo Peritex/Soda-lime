@@ -119,7 +119,7 @@
 /*---------------------------------------*/
 /*-----------{Powercord Toast}-----------*/
 /*---------------------------------------*/
-/*frost the toast bg */
+/**/
 #powercord-updater {
   position: absolute;
   display: flex;
@@ -137,32 +137,32 @@
   bottom: 65px !important;
 }
 
+#powercord-updater:hover {
+  animation: slide-in 0.5s ease, shake 1.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both, ease 500ms height;
+  -webkit-animation: slide-in 0.5s ease, shake 1.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both, ease 500ms height;
+  max-width: 600px;
+  min-width: 223px;
+  width: unset;
+  height: unset;
+}
+
 #powercord-updater .header .icon {
-  transform: matrix(1.5, 0, 0, 1.5, -7, 5);
+  display: none;
+  /* transform: matrix(1.5, 0, 0, 1.5, -7, 5);
   -webkit-transform: matrix(1.5, 0, 0, 1.5, -7, 5);
   -moz-transform: matrix(1.5, 0, 0, 1.5, -7, 5);
   -ms-transform: matrix(1.5, 0, 0, 1.5, -7, 5);
-  -o-transform: matrix(1.5, 0, 0, 1.5, -7, 5);
+  -o-transform: matrix(1.5, 0, 0, 1.5, -7, 5); */
 }
 
-#powercord-updater:hover .header>div {
+/* #powercord-updater:hover .header>div {
   transform: unset;
   -webkit-transform: unset;
   -moz-transform: unset;
   -ms-transform: unset;
   -o-transform: unset;
-}
+} */
 
-
-#powercord-updater:hover {
-  animation: slide-in 0.5s ease, shake 1.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  -webkit-animation: slide-in 0.5s ease, shake 1.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  max-width: 600px;
-  min-width: 223px;
-  width: unset;
-  height: unset;
-
-}
 
 
 
@@ -171,7 +171,7 @@
   display: flex;
   flex: 1;
   align-self: stretch;
-  box-shadow: 0 2px 3px 0 var(--toast-box-shadow);
+  box-shadow: unset;
   max-width: 100%;
 }
 
