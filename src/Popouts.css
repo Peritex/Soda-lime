@@ -116,6 +116,26 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+
+
+
+/*------------------------------------------*/
+/*-------------{Channel Topic}-------------*/
+/*----------------------------------------*/
+/* channel topic popout header */
+.modal-1TF_VN .header-1TKi98{
+  border-top: 1px solid;
+  border-image: var(--gradient2);
+  border-image-slice: 1;
+}
+
+
+
+
+
+
+
+
 /*---------------------------------------*/
 /*-----------{Powercord Toast}-----------*/
 /*---------------------------------------*/
@@ -164,9 +184,6 @@
 } */
 
 
-
-
-
 #powercord-updater .header {
   display: flex;
   flex: 1;
@@ -186,8 +203,8 @@
   align-items: center;
 }
 
-/*----------------------------------*/
-/*--------{Top Notice bat}--------*/
+/*------------------------------------*/
+/*----------{Top Notice bat}---------*/
 /*----------------------------------*/
 .powercord-notice,
 #app-mount .notice-3bPHh- {
