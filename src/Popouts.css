@@ -190,6 +190,10 @@
   align-self: stretch;
   box-shadow: unset;
   max-width: 100%;
+  background-color: unset;
+  border-top: 1px;
+  border-image: var(--gradUpdate);
+  border-image-slice: 1;
 }
 
 #powercord-updater .contents {
