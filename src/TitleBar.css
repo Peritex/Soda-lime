@@ -120,12 +120,16 @@
   display: none;
 }
 .children-19S4PO {
-    margin-right: 20px;
+    min-width: 32px;
 }
 
 .toolbar-1t6TWx {
     right: 10px !important;
 }
+.toolbar-1t6TWx.vcMode{
+    display: none;
+}
+
 
 
 /*hide search till clicked*/
