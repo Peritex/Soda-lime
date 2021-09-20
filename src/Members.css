@@ -46,9 +46,23 @@
 .membersWrap-2h-GB4:hover .members-1998pB .member-3-YXUe {
     margin-left: 8px;
 }
+.membersWrap-2h-GB4.vcMode:hover .members-1998pB .member-3-YXUe {
+    margin-left: 0px !important;
+}
 
 .membersWrap-2h-GB4:hover .membersGroup-v9BXpm {
     transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+}
+.membersWrap-2h-GB4.vcMode:hover .membersGroup-v9BXpm {
+    transform: unset !important;
+    -webkit-transform: unset !important;
+    -moz-transform: unset !important;
+    -ms-transform: unset !important;
+    -o-transform: unset !important;
 }
 
 .membersWrap-2h-GB4 .membersGroup-v9BXpm {
@@ -78,7 +92,9 @@
     margin-left: -25px;
     max-width: 100%;
 }
-
+.chatContent-a9vAAp.vcMode{
+    max-width: 0px;
+}
 
 /* list elements anim */
 .layout-2DM8Md{
