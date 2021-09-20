@@ -93,7 +93,7 @@
     max-width: 100%;
 }
 .chatContent-a9vAAp.vcMode{
-    max-width: 0px;
+    max-width: 0px !important;
 }
 
 /* list elements anim */
