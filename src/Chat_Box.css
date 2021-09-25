@@ -16,6 +16,10 @@
 }
 
 
+.scrollerSpacer-avRLaA.empty-6MGttt {
+    height: 32px;
+}
+
   /*--------------------------------*/
  /*--------{frost chat box}--------*/
 /*--------------------------------*/
@@ -110,6 +114,16 @@
     opacity: .75;
 
 }
+
+
+/* Failed to load */
+.messagesErrorBar-nyJGU7.barBase-1c2Rfb {
+    bottom: 100px;
+    left: 0px;
+    right: unset;
+    padding: 0;
+}
+
 
   /*-----------------------------------*/
  /*-----{Hide for chat box icons}-----*/
