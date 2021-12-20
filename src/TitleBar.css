@@ -71,7 +71,7 @@
  /*-----------{TopBar Button Anim}------------*/
 /*-------------------------------------------*/
 /*anim TopBar buttons*/
-.iconWrapper-2OrFZ1:hover:not(.soda-arrow, .soda-arrow2) {
+/* .iconWrapper-2OrFZ1:hover:not(.soda-arrow, .soda-arrow2) {
     animation: Bop 1s 6;
   }
   @keyframes Bop {
@@ -82,7 +82,7 @@
     100% {
       transform: rotateY(360deg);
     }
-}
+} */
 /*ring the mute bell*/
 .iconWrapper-2OrFZ1[aria-label="Notification settings"]:hover {
     animation: Ring 0.15s 6;
