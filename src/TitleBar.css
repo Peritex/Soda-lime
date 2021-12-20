@@ -84,7 +84,7 @@
     }
 }
 /*ring the mute bell*/
-.iconWrapper-2OrFZ1[role="switch"]:hover {
+.iconWrapper-2OrFZ1[aria-label="Notification settings"]:hover {
     animation: Ring 0.15s 6;
   }
   @keyframes Ring {
