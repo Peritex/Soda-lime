@@ -1,6 +1,11 @@
   /*---------------------------------------------------------------------*/
  /*---------------------------{Msg box Tweeks}--------------------------*/
 /*---------------------------------------------------------------------*/
+:root{
+  --br-chatBox: 3px;
+}
+
+
 
 /*top of chat box*/
 .channelTextArea-rNsIhG{
@@ -19,6 +24,8 @@
 .scrollerSpacer-avRLaA.empty-6MGttt {
     height: 32px;
 }
+
+
 
   /*--------------------------------*/
  /*--------{frost chat box}--------*/
@@ -43,9 +50,9 @@
     backdrop-filter: blur(var( --blur-tooltip));
     /* left: 50%; */
     /* transform: translate(-50%, 0); */
-    padding-bottom: 9px;
-    padding-right: 32px;
-    margin: -60px 48px 0px 0px;
+    /* padding-bottom: 9px; */
+    padding-right: 0;
+    margin: -60px 80px 0px 0px;
 }
 
 .channelTextArea-1FufC0{
@@ -53,14 +60,35 @@
   padding: 0px 32px 16px 32px;
   background-color: rgba(0,0,0,0.1);
   backdrop-filter: blur(5px);
+  border-radius:0 5px 0 0;
+  -webkit-border-radius:0 5px 0 0;
+  -moz-border-radius:0 5px 0 0;
+  -ms-border-radius:0 5px 0 0;
+  -o-border-radius:0 5px 0 0;
 }
+
+.scrollableContainer-15eg7h{
+  background-color: var(--background-secondary);
+  border-radius:var(--br-chatBox);
+  -webkit-border-radius:var(--br-chatBox);
+  -moz-border-radius:var(--br-chatBox);
+  -ms-border-radius:var(--br-chatBox);
+  -o-border-radius:var(--br-chatBox);
+}
+
+/* non chat box wrapper */
+.wrapper-2SplAX{
+  margin-left: 32px;
+}
+
+
 
   /*---------------------------------------*/
  /*-----{Fix "is typing" hidding msg}-----*/
 /*---------------------------------------*/
 /* Text Container is on Bottom, so Chat Write Box Hide some Msg, its a Fix */
 .scrollerInner-2PPAp2 {
-    padding-bottom:48px;
+    padding-bottom: 48px;
 }
 
   /*--------------------------------*/
@@ -75,10 +103,6 @@
   margin-right: 32px;
 }
 
-.channelTextArea-rNsIhG, .channelTextArea-2VhZ6z{
-    box-shadow: 3px 3px 5px var( --background-tertiary);
-    
-}
 
   /*--------------------------------*/
  /*-----{Fix scrollbar hight}-----*/
@@ -144,6 +168,6 @@
     max-width: 1800px;
 }
 /*Nitro gift del*/
-.buttons-uaqb-5[aria-label='Send a gift'] {
+.buttons-uaqb-5 > button.button-f2h6uQ {
   display: none !important;
 }
