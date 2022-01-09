@@ -50,7 +50,7 @@
     backdrop-filter: blur(var( --blur-tooltip));
     /* left: 50%; */
     /* transform: translate(-50%, 0); */
-    padding-left: 0px;
+    padding-left: 0px !important;
     padding-right: 0;
     margin: -60px 80px 0px 0px;
 }
