@@ -1,15 +1,21 @@
   /*-------------------------------------------------------------*/
  /*----------------------{Guilds Side bar}----------------------*/
 /*-------------------------------------------------------------*/
+:root{
+
+    --br-server: 5px;
+    --br-server-sel: 10px;
+}
+
 
   /*--------------------------------*/
  /*---------{Server List}----------*/
 /*--------------------------------*/
-.wrapper-1Rf91z, .wrapper-3NnKdC.guilds-1SWlCJ {
+.wrapper-1_HaEi.guilds-2JjMmN {
   width: 70px;
 }
 
-.scroller-2TZvBN, .scroller-1Bvpku{
+.scroller-3X7KbA{
     display: flex;
     flex-flow: column;
     padding-bottom: 60px;
@@ -28,12 +34,29 @@
 
 }
 
+.wrapper-28eC3z foreignObject{
+    mask: none;
+}
+.wrapper-3kah-n.selected-1Drb7Z > img.icon-3AqZ2e{
+    border-radius:var(--br-sever-sel);
+    -webkit-border-radius:var(--br-sever-sel);
+    -moz-border-radius:var(--br-sever-sel);
+    -ms-border-radius:var(--br-sever-sel);
+    -o-border-radius:var(--br-sever-sel);
+}
+.wrapper-3kah-n > img.icon-3AqZ2e{
+    border-radius:var(--br-sever);
+    -webkit-border-radius:var(--br-sever);
+    -moz-border-radius:var(--br-sever);
+    -ms-border-radius:var(--br-sever);
+    -o-border-radius:var(--br-sever);
+}
 
   /*----------------------------------*/
  /*-----------{Home Icon}------------*/
 /*----------------------------------*/
 /*make home icon sticky*/
-.scroller-1Bvpku .tutorialContainer-2sGCg9 {
+.scroller-3X7KbA .tutorialContainer-1pL9QS {
     position: sticky;
     top: -5px;
     padding-top: 8px;
@@ -44,7 +67,7 @@
     order: -3;
 }
 /*list divider*/
-.scroller-1Bvpku > .listItem-2P_4kh{
+.scroller-3X7KbA > .listItem-3SmSlK{
     position: sticky;
     order: -2;
     top:62px;
@@ -52,7 +75,7 @@
     z-index: 1;
 }
 /*home button svg*/
-.homeIcon-FuNwkv{
+.homeIcon-r0w4ny{
     width: 80%;
     height: 80%;
 
@@ -62,19 +85,19 @@
     fill: #000;
 }
 /*remover discord icon */
-.homeIcon-FuNwkv path{
+.homeIcon-r0w4ny path{
     display: none
 }
 
-.wrapper-1BJsBx .childWrapper-anI2G9{
+.wrapper-3kah-n .childWrapper-1j_1ub{
     background-color: var(--color-purple);
 }
 
-.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9{
+.wrapper-3kah-n.selected-bZ3Lue .childWrapper-1j_1ub{
     background-color: var(--color-blue);
 }
 
-.wrapper-1BJsBx:hover .childWrapper-anI2G9{
+.wrapper-3kah-n:hover .childWrapper-1j_1ub{
     background-image: var(--gradientR1);
 }
 
@@ -123,15 +146,15 @@
     background: linear-gradient(0deg, #f04747, transparent);
     box-shadow: none;
 }
-.unreadMentionsIndicatorBottom-2mDYbI, .unreadMentionsIndicatorTop-2-tcdU{
+.unreadMentionsIndicatorBottom-3RJMnQ, .unreadMentionsIndicatorTop-2bTgUU{
     padding:0px;
     height:24px;
 }
-.unreadMentionsIndicatorBottom-2mDYbI .unreadMentionsBar-1Bu1dC{
+.unreadMentionsIndicatorBottom-3RJMnQ .unreadMentionsBar-ZXXoOH{
     border-radius: 0px !important;
     background: linear-gradient(0deg, #f04747, transparent);
 }
-.unreadMentionsIndicatorTop-2-tcdU .unreadMentionsBar-1Bu1dC{
+.unreadMentionsIndicatorTop-2bTgUU .unreadMentionsBar-ZXXoOH{
     border-radius: 0 !important;
     background: linear-gradient(#f04747, transparent);
 }
