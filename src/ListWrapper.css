@@ -90,3 +90,18 @@
 .sidebar-button.sidebar-button-no{
   background-color: hsl(160, 75%, 50%);
 }
+
+
+
+
+
+
+.form-3gdLxP,
+.sidebar-1tnWFu,
+[aria-label="Servers sidebar"]{
+    transition: ease-out 500ms;
+    -webkit-transition: ease-out 500ms;
+    -moz-transition: ease-out 500ms;
+    -ms-transition: ease-out 500ms;
+    -o-transition: ease-out 500ms;
+}
