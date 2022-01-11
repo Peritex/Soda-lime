@@ -1,8 +1,7 @@
   /*-------------------------------------------------------------*/
  /*----------------------{Guilds Side bar}----------------------*/
 /*-------------------------------------------------------------*/
-:root{
-
+:root {
     --br-server: 10px;
     --br-server-sel: 5px;
 }
@@ -21,7 +20,7 @@
     padding-bottom: 60px;
 }
 
-.guilds-2JjMmN .wrapper-28eC3z foreignObject{
+.guilds-2JjMmN .wrapper-28eC3z foreignObject {
     mask: none;
 }
 .guilds-2JjMmN .wrapper-3kah-n.selected-1Drb7Z img.icon-3AqZ2e{
