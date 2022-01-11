@@ -52,14 +52,7 @@
     backdrop-filter: blur(5px);
     order: -3;
 }
-/*list divider*/
-.scroller-3X7KbA .tutorialContainer-1pL9QS .listItem-3SmSlK{
-    position: sticky;
-    order: -2;
-    top:62px;
-    backdrop-filter: blur(5px);
-    z-index: 1;
-}
+
 /*home button svg*/
 .homeIcon-r0w4ny{
     width: 80%;
@@ -79,7 +72,7 @@
     background-color: transparent;
 }
 
-.wrapper-3kah-n.selected-bZ3Lue .childWrapper-1j_1ub{
+.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub{
     background-color: var(--color-blue);
 }
 
