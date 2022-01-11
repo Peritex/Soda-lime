@@ -7,29 +7,10 @@
 
 
 
-/*top of chat box*/
-.channelTextArea-rNsIhG{
-  background-color: #1a1a1a;
-}
-.channelTextArea-rNsIhG:hover{
-  background-image: var(--gradient1);
-}
-
-.channelTextArea-rNsIhG, .popout_7205, .form-2fGMdU  {
-  padding-top:3px;
-  margin-bottom:0;
-}
-
-
-.scrollerSpacer-avRLaA.empty-6MGttt {
-    height: 32px;
-}
-
-
-
   /*--------------------------------*/
  /*--------{frost chat box}--------*/
 /*--------------------------------*/
+
 /* Removes a stupid Container */
 .form-3gdLxP:before{
     display: none;
@@ -40,16 +21,7 @@
 /*---------------------------------*/
 /* New Position to remove the Gray Background for a Blur Background / Chat Width */
 .form-3gdLxP {
-    /* position:absolute; */
-    /* display: flex; */
-    /* flex-direction: column-reverse; */
-    /* bottom:0%; */
-    /* width: 100% !important; */
-    /* max-width:-webkit-fill-available !important; */
-    /* background: rgba(33, 33, 33, 0.5) !important;  */
     backdrop-filter: blur(var( --blur-tooltip));
-    /* left: 50%; */
-    /* transform: translate(-50%, 0); */
     padding-left: 0px !important;
     padding-right: 0;
     margin: -60px 80px 0px 0px;
@@ -83,79 +55,6 @@
 
 
 
-  /*---------------------------------------*/
- /*-----{Fix "is typing" hidding msg}-----*/
-/*---------------------------------------*/
-/* Text Container is on Bottom, so Chat Write Box Hide some Msg, its a Fix */
-.scrollerInner-2PPAp2 {
-    padding-bottom: 48px;
-}
-
-  /*--------------------------------*/
- /*--------{frost chat box}--------*/
-/*--------------------------------*/
-/* Fixed someone Typing etc for The Blur Container */
-.typing-2GQL18, .base-gE7OpD {
-    position: relative;
-    margin-left: 30px;
-}
-.cooldownWrapper-3joyFc {
-  margin-right: 32px;
-}
-
-
-  /*--------------------------------*/
- /*-----{Fix scrollbar hight}-----*/
-/*--------------------------------*/
-.messagesWrapper-1sRNjr ::-webkit-scrollbar-track  {
-    margin-bottom: 73px !important;
-}
-
-  /*--------------------------------*/
- /*-----{Fix jump to new msg}-----*/
-/*--------------------------------*/
-.theme-dark #app-mount .jumpToPresentBar-G1R9s6 {
-    bottom: unset;
-    top: 20px;
-    left: 0;
-    padding: 0;
-    right: unset;
-    border-radius: 0 3px 2px 0;
-    border-top: 1px;
-    border-image: var(--gradient2);
-    border-style: solid;
-    border-image-slice: 1;
-    background-color: var(--background-primary);
-    opacity: .75;
-}
-.barBase-1c2Rfb:hover{
-  opacity: 1 !important;
-}
-
-.theme-dark #app-mount .newMessagesBar-265mhP{
-    top: 20px;
-    left: unset;
-    right: 0;
-    border-radius: 0 3px 2px 0;
-    border-top: 1px;
-    border-image: var(--gradient2);
-    border-style: solid;
-    border-image-slice: 1;
-    background-color: var(--background-primary);
-    opacity: .75;
-
-}
-
-
-/* Failed to load */
-.messagesErrorBar-nyJGU7.barBase-1c2Rfb {
-    bottom: 100px;
-    left: 0px;
-    right: unset;
-    padding: 0;
-}
-
-
   /*-----------------------------------*/
  /*-----{Hide for chat box icons}-----*/
 /*-----------------------------------*/
@@ -171,3 +70,57 @@
 .buttons-uaqb-5 > button.button-f2h6uQ {
   display: none !important;
 }
+
+
+
+  /*---------------------------------------*/
+ /*-----{Fix "is typing" hidding msg}-----*/
+/*---------------------------------------*/
+/* Text Container is on Bottom, so Chat Write Box Hide some Msg, its a Fix */
+.scrollerInner-2PPAp2 {
+    padding-bottom: 48px;
+}
+
+  /*--------------------------------*/
+ /*--------{frost chat box}--------*/
+/*--------------------------------*/
+/* Fixed someone Typing etc for The Blur Container */
+/* .typing-2GQL18, .base-gE7OpD {
+    position: relative;
+    margin-left: 30px;
+}
+.cooldownWrapper-3joyFc {
+  margin-right: 32px;
+} */
+
+
+  /*--------------------------------*/
+ /*-----{Fix scrollbar hight}-----*/
+/*--------------------------------*/
+/* .messagesWrapper-1sRNjr ::-webkit-scrollbar-track  {
+    margin-bottom: 73px !important;
+} */
+
+  /*--------------------------------*/
+ /*-----{Fix jump to new msg}-----*/
+/*--------------------------------*/
+.messagesWrapper-RpOMA3 .jumpToPresentBar-1cEnH0{
+  left: 0;
+  right: unset;
+  margin-bottom: 64px;
+  border-radius: 0 5px 5px 0;
+}
+
+.messagesWrapper-RpOMA3 .barButtonMain-2GIx4o{
+  display: none;
+}
+
+
+
+/* Failed to load */
+/* .messagesErrorBar-nyJGU7.barBase-1c2Rfb {
+    bottom: 100px;
+    left: 0px;
+    right: unset;
+    padding: 0;
+} */
