@@ -32,7 +32,7 @@
 }
 
 .channelTextArea-1FufC0{
-  width:calc(100% - var(--pad-chatBox)*2 -16px);
+  width:calc(100% - var(--pad-chatBox)*2 - 16px);
   margin-bottom: 0;
   padding: 0px var(--pad-chatBox) 16px var(--pad-chatBox);
   background-color: rgba(0,0,0,0.1);
