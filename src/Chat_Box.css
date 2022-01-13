@@ -2,7 +2,9 @@
  /*---------------------------{Msg box Tweeks}--------------------------*/
 /*---------------------------------------------------------------------*/
 :root{
+  --pad-chatBox: 32px;
   --br-chatBox: 3px;
+  --blur-chatBox: 5px;
 }
 
 
@@ -21,17 +23,20 @@
 /*---------------------------------*/
 /* New Position to remove the Gray Background for a Blur Background / Chat Width */
 .form-3gdLxP {
-    backdrop-filter: blur(var( --blur-tooltip));
-    padding-left: 0px !important;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding-left: 0px;
     padding-right: 0;
-    margin: -60px 80px 0px 0px;
+    margin: 0px;
 }
 
 .channelTextArea-1FufC0{
+  width:calc(100% - var(--pad-chatBox)*2 -16px);
   margin-bottom: 0;
-  padding: 0px 32px 16px 32px;
+  padding: 0px var(--pad-chatBox) 16px var(--pad-chatBox);
   background-color: rgba(0,0,0,0.1);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(var(--blur-chatBox));
   border-radius:0 5px 0 0;
   -webkit-border-radius:0 5px 0 0;
   -moz-border-radius:0 5px 0 0;
@@ -40,12 +45,12 @@
 }
 
 .scrollableContainer-15eg7h{
-  background-color: var(--background-secondary);
-  border-radius:var(--br-chatBox);
-  -webkit-border-radius:var(--br-chatBox);
-  -moz-border-radius:var(--br-chatBox);
-  -ms-border-radius:var(--br-chatBox);
-  -o-border-radius:var(--br-chatBox);
+  background-color: rgba(var(--background-secondary), 0.8);
+  border-radius: var(--br-chatBox);
+  -webkit-border-radius: var(--br-chatBox);
+  -moz-border-radius: var(--br-chatBox);
+  -ms-border-radius: var(--br-chatBox);
+  -o-border-radius: var(--br-chatBox);
 }
 
 /* non chat box wrapper */
@@ -61,7 +66,6 @@
 .buttons-uaqb-5 {
     max-width: 40px;
     transition: max-width ease-in-out 2s;
-    
 }
 .buttons-uaqb-5:hover {
     max-width: 1800px;
@@ -77,29 +81,15 @@
  /*-----{Fix "is typing" hidding msg}-----*/
 /*---------------------------------------*/
 /* Text Container is on Bottom, so Chat Write Box Hide some Msg, its a Fix */
-.scrollerInner-2PPAp2 {
+/* .scrollerInner-2PPAp2 {
     padding-bottom: 48px;
-}
+} */
 
   /*--------------------------------*/
  /*--------{frost chat box}--------*/
 /*--------------------------------*/
-/* Fixed someone Typing etc for The Blur Container */
-/* .typing-2GQL18, .base-gE7OpD {
-    position: relative;
-    margin-left: 30px;
-}
-.cooldownWrapper-3joyFc {
-  margin-right: 32px;
-} */
 
 
-  /*--------------------------------*/
- /*-----{Fix scrollbar hight}-----*/
-/*--------------------------------*/
-/* .messagesWrapper-1sRNjr ::-webkit-scrollbar-track  {
-    margin-bottom: 73px !important;
-} */
 
   /*--------------------------------*/
  /*-----{Fix jump to new msg}-----*/
@@ -124,3 +114,50 @@
     right: unset;
     padding: 0;
 } */
+
+
+
+
+
+
+/* make chat message sender avatar not round */
+.messagesWrapper-RpOMA3 .cozy-VmLDNB.wrapper-30-Nkg .avatar-2e8lTP{
+  border-radius: var(--br-avatar);
+  -webkit-border-radius: var(--br-avatar);
+  -moz-border-radius: var(--br-avatar);
+  -ms-border-radius: var(--br-avatar);
+  -o-border-radius: var(--br-avatar);
+}
+
+
+/* Emoji Resize */
+.chatContent-3KubbW .emojiContainer-2XKwXX .emoji:not(.emoji-2cWBLE) {
+  height: 3em;
+  width: 3em;
+}
+/* Emoji Resize */
+
+
+/* Channel msg animation */
+@keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateX(150px);
+      -webkit-transform: translateX(150px);
+      -moz-transform: translateX(150px);
+      -ms-transform: translateX(150px);
+      -o-transform: translateX(150px);
+}
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+  }
+}
+.message-2CShn3 {
+  animation: slide-up 0.4s ease;
+  -webkit-animation: slide-up 0.4s ease;
+}

@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 .theme-dark{
-	--background-primary: #212121!important;
-	--background-secondary: #131313!important;
-	--background-secondary-alt: #212121 !important;
-	--background-tertiary: #0f0f0f!important;
-	--background-accent: #1f1f1f!important;
-	--background-floating: #191919!important;
+	--background-primary: rgb(33, 33, 33)!important;
+	--background-secondary: rgb(19, 19, 19)!important;
+	--background-secondary-alt: rgb(33, 33, 33) !important;
+	--background-tertiary: rgb(15, 15, 15)!important;
+	--background-accent: rgb(31, 31, 31)!important;
+	--background-floating: rgb(25, 25, 25)!important;
 	--background-modifier-hover: rgba(255, 255, 255, 0.01)!important;
 	--background-modifier-active: rgba(255, 255, 255, 0.03)!important;
 	--background-modifier-selected: rgba(255, 255, 255, 0.04)!important;
@@ -75,9 +75,10 @@
   --borders-cards: 0px; /*Border shapes for cards and banners. 25px for circle, 0px for square*/
   --borders-previews: 0px; /*Border shapes for previews. 25px for circle, 0px for square*/
   --borders-sidebar-and-notices: 0px; /*Shape for top left sidebar and notices border. 25px for circle, 0px for square*/
-  --borders-servers: 5%; /*Border shapes for server icons. 50% for circle, 0% for square*/
-  --borders-avatars: 5%; /*Border shapes for avatars. 50% for circle, 0% for square*/
-  --borders-icons: 0%; /*Border shapes for icons. 50% for circle, 0% for square*/
+  /* moved to Server.css  --borders-servers: 5%; /*Border shapes for server icons. */
+  --borders-avatars: 5%; /*Border shapes for avatars. */
+  --br-avatar: 5%; /*new Border radius for avatar */
+  --borders-icons: 0%; /*Border shapes for icons. */
   --borders-labels: 0px; /*Border shapes for text and number indicators. 15px for circle, 0px for square*/
   --borders-pills: 3px; /*Border shapes for unread badges and selected server pills. 5px for circle, 0px for square*/
   --borders-lines: 0px; /*Border shapes for lines when you drag categories or channels. 2px for circle, 0px for square*/
@@ -129,12 +130,7 @@ h3{ font-family: 'Ubuntu'; }
  /*--------{some snip snips}--------*/
 /*---------------------------------*/
 
-/* Emoji Resize */
-.chatContent-3KubbW .emojiContainer-2XKwXX .emoji:not(.emoji-2cWBLE) {
-  height: 3em;
-  width: 3em;
-}
-/* Emoji Resize */
+
 
 /*move icons in server menu to the frount */
 .iconContainer-2-XQPY {
@@ -145,6 +141,18 @@ h3{ font-family: 'Ubuntu'; }
 
 
 
+
+  /*----------------------------------*/
+ /*-----------{scroll bar}-----------*/
+/*----------------------------------*/
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--color-purple) !important;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
 
 
 
@@ -171,9 +179,6 @@ h3{ font-family: 'Ubuntu'; }
 .theme-dark .container-2cd8Mz{
     background-color: var( --background-primary);
 }
-/* .peopleList-3c4jOR, .container-1D34oG{
-    background-color: var( --background-primary) !important;
-} */
 /* poeple anim */
 .peopleListItem-u6dGxF{
   transition: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
@@ -284,36 +289,9 @@ h3{ font-family: 'Ubuntu'; }
 
 
 
-::-webkit-scrollbar-thumb {
-    border-radius: 25px;
-    background-color: var(--color-purple) !important;
-}
 
 
 
-/* Channel msg animation */
-@keyframes slide-up {
-    0% {
-      opacity: 0;
-      transform: translateX(50px);
-      -webkit-transform: translateX(50px);
-      -moz-transform: translateX(50px);
-      -ms-transform: translateX(50px);
-      -o-transform: translateX(50px);
-  }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-      -webkit-transform: translateX(0);
-      -moz-transform: translateX(0);
-      -ms-transform: translateX(0);
-      -o-transform: translateX(0);
-  }
-}
-.message-2qnXI6 {
-  animation: slide-up 0.4s ease;
-  -webkit-animation: slide-up 0.4s ease;
-}
 
 
 
@@ -439,6 +417,12 @@ h3{ font-family: 'Ubuntu'; }
   }
 
 }
+
+
+
+
+
+
 
 
   /*-----------------------------------------------------------------------*/
