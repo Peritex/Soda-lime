@@ -77,19 +77,6 @@
 
 
 
-  /*---------------------------------------*/
- /*-----{Fix "is typing" hidding msg}-----*/
-/*---------------------------------------*/
-/* Text Container is on Bottom, so Chat Write Box Hide some Msg, its a Fix */
-/* .scrollerInner-2PPAp2 {
-    padding-bottom: 48px;
-} */
-
-  /*--------------------------------*/
- /*--------{frost chat box}--------*/
-/*--------------------------------*/
-
-
 
   /*--------------------------------*/
  /*-----{Fix jump to new msg}-----*/
@@ -108,6 +95,13 @@
 
 
 /* Failed to load */
+.chatContent-3KubbW .messagesErrorBar-1IQ1rH{
+    top: 0px;
+    right: unset;
+    bottom: unset;
+    border-radius: 0px 0px 5px 5px;
+}
+
 /* .messagesErrorBar-nyJGU7.barBase-1c2Rfb {
     bottom: 100px;
     left: 0px;
