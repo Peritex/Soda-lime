@@ -1,3 +1,5 @@
+ /* TODO:  ->mark as read */
+ 
   /*---------------------------------------------------------------------*/
  /*---------------------------{Msg box Tweeks}--------------------------*/
 /*---------------------------------------------------------------------*/
@@ -7,12 +9,9 @@
   --blur-chatBox: 5px;
 }
 
-
-
   /*--------------------------------*/
  /*--------{frost chat box}--------*/
 /*--------------------------------*/
-
 /* Removes a stupid Container */
 .form-3gdLxP:before{
     display: none;
@@ -59,7 +58,6 @@
 }
 
 
-
   /*-----------------------------------*/
  /*-----{Hide for chat box icons}-----*/
 /*-----------------------------------*/
@@ -76,8 +74,6 @@
 }
 
 
-
-
   /*--------------------------------*/
  /*-----{Fix jump to new msg}-----*/
 /*--------------------------------*/
@@ -92,8 +88,6 @@
   display: none;
 }
 
-
-
 /* Failed to load */
 .chatContent-3KubbW .messagesErrorBar-1IQ1rH{
     top: 0px;
@@ -102,20 +96,18 @@
     border-radius: 0px 0px 5px 5px;
 }
 
-/* .messagesErrorBar-nyJGU7.barBase-1c2Rfb {
-    bottom: 100px;
-    left: 0px;
-    right: unset;
-    padding: 0;
-} */
 
 
+  /*--------------------------------------------------------------------------*/
+ /*---------------------------{Chat Content Tweeks}--------------------------*/
+/*--------------------------------------------------------------------------*/
 
-
-
+.chatContent-3KubbW .scroller-kQBbkU{
+  padding-bottom: 60px;
+}
 
 /* make chat message sender avatar not round */
-.messagesWrapper-RpOMA3 .cozy-VmLDNB.wrapper-30-Nkg .avatar-2e8lTP{
+.chatContent-3KubbW .messagesWrapper-RpOMA3 .cozy-VmLDNB.wrapper-30-Nkg .avatar-2e8lTP{
   border-radius: var(--br-avatar);
   -webkit-border-radius: var(--br-avatar);
   -moz-border-radius: var(--br-avatar);
@@ -123,14 +115,12 @@
   -o-border-radius: var(--br-avatar);
 }
 
-
 /* Emoji Resize */
 .chatContent-3KubbW .emojiContainer-2XKwXX .emoji:not(.emoji-2cWBLE) {
   height: 3em;
   width: 3em;
 }
 /* Emoji Resize */
-
 
 /* Channel msg animation */
 @keyframes slide-up {
@@ -151,7 +141,7 @@
       -o-transform: translateX(0);
   }
 }
-.message-2CShn3 {
+.chatContent-3KubbW .message-2CShn3 {
   animation: slide-up 0.4s ease;
   -webkit-animation: slide-up 0.4s ease;
 }
