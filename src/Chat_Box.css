@@ -4,6 +4,8 @@
  /*---------------------------{Msg box Tweeks}--------------------------*/
 /*---------------------------------------------------------------------*/
 :root{
+  --bg-textArea: rgba(15, 15, 15, 0.3);
+
   --pad-chatBox: 32px;
   --br-chatBox: 3px;
   --blur-chatBox: 5px;
@@ -44,7 +46,7 @@
 }
 
 .scrollableContainer-15eg7h{
-  background-color: rgba(var(--background-secondary), 0.8);
+  background-color: var(--bg-textArea);
   border-radius: var(--br-chatBox);
   -webkit-border-radius: var(--br-chatBox);
   -moz-border-radius: var(--br-chatBox);
@@ -90,13 +92,19 @@
 
 /* Failed to load */
 .chatContent-3KubbW .messagesErrorBar-1IQ1rH{
-    top: 0px;
-    right: unset;
-    bottom: unset;
-    border-radius: 0px 0px 5px 5px;
+  top: 0px;
+  right: unset;
+  bottom: unset;
+  border-radius: 0px 0px 5px 5px;
 }
 
+/* fix is typing - and force emoji slide */
+.base-3bcbY3 .text-3S7XCz{
 
+}
+.base-3bcbY3 .text-3S7XCz emoji{
+  
+}
 
   /*--------------------------------------------------------------------------*/
  /*---------------------------{Chat Content Tweeks}--------------------------*/

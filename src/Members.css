@@ -2,15 +2,35 @@
     --premium-size: 480px; /* vars for background if nitro */
     --premium-opacity: .25;
     --premium-blur: blur(3px);
+
+    --br-member-popout: 5px;
+    --br-member-profile: 5px;
     --br-avatar: 5px;
 
     --roleslist-columns: 2; /* Number of role columns */
+
+
 }
 
 
 /*-------------------------------------*/
 /*--------{popout members list}--------*/
 /*-------------------------------------*/
+/* new members list */
+
+.membersWrap-3NUR2t:hover .membersGroup-2eiWxl{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.membersWrap-3NUR2t .membersGroup-2eiWxl{
+    transition: 500ms ease;
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+/* old members list */
+
 /* Cool Member List */
 .membersWrap-2h-GB4 {
     min-width: unset;
@@ -137,8 +157,13 @@
 /*---------------------------------------*/
 /*--------{Member profile popout}--------*/
 /*---------------------------------------*/
-.userPopout-2j1gM4 { 
-    width: 400px !important; 
+.userPopout-2j1gM4 {
+    width: 400px !important;
+    border-radius: var(--br-member-popout);
+    -webkit-border-radius: var(--br-member-popout);
+    -moz-border-radius: var(--br-member-popout);
+    -ms-border-radius: var(--br-member-popout);
+    -o-border-radius: var(--br-member-popout);
 }
 /* top banner for nitro */
 .popoutBannerPremium-3i5EEI{
@@ -154,13 +179,22 @@
 }
 /* avatar pic wrapper */
 .avatar-2Vndt_.wrapper-1VLyxH {
-    width: 128px !important; 
-    height: 128px !important; 
-    border-radius: 0px;
+    width: 128px !important;
+    height: 128px !important;
+    border-radius: var(--br-avatar);
+    -webkit-border-radius: var(--br-avatar);
+    -moz-border-radius: var(--br-avatar);
+    -ms-border-radius: var(--br-avatar);
+    -o-border-radius: var(--br-avatar);
 }
 /* make pic not round */
 .avatarWrapper-eenWra .avatar-2Vndt_ foreignObject{
     mask: none;
+    border-radius: var(--br-avatar);
+    -webkit-border-radius: var(--br-avatar);
+    -moz-border-radius: var(--br-avatar);
+    -ms-border-radius: var(--br-avatar);
+    -o-border-radius: var(--br-avatar);
 }
 
 .avatarHint-k7pYop,
@@ -357,5 +391,9 @@
 
 .theme-dark .root-g14mjS {
     background-color: var(--background-floating) !important;
-    border-radius: 16px !important;
+    border-radius: var(--br-member-profile) !important;
+    -webkit-border-radius: var(--br-member-profile) !important;
+    -moz-border-radius: var(--br-member-profile) !important;
+    -ms-border-radius: var(--br-member-profile) !important;
+    -o-border-radius: var(--br-member-profile) !important;
 }
