@@ -29,7 +29,27 @@
     opacity: 0;
 }
 
-[aria-label*="Online"] rect{
+
+/* new status indicator -- members is members && root is big user profile */
+.members-3WRCEx .wrapper-1VLyxH[aria-label*="Online"], 
+.root-8LYsGj .wrapper-1VLyxH[aria-label*="Online"]{
+    box-shadow: 0 0 5px 2px var(--status-color-online);
+    border-radius: var(--br-avatar);
+}
+.members-3WRCEx .wrapper-1VLyxH[aria-label*="Idle"], 
+.root-8LYsGj .wrapper-1VLyxH[aria-label*="Idle"]{
+    box-shadow: 0 0 5px 2px var(--status-color-idle);
+    border-radius: var(--br-avatar);
+}
+.members-3WRCEx .wrapper-1VLyxH[aria-label*="Do not disturb"], 
+.root-8LYsGj .wrapper-1VLyxH[aria-label*="Do not disturb"]{
+    box-shadow: 0 0 5px 2px var(--status-color-dnd);
+    border-radius: var(--br-avatar);
+}
+
+
+
+/* [aria-label*="Online"] rect{
     mask: none;
     x: 1;
     y: 1;
@@ -40,7 +60,9 @@
     fill: none;
     stroke-width: 3px;
     stroke: var(--status-color-online);
-}
+} */
+
+
 
 /* old members list */
 
