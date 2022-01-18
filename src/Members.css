@@ -29,6 +29,19 @@
     opacity: 0;
 }
 
+[aria-label*="Online"] rect{
+    mask: none;
+    x: 1;
+    y: 1;
+    width: 30px;
+    height: 30px;
+    rx: var(--br-avatar);
+    ry: var(--br-avatar);
+    fill: none;
+    stroke-width: 3px;
+    stroke: var(--status-color-online);
+}
+
 /* old members list */
 
 /* Cool Member List */
@@ -243,9 +256,13 @@
     background: var(--background-tertiary);
     padding: 12.5px;
     gap: 4.5px;
-    border-radius: 8px;
+    border-radius: var(--br-member-popout);
     max-height: 150px;
     overflow: auto;
+    -webkit-border-radius: var(--br-member-popout);
+    -moz-border-radius: var(--br-member-popout);
+    -ms-border-radius: var(--br-member-popout);
+    -o-border-radius: var(--br-member-popout);
 }
 [class*="rolesList-"]::-webkit-scrollbar {
     width: 4.5px;
