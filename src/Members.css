@@ -9,7 +9,9 @@
 
     --roleslist-columns: 2; /* Number of role columns */
 
-
+    --members-list-width: 64px;
+    --trans-members-list: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19) 250ms;
+    --trans-members-text: 500ms ease-in;
 }
 
 
@@ -18,15 +20,54 @@
 /*-------------------------------------*/
 /* new members list */
 
+
+/* members wrapper container */
+.container-2o3qEW{
+    width: var(--members-list-width);
+}
+/* new popout member list */
+.membersWrap-3NUR2t {
+    transition: var(--trans-members-list);
+    -webkit-transition: var(--trans-members-list);
+    -moz-transition: var(--trans-members-list);
+    -ms-transition: var(--trans-members-list);
+    -o-transition: var(--trans-members-list);
+}
+.membersWrap-3NUR2t:hover {
+    transform: translateX(calc(var(--members-list-width) - 240px));
+    -webkit-transform: translateX(calc(var(--members-list-width) - 240px));
+    -moz-transform: translateX(calc(var(--members-list-width) - 240px));
+    -ms-transform: translateX(calc(var(--members-list-width) - 240px));
+    -o-transform: translateX(calc(var(--members-list-width) - 240px));
+}
+.membersWrap-3NUR2t .member-2gU6Ar .content-1U25dZ{
+    transform: translateX(50px);
+    opacity: 0;
+    transition: var(--trans-members-text);
+    -webkit-transition: var(--trans-members-text);
+    -moz-transition: var(--trans-members-text);
+    -ms-transition: var(--trans-members-text);
+    -o-transition: var(--trans-members-text);
+}
+.membersWrap-3NUR2t:hover .member-2gU6Ar .content-1U25dZ{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+/* member role gruups */
 .membersWrap-3NUR2t:hover .membersGroup-2eiWxl{
     transform: translateX(0px);
     opacity: 1;
 }
 
 .membersWrap-3NUR2t .membersGroup-2eiWxl{
-    transition: 500ms ease;
     transform: translateX(50px);
     opacity: 0;
+    transition: var(--trans-members-text);
+    -webkit-transition: var(--trans-members-text);
+    -moz-transition: var(--trans-members-text);
+    -ms-transition: var(--trans-members-text);
+    -o-transition: var(--trans-members-text);
 }
 
 
@@ -47,8 +88,6 @@
     border-radius: var(--br-avatar);
 }
 
-
-
 /* [aria-label*="Online"] rect{
     mask: none;
     x: 1;
@@ -61,6 +100,12 @@
     stroke-width: 3px;
     stroke: var(--status-color-online);
 } */
+
+
+
+
+
+
 
 
 
