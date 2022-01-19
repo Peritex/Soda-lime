@@ -57,7 +57,7 @@
     opacity: 1;
 }
 
-.membersWrap-3NUR2t .membersWrap-3NUR2t:before {
+.membersWrap-3NUR2t:before {
     content: "";
     display: block;
     position: absolute;
@@ -70,7 +70,7 @@
     backdrop-filter: blur(10px) grayscale(0.8);
 }
 .membersWrap-3NUR2t .members-3WRCEx {
-    background-color: none;
+    background-color: transparent;
 }
 
 
