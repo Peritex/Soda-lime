@@ -179,15 +179,56 @@ h3{ font-family: 'Ubuntu'; }
 .theme-dark .container-2cd8Mz{
     background-color: var( --background-primary);
 }
+
+
+.peopleList-2VBrVI > div{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.peopleList-2VBrVI .title-x4dI75{
+    grid-column: 1/4;
+}
+.peopleList-2VBrVI .peopleListItem-u6dGxF{
+    height: 200px !important;
+}
+
+.peopleList-2VBrVI .listItemContents-2n2Uy9{
+    flex-direction: column;
+    padding: 16px;
+}
+
+.peopleList-2VBrVI .userInfo-2WpsYG{
+    flex-direction: column;
+    width: 100%;
+}
+.peopleList-2VBrVI .avatar-2MSPKk{
+  	width: 64px;
+    height: 64px;
+    margin-left: calc(50% - 32px);
+}
+
+
+.peopleColumn-1wMU14 .avatar-2MSPKk foreignObject{
+  mask: none;
+  border-radius: var(--br-avatar);
+  -webkit-border-radius: var(--br-avatar);
+  -moz-border-radius: var(--br-avatar);
+  -ms-border-radius: var(--br-avatar);
+  -o-border-radius: var(--br-avatar);
+}
+
+
+
 /* poeple anim */
-.peopleListItem-u6dGxF{
+/* .peopleListItem-u6dGxF{
   transition: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
   -webkit-transition: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
   -moz-transition: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
   -ms-transition: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
   -o-transition: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
-}
-.peopleListItem-u6dGxF:hover {
+} */
+/* .peopleListItem-u6dGxF:hover {
     box-shadow: 0px 2px 5px 0px rgb(11 11 11);
     transition: 50ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -webkit-transition: 50ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -199,7 +240,78 @@ h3{ font-family: 'Ubuntu'; }
     -moz-transform: scale(1.01);
     -ms-transform: scale(1.01);
     -o-transform: scale(1.01);
+} */
+
+
+
+
+/* fix home page privateChannels status indicator */
+.privateChannels-oVe7HL .wrapper-1VLyxH[aria-label*="Online"]{
+    box-shadow: 0 0 5px 2px var(--status-color-online);
+    border-radius: var(--br-avatar);
 }
+.privateChannels-oVe7HL .wrapper-1VLyxH[aria-label*="Idle"]{
+    box-shadow: 0 0 5px 2px var(--status-color-idle);
+    border-radius: var(--br-avatar);
+}
+.privateChannels-oVe7HL .wrapper-1VLyxH[aria-label*="Do Not Disturb"]{
+    box-shadow: 0 0 5px 2px var(--status-color-dnd);
+    border-radius: var(--br-avatar);
+}
+
+
+
+
+
+
+
+
+  /*------------------------------------------------------------------------*/
+ /*-------------------------{home menu buttons}----------------------------*/
+/*------------------------------------------------------------------------*/
+/* make the top 4 in home buttons */
+.privateChannels-oVe7HL  [class*="content-"] {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) {
+  flex-grow: 1;
+  margin-top: 8px !important; 
+  margin-left: 0;
+  padding: 0 4px;
+}
+.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]):first-of-type {
+  margin-left: 8px !important;
+}
+.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="layout-"] {
+  justify-content: center;
+  padding: 0 !important;
+}
+.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="avatar-"] {
+  margin: 0 !important;
+}
+.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="content-"] {
+  display: none;
+}
+.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="children-"] {
+  position: absolute;
+  transform: translate(4px, 8px);
+  box-shadow: 0 0 0 3px var(--background-secondary);
+  border-radius: 100px;
+}
+.privateChannels-oVe7HL  [class*="content-"] > h2 {
+    width: 100%;
+}
+.privateChannels-oVe7HL  [class*="content-"] > a[href*="/channels/@me/"] {
+    width: 100%;
+}
+
+
+
+
+
+
 
 
 
@@ -297,46 +409,7 @@ h3{ font-family: 'Ubuntu'; }
 
 
 
-  /*------------------------------------------------------------------------*/
- /*-------------------------{home menu buttons}----------------------------*/
-/*------------------------------------------------------------------------*/
-/* make the top 4 in home buttons */
-.privateChannels-oVe7HL  [class*="content-"] {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
-.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) {
-  flex-grow: 1;
-  margin-top: 8px !important; 
-  margin-left: 0;
-  padding: 0 4px;
-}
-.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]):first-of-type {
-  margin-left: 8px !important;
-}
-.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="layout-"] {
-  justify-content: center;
-  padding: 0 !important;
-}
-.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="avatar-"] {
-  margin: 0 !important;
-}
-.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="content-"] {
-  display: none;
-}
-.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="children-"] {
-  position: absolute;
-  transform: translate(4px, 8px);
-  box-shadow: 0 0 0 3px var(--background-secondary);
-  border-radius: 100px;
-}
-.privateChannels-oVe7HL  [class*="content-"] > h2 {
-    width: 100%;
-}
-.privateChannels-oVe7HL  [class*="content-"] > a[href*="/channels/@me/"] {
-    width: 100%;
-}
+
 
 
 /*TODO:: move to thread.css*/
@@ -504,9 +577,3 @@ h3{ font-family: 'Ubuntu'; }
 
 
 
-
-
-
-#listContainer.soda-list{
-  display: flex;
-}

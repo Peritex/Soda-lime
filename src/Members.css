@@ -76,6 +76,7 @@
 
 
 
+
 /* new status indicator -- members is members && root is big user profile */
 .members-3WRCEx .wrapper-1VLyxH[aria-label*="Online"], 
 .root-8LYsGj .wrapper-1VLyxH[aria-label*="Online"]{
@@ -92,6 +93,18 @@
     box-shadow: 0 0 5px 2px var(--status-color-dnd);
     border-radius: var(--br-avatar);
 }
+
+/* list avatar pic   .wrapper-1VLyxH is more universal than .avatar-6qzftW */
+.wrapper-1VLyxH foreignObject{
+    mask: none;
+    border-radius: var(--br-avatar);
+    -webkit-border-radius: var(--br-avatar);
+    -moz-border-radius: var(--br-avatar);
+    -ms-border-radius: var(--br-avatar);
+    -o-border-radius: var(--br-avatar);
+}
+
+
 
 /* [aria-label*="Online"] rect{
     mask: none;
@@ -204,36 +217,8 @@
     max-width: 0px !important;
 }
 
-/* list elements anim */
-.layout-2DM8Md{
-    transition: 750ms ease;
-    -webkit-transition: 750ms ease;
-    -moz-transition: 750ms ease;
-    -ms-transition: 750ms ease;
-    -o-transition: 750ms ease;
-}
-.layout-2DM8Md:hover {
-    transition: 50ms ease;
-    box-shadow: 0px 2px 5px 0px rgb(11 11 11);
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -webkit-transition: 50ms ease;
-    -moz-transition: 50ms ease;
-    -ms-transition: 50ms ease;
-    -o-transition: 50ms ease;
-}
-/* list avatar pic */
-.avatar-6qzftW foreignObject{
-    mask: none;
-    border-radius: var(--br-avatar);
-    -webkit-border-radius: var(--br-avatar);
-    -moz-border-radius: var(--br-avatar);
-    -ms-border-radius: var(--br-avatar);
-    -o-border-radius: var(--br-avatar);
-}
+
+
 
 
 
