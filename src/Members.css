@@ -42,7 +42,7 @@
 }
 /* members list nameTag text and members list group text */
 .membersWrap-3NUR2t .membersGroup-2eiWxl, 
-.membersWrap-3NUR2t .member-2gU6Ar .content-1U25dZ{
+.membersWrap-3NUR2t .member-2gU6Ar .content-1U25dZ {
     transform: translateX(50px);
     opacity: 0;
     transition: var(--trans-members-text);
@@ -52,10 +52,27 @@
     -o-transition: var(--trans-members-text);
 }
 .membersWrap-3NUR2t:hover .membersGroup-2eiWxl,
-.membersWrap-3NUR2t:hover .member-2gU6Ar .content-1U25dZ{
+.membersWrap-3NUR2t:hover .member-2gU6Ar .content-1U25dZ {
     transform: translateX(0px);
     opacity: 1;
 }
+
+.membersWrap-3NUR2t .membersWrap-3NUR2t:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 8, 8, 0.5);
+    z-index: 0;
+    backdrop-filter: blur(10px) grayscale(0.8);
+}
+.membersWrap-3NUR2t .members-3WRCEx {
+    background-color: none;
+}
+
 
 
 
@@ -70,8 +87,8 @@
     box-shadow: 0 0 5px 2px var(--status-color-idle);
     border-radius: var(--br-avatar);
 }
-.members-3WRCEx .wrapper-1VLyxH[aria-label*="Do not disturb"], 
-.root-8LYsGj .wrapper-1VLyxH[aria-label*="Do not disturb"]{
+.members-3WRCEx .wrapper-1VLyxH[aria-label*="Do Not Disturb"], 
+.root-8LYsGj .wrapper-1VLyxH[aria-label*="Do Not Disturb"]{
     box-shadow: 0 0 5px 2px var(--status-color-dnd);
     border-radius: var(--br-avatar);
 }
