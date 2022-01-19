@@ -50,13 +50,28 @@
 
 
 
+  /*------------------------------------------------*/
+ /*-----------{TopBar friends buttons }------------*/
+/*------------------------------------------------*/
+.topPill-30KHOu{
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.topPill-30KHOu .item-PXvHYJ{
+    margin: 0;
+}
+
 
 
   /*-------------------------------------------*/
  /*-----------{TopBar Button Anim}------------*/
 /*-------------------------------------------*/
 /*anim TopBar buttons*/
-.iconWrapper-2OrFZ1:hover {
+/* .iconWrapper-2OrFZ1:hover:not(.soda-arrow, .soda-arrow2) {
     animation: Bop 1s 6;
   }
   @keyframes Bop {
@@ -67,9 +82,9 @@
     100% {
       transform: rotateY(360deg);
     }
-}
+} */
 /*ring the mute bell*/
-.iconWrapper-2OrFZ1[role="switch"]:hover {
+.iconWrapper-2OrFZ1[aria-label="Notification settings"]:hover {
     animation: Ring 0.15s 6;
   }
   @keyframes Ring {
@@ -105,12 +120,16 @@
   display: none;
 }
 .children-19S4PO {
-    margin-right: 20px;
+    min-width: 32px;
 }
 
 .toolbar-1t6TWx {
     right: 10px !important;
 }
+.toolbar-1t6TWx.vcMode{
+    display: none;
+}
+
 
 
 /*hide search till clicked*/
@@ -143,6 +162,8 @@ svg.icon-22AiRD:hover {
     color: var(--interactive-hover);
 }
 .topic-TCb_qw {
+    flex: 0 1 auto;
+    -webkit-app-region: no-drag;
     color: var(--interactive-normal) !important;
 }
 .title-29uC1r {
@@ -167,4 +188,10 @@ svg.icon-22AiRD:hover {
 }
 .toolbar-1t6TWx .iconWrapper-2OrFZ1 svg > .strikethrough-3Wiitd{
     color: var(--color-orange);
+}
+
+
+/* library buttons no-drag */
+.item-PXvHYJ.themed-OHr7kt, .libraryFilter-31ZUa2{
+    -webkit-app-region: no-drag;
 }

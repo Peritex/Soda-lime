@@ -1,39 +1,49 @@
   /*-------------------------------------------------------------*/
  /*----------------------{Guilds Side bar}----------------------*/
 /*-------------------------------------------------------------*/
+:root {
+    --br-server: 10px;
+    --br-server-sel: 3px;
+}
+
 
   /*--------------------------------*/
  /*---------{Server List}----------*/
 /*--------------------------------*/
-.wrapper-1Rf91z, .wrapper-3NnKdC.guilds-1SWlCJ {
+.wrapper-1_HaEi.guilds-2JjMmN {
   width: 70px;
 }
 
-.scroller-2TZvBN, .scroller-1Bvpku{
+.scroller-3X7KbA{
     display: flex;
     flex-flow: column;
     padding-bottom: 60px;
 }
 
-.guilds-1SWlCJ .scroller-2TZvBN .guildSeparator-3s64Iy{
-    display: none;
+.guilds-2JjMmN .wrapper-28eC3z foreignObject {
+    mask: none;
 }
-.guilds-1SWlCJ::after{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    width: inherit;
-    height: 60px;
-    backdrop-filter: blur(5px);
-
+.guilds-2JjMmN .wrapper-3kah-n.selected-1Drb7Z img.icon-3AqZ2e{
+    border-radius:var(--br-server-sel) ;
+    -webkit-border-radius:var(--br-server-sel) ;
+    -moz-border-radius:var(--br-server-sel) ;
+    -ms-border-radius:var(--br-server-sel) ;
+    -o-border-radius:var(--br-server-sel) ;
 }
-
+.guilds-2JjMmN .wrapperSimple-Js2rIO,
+.guilds-2JjMmN .wrapper-3kah-n img.icon-3AqZ2e{
+    border-radius:var(--br-server) ;
+    -webkit-border-radius:var(--br-server) ;
+    -moz-border-radius:var(--br-server) ;
+    -ms-border-radius:var(--br-server) ;
+    -o-border-radius:var(--br-server) ;
+}
 
   /*----------------------------------*/
  /*-----------{Home Icon}------------*/
 /*----------------------------------*/
 /*make home icon sticky*/
-.scroller-1Bvpku .tutorialContainer-2sGCg9 {
+.scroller-3X7KbA .tutorialContainer-1pL9QS {
     position: sticky;
     top: -5px;
     padding-top: 8px;
@@ -43,16 +53,9 @@
     backdrop-filter: blur(5px);
     order: -3;
 }
-/*list divider*/
-.scroller-1Bvpku > .listItem-2P_4kh{
-    position: sticky;
-    order: -2;
-    top:62px;
-    backdrop-filter: blur(5px);
-    z-index: 1;
-}
+
 /*home button svg*/
-.homeIcon-FuNwkv{
+.homeIcon-r0w4ny{
     width: 80%;
     height: 80%;
 
@@ -62,19 +65,19 @@
     fill: #000;
 }
 /*remover discord icon */
-.homeIcon-FuNwkv path{
+.homeIcon-r0w4ny path{
     display: none
 }
 
-.wrapper-1BJsBx .childWrapper-anI2G9{
-    background-color: var(--color-purple);
+.wrapper-3kah-n .childWrapper-1j_1ub{
+    background-color: transparent;
 }
 
-.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9{
+.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub{
     background-color: var(--color-blue);
 }
 
-.wrapper-1BJsBx:hover .childWrapper-anI2G9{
+.wrapper-3kah-n:hover .childWrapper-1j_1ub{
     background-image: var(--gradientR1);
 }
 
@@ -84,9 +87,9 @@
  /*------{Join server button}------*/
 /*--------------------------------*/
 /* Join/Create a sever */
-.scroller-2TZvBN .tutorialContainer-SGrQ1h{
-/*    order: -1;*/
-}
+/* .scroller-2TZvBN .tutorialContainer-SGrQ1h{
+    order: -1;
+} */
 
 /* hide pill marker at side of servers for add/join */
 .tutorialContainer-SGrQ1h div .pill-3YxEhL,
@@ -123,15 +126,15 @@
     background: linear-gradient(0deg, #f04747, transparent);
     box-shadow: none;
 }
-.unreadMentionsIndicatorBottom-2mDYbI, .unreadMentionsIndicatorTop-2-tcdU{
+.unreadMentionsIndicatorBottom-3RJMnQ, .unreadMentionsIndicatorTop-2bTgUU{
     padding:0px;
     height:24px;
 }
-.unreadMentionsIndicatorBottom-2mDYbI .unreadMentionsBar-1Bu1dC{
+.unreadMentionsIndicatorBottom-3RJMnQ .unreadMentionsBar-ZXXoOH{
     border-radius: 0px !important;
     background: linear-gradient(0deg, #f04747, transparent);
 }
-.unreadMentionsIndicatorTop-2-tcdU .unreadMentionsBar-1Bu1dC{
+.unreadMentionsIndicatorTop-2bTgUU .unreadMentionsBar-ZXXoOH{
     border-radius: 0 !important;
     background: linear-gradient(#f04747, transparent);
 }

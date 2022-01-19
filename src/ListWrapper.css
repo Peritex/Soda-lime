@@ -1,0 +1,107 @@
+.soda-wrapper{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+
+
+.arrow path{
+  fill: var(--interactive-normal);
+}
+.arrow:hover path{
+  fill: var(--interactive-hover);
+}
+.soda-arrow.active path{
+  fill: var(--interactive-active);
+}
+.active:not(.soda-arrow){
+  display: none;
+}
+
+.soda-icon{
+    -webkit-app-region: no-drag;
+}
+
+
+.soda-icon.soda-arrow .arrow{
+  animation: flip 1s;
+  -webkit-animation: flip 1s;
+  transform: rotateZ(90deg);
+  -webkit-transform: rotateZ(90deg);
+  -moz-transform: rotateZ(90deg);
+  -ms-transform: rotateZ(90deg);
+  -o-transform: rotateZ(90deg);
+}
+.soda-icon.active .arrow{
+  animation: flip 1s reverse;
+  transform: rotateZ(270deg);
+  -webkit-transform: rotateZ(270deg);
+  -moz-transform: rotateZ(270deg);
+  -ms-transform: rotateZ(270deg);
+  -o-transform: rotateZ(270deg);
+  -webkit-animation: flip 1s reverse;
+}
+
+
+.soda-menu::-webkit-scrollbar{
+  width:4px;
+}
+.soda-menu {
+    position: fixed;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    min-height: fit-content;
+    max-height: 35%;
+    padding: 8px 4px 4px 8px;
+    margin-top: 6px;
+    box-shadow: 1px 1px 7px 2px #000 ,5px 5px 10px 2px #111, 2px 2px 20px 0px #555;
+    border-top: 1px;
+    border-style: solid;
+    border-image: var(--gradient2);
+    border-image-slice: 1;
+    background-color: var(--background-primary);
+}
+.soda-menu.hide{
+  display: none;
+}
+.soda-menu button {
+  background-color: transparent;
+  color: ghostwhite;
+  padding: 4px 8px; 
+  margin: 4px 0px;
+}
+.soda-menu button::not(.dynamic-button):hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dynamic-button{
+  background-color: hsl(359,75%,55%);
+}
+/* .dynamic-button:hover{
+  background-color: ;
+} */
+.vcOnly-button.vcOnly-button-on,
+.dynamic-button.dynamic-button-on,
+.sidebar-button.sidebar-button-no{
+  background-color: hsl(160, 75%, 50%);
+}
+
+
+
+
+
+
+.form-3gdLxP,
+.sidebar-1tnWFu,
+[aria-label="Servers sidebar"] {
+    transition: ease-out 500ms;
+    -webkit-transition: ease-out 500ms;
+    -moz-transition: ease-out 500ms;
+    -ms-transition: ease-out 500ms;
+    -o-transition: ease-out 500ms;
+}

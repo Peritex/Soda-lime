@@ -1,8 +1,8 @@
 {
     "name": "Soda-lime",
     "description": "Clean & Clear",
-    "version": "1.2.7",
+    "version": "2.0.0",
     "author": "Me Bitch",
-    "theme": "Base.css",
+    "theme": "index.css",
     "license": "DMCAss"
 }
