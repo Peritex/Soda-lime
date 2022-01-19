@@ -69,7 +69,8 @@
     z-index: 0;
     backdrop-filter: blur(10px) grayscale(0.8);
 }
-.membersWrap-3NUR2t .members-3WRCEx {
+.membersWrap-3NUR2t .members-3WRCEx,
+.members-3WRCEx, .members-3WRCEx>div {
     background-color: transparent;
 }
 
