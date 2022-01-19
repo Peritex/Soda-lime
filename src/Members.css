@@ -51,7 +51,7 @@
     -ms-transition: var(--trans-members-text);
     -o-transition: var(--trans-members-text);
 }
-.membersWrap-3NUR2t:hover .membersGroup-2eiWxl
+.membersWrap-3NUR2t:hover .membersGroup-2eiWxl,
 .membersWrap-3NUR2t:hover .member-2gU6Ar .content-1U25dZ{
     transform: translateX(0px);
     opacity: 1;
