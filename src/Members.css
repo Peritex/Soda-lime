@@ -11,7 +11,7 @@
 
     --members-list-width: 64px;
     --trans-members-list: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19) 250ms;
-    --trans-members-text: 500ms ease-in;
+    --trans-members-text: 750ms ease-in;
 }
 
 
@@ -40,6 +40,8 @@
     -ms-transform: translateX(calc(var(--members-list-width) - 240px));
     -o-transform: translateX(calc(var(--members-list-width) - 240px));
 }
+/* members list nameTag text and members list group text */
+.membersWrap-3NUR2t .membersGroup-2eiWxl, 
 .membersWrap-3NUR2t .member-2gU6Ar .content-1U25dZ{
     transform: translateX(50px);
     opacity: 0;
@@ -49,26 +51,12 @@
     -ms-transition: var(--trans-members-text);
     -o-transition: var(--trans-members-text);
 }
+.membersWrap-3NUR2t:hover .membersGroup-2eiWxl
 .membersWrap-3NUR2t:hover .member-2gU6Ar .content-1U25dZ{
     transform: translateX(0px);
     opacity: 1;
 }
 
-/* member role gruups */
-.membersWrap-3NUR2t:hover .membersGroup-2eiWxl{
-    transform: translateX(0px);
-    opacity: 1;
-}
-
-.membersWrap-3NUR2t .membersGroup-2eiWxl{
-    transform: translateX(50px);
-    opacity: 0;
-    transition: var(--trans-members-text);
-    -webkit-transition: var(--trans-members-text);
-    -moz-transition: var(--trans-members-text);
-    -ms-transition: var(--trans-members-text);
-    -o-transition: var(--trans-members-text);
-}
 
 
 /* new status indicator -- members is members && root is big user profile */
