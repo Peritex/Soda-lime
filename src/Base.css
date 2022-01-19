@@ -269,17 +269,17 @@ h3{ font-family: 'Ubuntu'; }
 
 
 /* fix home page privateChannels status indicator */
-.peopleList-2VBrVI .peopleListItem-u6dGxF .wrapper-1VLyxH[aria-label*="Online"]
+.peopleList-2VBrVI .peopleListItem-u6dGxF .wrapper-1VLyxH[aria-label*="Online"],
 .privateChannels-oVe7HL .wrapper-1VLyxH[aria-label*="Online"]{
     box-shadow: 0 0 5px 2px var(--status-color-online);
     border-radius: var(--br-avatar);
 }
-.peopleList-2VBrVI .peopleListItem-u6dGxF .wrapper-1VLyxH[aria-label*="Idle"]
+.peopleList-2VBrVI .peopleListItem-u6dGxF .wrapper-1VLyxH[aria-label*="Idle"],
 .privateChannels-oVe7HL .wrapper-1VLyxH[aria-label*="Idle"]{
     box-shadow: 0 0 5px 2px var(--status-color-idle);
     border-radius: var(--br-avatar);
 }
-.peopleList-2VBrVI .peopleListItem-u6dGxF .wrapper-1VLyxH[aria-label*="Do Not Disturb"]
+.peopleList-2VBrVI .peopleListItem-u6dGxF .wrapper-1VLyxH[aria-label*="Do Not Disturb"],
 .privateChannels-oVe7HL .wrapper-1VLyxH[aria-label*="Do Not Disturb"]{
     box-shadow: 0 0 5px 2px var(--status-color-dnd);
     border-radius: var(--br-avatar);
