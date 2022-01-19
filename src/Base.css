@@ -191,20 +191,43 @@ h3{ font-family: 'Ubuntu'; }
 }
 .peopleList-2VBrVI .peopleListItem-u6dGxF{
     height: 200px !important;
+    margin: 8px;
+    padding: 8px;
 }
-
+.peopleList-2VBrVI .peopleListItem-u6dGxF:hover{
+    height: 200px !important;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+/* layout of the "cards in the grid" */
 .peopleList-2VBrVI .listItemContents-2n2Uy9{
     flex-direction: column;
     padding: 16px;
 }
-
 .peopleList-2VBrVI .userInfo-2WpsYG{
     flex-direction: column;
     width: 100%;
 }
+.peopleList-2VBrVI .text-3j8t_e{
+    margin-top: 10px;
+    align-items: center;
+}
+/* .peopleList-2VBrVI .text-3j8t_e .nameTag-H6kSJ0{
+    justify-content: center;
+} */
+.peopleList-2VBrVI .text-3j8t_e .discriminator-WV5K5s{
+    display: none;
+}
+
+
 .peopleList-2VBrVI .avatar-2MSPKk{
-  	width: 64px;
-    height: 64px;
+  	width: 64px !important;
+    height: 64px !important;
     margin-left: calc(50% - 32px);
 }
 
