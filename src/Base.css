@@ -33,7 +33,7 @@
 	--toast-contents: #1a1a1a66 !important;
 	--toast-box-shadow: rgba(0, 0, 0, 0.5)!important;
 	--toast-border:  #1f1f1f22 !important;
-  --seperator-color: var(--background-accent);
+    --seperator-color: var(--background-accent);
 
 	--color-violet: #ff009c; /*First Gradient Color*/
 	--color-blue: #009cff; /*Second Gradient Color*/
@@ -107,6 +107,8 @@
 
   --thread-width: 240px;
 
+  --grid-columns: 3;
+
 }
 
 
@@ -170,6 +172,10 @@ h3{ font-family: 'Ubuntu'; }
     color: #ffffff;
 }
 
+
+
+
+
   /*---------------------------------------------------------------------*/
  /*--------------------------{people home tabs}--------------------------*/
 /*---------------------------------------------------------------------*/
@@ -183,31 +189,38 @@ h3{ font-family: 'Ubuntu'; }
 
 .peopleList-2VBrVI > div{
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
 }
 
 .peopleList-2VBrVI .title-x4dI75{
-    grid-column: 1/4;
+    grid-column: 1/calc(var(--grid-columns) + 1);
 }
 .peopleList-2VBrVI .peopleListItem-u6dGxF{
     height: 200px !important;
     margin: 8px;
     padding: 8px;
+    box-shadow: 0 -3px 10px -5px, 0 5px 10px -5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition:ease 150ms;
+    -webkit-transition:ease 150ms;
+    -moz-transition:ease 150ms;
+    -ms-transition:ease 150ms;
+    -o-transition:ease 150ms;
 }
 .peopleList-2VBrVI .peopleListItem-u6dGxF:hover{
     height: 200px !important;
     margin: 8px;
     padding: 8px;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    box-shadow: 0px -3px 10px -10px, 0 5px 10px -5px, 5px 20px 10px 0px rgb(0 0 0 / 40%);
 }
 /* layout of the "cards in the grid" */
 .peopleList-2VBrVI .listItemContents-2n2Uy9{
     flex-direction: column;
-    padding: 16px;
+    padding: 8px;
 }
 .peopleList-2VBrVI .userInfo-2WpsYG{
     flex-direction: column;
@@ -225,12 +238,20 @@ h3{ font-family: 'Ubuntu'; }
     display: none;
 }
 
+.peopleList-2VBrVI .actions-YHvpIT{
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0;
+}
+.peopleList-2VBrVI .actions-YHvpIT .actionButton-3-B2x-{
+    margin-left: 0;
+}
 
 .peopleList-2VBrVI .avatar-2MSPKk{
   	width: 64px !important;
     height: 64px !important;
     /* margin-left: calc(50% - 32px); */
-    margin: 4px;
+    margin: 5px;
 }
 
 
