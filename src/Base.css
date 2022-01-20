@@ -236,11 +236,11 @@ h3{ font-family: 'Ubuntu'; }
 
 .peopleColumn-1wMU14 .avatar-2MSPKk foreignObject{
   mask: none;
-  border-radius: var(--br-avatar);
-  -webkit-border-radius: var(--br-avatar);
-  -moz-border-radius: var(--br-avatar);
-  -ms-border-radius: var(--br-avatar);
-  -o-border-radius: var(--br-avatar);
+  border-radius: calc(var(--br-avatar) * 0.5);
+  -webkit-border-radius: calc(var(--br-avatar) * 0.5);
+  -moz-border-radius: calc(var(--br-avatar) * 0.5);
+  -ms-border-radius: calc(var(--br-avatar) * 0.5);
+  -o-border-radius: calc(var(--br-avatar) * 0.5);
 }
 
 
