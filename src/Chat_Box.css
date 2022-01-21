@@ -131,7 +131,7 @@
 /* Emoji Resize */
 
 /* Channel msg animation */
-@keyframes slide-up {
+@keyframes slide-in {
     0% {
       opacity: 0;
       transform: translateX(150px);
@@ -150,6 +150,6 @@
   }
 }
 .chatContent-3KubbW .message-2CShn3 {
-  animation: slide-up 0.4s ease;
-  -webkit-animation: slide-up 0.4s ease;
+  animation: slide-in 0.4s ease;
+  -webkit-animation: slide-in 0.4s ease;
 }
