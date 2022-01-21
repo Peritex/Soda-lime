@@ -139,7 +139,7 @@
       -moz-transform: translateX(150px);
       -ms-transform: translateX(150px);
       -o-transform: translateX(150px);
-}
+  }
     100% {
       opacity: 1;
       transform: translateX(0);
