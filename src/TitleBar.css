@@ -51,6 +51,38 @@
 
 
 
+  /*------------------------------------------------*/
+ /*-------------{Title bar container}--------------*/
+/*------------------------------------------------*/
+.title-31SJ6t {
+    -webkit-app-region: drag;
+}
+
+  /*--------------------------------------------*/
+ /*-------------{Chat Title text}--------------*/
+/*--------------------------------------------*/
+
+.title-31SJ6t .children-3xh0VB {
+    justify-content: space-between;
+}
+
+.title-31SJ6t .divider-q3P9HC {
+    width: 2px;
+    /* margin: .5rem 0 0 0;
+    height: .5rem;
+    width: .5rem;
+    background-color: var(--color-green);
+    border-radius: 0.1rem; */
+}
+
+.title-31SJ6t .topic-11NuQZ {
+    position: absolute;
+    width: 1.5rem;
+    opacity: 0;
+    -webkit-app-region: no-drag;
+}
+
+
   /*-------------------------------------------*/
  /*-------------{ToolBar Button}--------------*/
 /*-------------------------------------------*/
@@ -89,36 +121,4 @@
 /*TopBar help button del*/
 .toolbar-3_r2xA > a.anchor-1MIwyf{
     display: none;
-}
-
-
-
-
-
-  /*--------------------------------------------*/
- /*-------------{Chat Title text}--------------*/
-/*--------------------------------------------*/
-
-.divider-q3P9HC {
-    width: 2px;
-    height: 1.25rem;
-}
-
-
-.topic-TCb_qw {
-    flex: 0 1 auto;
-    -webkit-app-region: no-drag;
-    color: var(--interactive-normal) !important;
-}
-.title-29uC1r {
-    color: var(--interactive-normal);
-}
-.title-29uC1r:hover {
-    color: var(--interactive-hover);
-}
-.status-1XNdyw:hover {
-    filter: brightness(1.5)!important
-}
-.channelName-qsg_a_ > div > .input-2A_zIr {
-    box-shadow: none !important;
 }
