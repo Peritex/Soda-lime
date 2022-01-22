@@ -50,41 +50,13 @@
 
 
 
-  /*------------------------------------------------*/
- /*-----------{TopBar friends buttons }------------*/
-/*------------------------------------------------*/
-.topPill-30KHOu{
-    display: flex;
-    flex: 1 1 auto;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-}
-.topPill-30KHOu .item-PXvHYJ{
-    margin: 0;
-}
-
-
 
   /*-------------------------------------------*/
- /*-----------{TopBar Button Anim}------------*/
+ /*-------------{ToolBar Button}--------------*/
 /*-------------------------------------------*/
-/*anim TopBar buttons*/
-/* .iconWrapper-2OrFZ1:hover:not(.soda-arrow, .soda-arrow2) {
-    animation: Bop 1s 6;
-  }
-  @keyframes Bop {
-    0% {
-      transform: rotateY(0deg);
-    }
 
-    100% {
-      transform: rotateY(360deg);
-    }
-} */
 /*ring the mute bell*/
-.iconWrapper-2OrFZ1[aria-label="Notification settings"]:hover {
+.iconWrapper-2awDjA[aria-label="Notification Settings"]:hover {
     animation: Ring 0.15s 6;
   }
   @keyframes Ring {
@@ -98,69 +70,41 @@
       transform: rotate(-7deg);
     }
 }
+
+/*hide search till clicked*/
+.search-1FM8Qc .searchBar-zdmu7v{
+    width:28px;
+    transition: width 0.5s ease-out;
+}
+.search-1FM8Qc:not(.open-3y3yI_) .searchBar-zdmu7v:hover{
+    width: 128px;
+}
+
+.toolbar-3_r2xA .updateIconForeground-2V_zo4 {
+    fill: var(--color-green);
+}
+.toolbar-3_r2xA .updateIconForeground-2V_zo4 {
+    fill: var(--color-lime);
+}
 /*TopBar help button del*/
-.iconWrapper-2OrFZ1[aria-label="Help"]{
-    display:none;
-}
-
-
-
-
-
-/*top bar contaner bg*/
-.children-19S4PO, .toolbar-1t6TWx {
-    -webkit-app-region: drag;
-    background-color: rgba(0,0,0,0.2);
-    border-radius: var( --borders-top-bar);
-    padding: 5px;
-    height: auto;
-    margin: 3px !important;
-}
-.children-19S4PO::after {
-  display: none;
-}
-.children-19S4PO {
-    min-width: 32px;
-}
-
-.toolbar-1t6TWx {
-    right: 10px !important;
-}
-.toolbar-1t6TWx.vcMode{
+.toolbar-3_r2xA > a.anchor-1MIwyf{
     display: none;
 }
 
 
 
-/*hide search till clicked*/
-.searchBar-3dMhjb{
-    width:28px;
-    transition: width 0.5s ease-out;
-}
 
-.divider-3FBTu8 {
+
+  /*--------------------------------------------*/
+ /*-------------{Chat Title text}--------------*/
+/*--------------------------------------------*/
+
+.divider-q3P9HC {
     width: 2px;
-    height: 20px;
+    height: 1.25rem;
 }
 
-svg > .updateIconForeground-3tnNZn {
-    fill: var(--color-green);
-}
-.iconWrapper-2OrFZ1:hover svg > .updateIconForeground-3tnNZn {
-    fill: var(--color-lime);
-}
-svg:active > .updateIconForeground-3tnNZn {
-    fill: var(--interactive-active);
-}
-svg.icon-3cZ1F_ > path {
-    fill: var(--interactive-normal);
-}
-svg.icon-22AiRD {
-    color: var(--interactive-normal);
-}
-svg.icon-22AiRD:hover {
-    color: var(--interactive-hover);
-}
+
 .topic-TCb_qw {
     flex: 0 1 auto;
     -webkit-app-region: no-drag;
@@ -177,21 +121,4 @@ svg.icon-22AiRD:hover {
 }
 .channelName-qsg_a_ > div > .input-2A_zIr {
     box-shadow: none !important;
-}
-
-.search-2oPWTC .icon-38sknP {
-    cursor: pointer;
-}
-
-.toolbar-1t6TWx .iconWrapper-2OrFZ1 .iconBadge-qZ4Ksk{
-    background-color: var(--color-orange);
-}
-.toolbar-1t6TWx .iconWrapper-2OrFZ1 svg > .strikethrough-3Wiitd{
-    color: var(--color-orange);
-}
-
-
-/* library buttons no-drag */
-.item-PXvHYJ.themed-OHr7kt, .libraryFilter-31ZUa2{
-    -webkit-app-region: no-drag;
 }
