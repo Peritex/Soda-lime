@@ -23,8 +23,9 @@
 .guilds-2JjMmN .wrapper-28eC3z foreignObject {
     mask: none;
 }
-.guilds-2JjMmN .folderIconWrapper-1oRIZr,
-.guilds-2JjMmN .wrapper-3kah-n.selected-1Drb7Z img.icon-3AqZ2e{
+.guilds-2JjMmN .folder-241Joy.hover-3m7-WT .folderIconWrapper-1oRIZr,
+.guilds-2JjMmN .wrapper-3kah-n.selected-1Drb7Z img.icon-3AqZ2e,
+.guilds-2JjMmN .circleIconButton-1VxDrg.selected-2r1Hvo{
     border-radius:var(--br-server-sel) ;
     -webkit-border-radius:var(--br-server-sel) ;
     -moz-border-radius:var(--br-server-sel) ;
@@ -33,7 +34,8 @@
 }
 .guilds-2JjMmN .folderIconWrapper-1oRIZr,
 .guilds-2JjMmN .wrapperSimple-Js2rIO,
-.guilds-2JjMmN .wrapper-3kah-n img.icon-3AqZ2e{
+.guilds-2JjMmN .wrapper-3kah-n img.icon-3AqZ2e,
+.guilds-2JjMmN .circleIconButton-1VxDrg{
     border-radius:var(--br-server) ;
     -webkit-border-radius:var(--br-server) ;
     -moz-border-radius:var(--br-server) ;
