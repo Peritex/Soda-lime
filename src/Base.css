@@ -33,93 +33,94 @@
 	--toast-contents: #1a1a1a66 !important;
 	--toast-box-shadow: rgba(0, 0, 0, 0.5)!important;
 	--toast-border:  #1f1f1f22 !important;
-    --seperator-color: var(--background-accent);
+		--seperator-color: var(--background-accent);
 
 	--color-violet: #ff009c; /*First Gradient Color*/
 	--color-blue: #009cff; /*Second Gradient Color*/
-  --color-green: #00ff9c;
-  --color-orange: #ff9c00;
-  --color-lime: #9cff00;
-  --color-purple: #9c00ff;
+	--color-green: #00ff9c;
+	--color-orange: #ff9c00;
+	--color-lime: #9cff00;
+	--color-purple: #9c00ff;
 
-  --gradient1: linear-gradient(90deg, transparent, var(--color-violet), var(--color-blue), transparent);
-  --gradient2: linear-gradient(300deg, transparent, var(--color-orange), var(--color-orange), var(--color-purple));
-  --gradient3: linear-gradient(90deg, transparent, var(--color-purple), var(--color-green), transparent);
-  --gradUpdate: linear-gradient(90deg, var(--color-green), var(--color-green), var(--color-lime));
-
-
-  --gradientR1: radial-gradient(var(--color-green), transparent);
+	--gradient1: linear-gradient(90deg, transparent, var(--color-violet), var(--color-blue), transparent);
+	--gradient2: linear-gradient(300deg, transparent, var(--color-orange), var(--color-orange), var(--color-purple));
+	--gradient3: linear-gradient(90deg, transparent, var(--color-purple), var(--color-green), transparent);
+	--gradUpdate: linear-gradient(90deg, var(--color-green), var(--color-green), var(--color-lime));
 
 
-  --focus-primary: #ff009c;
+	--gradientR1: radial-gradient(var(--color-green), transparent);
+
+
+	--focus-primary: #ff009c;
 }
 :root{
 
-  --blur-popout: 10px;
-  --blur-toast: 3.5px;
-  --blur-tooltip: 5px;
-  --blur-msgbox: 5px;
+	--blur-popout: 10px;
+	--blur-toast: 3.5px;
+	--blur-tooltip: 5px;
+	--blur-msgbox: 5px;
 
 
-  --borders-buttons-rounded: 3px; /*Border shapes for rounded buttons. 25px for circle, 0px for square*/
-  --borders-buttons-circle: 5px; /*Border shapes for circle buttons. 25px for circle, 0px for square*/
-  --borders-switches: 3px; /*Border shapes for switches. 15px for circle, 0px for square*/
-  --borders-checkboxes: 0%; /*Border shapes for checkboxes. 50% for circle, 0% for square*/
-  --borders-slider-bars: 2px; /*Border shapes for slider bars. 5px for circle, 0px for square*/
-  --borders-slider-grabbers: 2px; /*Border shapes for slider grabbers. 8px for circle, 0px for square*/
-  --borders-progress-bars: 0px; /*Border shapes for progress bars. 5px for circle, 0px for square*/
-  --borders-inputs: 0px; /*Border shapes for inputs. 25px for circle, 0px for square*/
-  --borders-contexts: 5px; /*Border shapes for context menus. 25px for circle, 0px for square*/
-  --borders-popouts: 3px; /*Border shapes for popouts. 25px for circle, 0px for square*/
-  --borders-modals: 3px; /*Border shapes for modals. 25px for circle, 0px for square*/
-  --borders-cards: 0px; /*Border shapes for cards and banners. 25px for circle, 0px for square*/
-  --borders-previews: 0px; /*Border shapes for previews. 25px for circle, 0px for square*/
-  --borders-sidebar-and-notices: 0px; /*Shape for top left sidebar and notices border. 25px for circle, 0px for square*/
-  /* moved to Server.css  --borders-servers: 5%; /*Border shapes for server icons. */
-  --borders-avatars: 5%; /*Border shapes for avatars. */
-  --br-avatar: 5%; /*new Border radius for avatar */
-  --borders-icons: 0%; /*Border shapes for icons. */
-  --borders-labels: 0px; /*Border shapes for text and number indicators. 15px for circle, 0px for square*/
-  --borders-pills: 3px; /*Border shapes for unread badges and selected server pills. 5px for circle, 0px for square*/
-  --borders-lines: 0px; /*Border shapes for lines when you drag categories or channels. 2px for circle, 0px for square*/
-  --borders-role-outlines: 3px; /*Border shapes for roles outlines. 10px for circle, 0px for square*/
-  --borders-role-dots: 0px; /*Border shapes for roles dots. 10px for circle, 0px for square*/
-  --borders-tags: 5px; /*Border shapes for tags. 10px for circle, 0px for square*/
-  --borders-messages: 0px; /*Border shapes for hovered or highlighted messages. 25px for circle, 0px for square*/
-  --borders-files: 0px; /*Border shapes for images, videos, audios and gifs. 25px for circle, 0px for square*/
-  --borders-mentions: 0px; /*Border shapes for mentions. 10px for circle, 0px for square*/
-  --borders-reactions: 0px; /*Border shapes for reactions. 10px for circle, 0px for square*/
-  --borders-codes: 5px; /*Border shapes for codes and codeblocks. 10px for circle, 0px for square*/
-  --borders-embeds: 5px; /*Border shapes for embeds. 25px for circle, 0px for square*/
-  --borders-replies: 0px; /*Shape for top left replies border. 15px for circle, 0px for square*/
-  --borders-quotes: 0px; /*Border shapes for quote icon. 2px for circle, 0px for square*/
-  --borders-spoilers: 0px; /*Border shapes for spoilers. 10px for circle, 0px for square*/
-  --borders-toasts: 3px; /*Border shapes for toasts. 25px for circle, 0px for square*/
-  --borders-tooltips: 3px; /*Border shapes for tooltips. 25px for circle, 0px for square*/
-  --borders-scrollbars: 5px; /*Border shapes for scrollbars. 10px for circle, 0px for square*/
-  --borders-editors: 3px; /*Border shapes for editors workspace. 25px for circle, 0px for square*/
-  --borders-top-bar: 0px; /*Border shapes for the items in the top menu.*/
-  --borders-user-area: 0px; /*Border shapes of the ussr list.*/
-  --borders-PnP: 3px;
-  --border-spotify: 3px;
+	--borders-buttons-rounded: 3px; /*Border shapes for rounded buttons. 25px for circle, 0px for square*/
+	--borders-buttons-circle: 5px; /*Border shapes for circle buttons. 25px for circle, 0px for square*/
+	--borders-switches: 3px; /*Border shapes for switches. 15px for circle, 0px for square*/
+	--borders-checkboxes: 0%; /*Border shapes for checkboxes. 50% for circle, 0% for square*/
+	--borders-slider-bars: 2px; /*Border shapes for slider bars. 5px for circle, 0px for square*/
+	--borders-slider-grabbers: 2px; /*Border shapes for slider grabbers. 8px for circle, 0px for square*/
+	--borders-progress-bars: 0px; /*Border shapes for progress bars. 5px for circle, 0px for square*/
+	--borders-inputs: 0px; /*Border shapes for inputs. 25px for circle, 0px for square*/
+	--borders-contexts: 5px; /*Border shapes for context menus. 25px for circle, 0px for square*/
+	--borders-popouts: 3px; /*Border shapes for popouts. 25px for circle, 0px for square*/
+	--borders-modals: 3px; /*Border shapes for modals. 25px for circle, 0px for square*/
+	--borders-cards: 0px; /*Border shapes for cards and banners. 25px for circle, 0px for square*/
+	--borders-previews: 0px; /*Border shapes for previews. 25px for circle, 0px for square*/
+	--borders-sidebar-and-notices: 0px; /*Shape for top left sidebar and notices border. 25px for circle, 0px for square*/
+	/* moved to Server.css  --borders-servers: 5%; /*Border shapes for server icons. */
+	--borders-avatars: 5%; /*Border shapes for avatars. */
+	--br-avatar: 5%; /*new Border radius for avatar */
+	--borders-icons: 0%; /*Border shapes for icons. */
+	--borders-labels: 0px; /*Border shapes for text and number indicators. 15px for circle, 0px for square*/
+	--borders-pills: 3px; /*Border shapes for unread badges and selected server pills. 5px for circle, 0px for square*/
+	--borders-lines: 0px; /*Border shapes for lines when you drag categories or channels. 2px for circle, 0px for square*/
+	--borders-role-outlines: 3px; /*Border shapes for roles outlines. 10px for circle, 0px for square*/
+	--borders-role-dots: 0px; /*Border shapes for roles dots. 10px for circle, 0px for square*/
+	--borders-tags: 5px; /*Border shapes for tags. 10px for circle, 0px for square*/
+	--borders-messages: 0px; /*Border shapes for hovered or highlighted messages. 25px for circle, 0px for square*/
+	--borders-files: 0px; /*Border shapes for images, videos, audios and gifs. 25px for circle, 0px for square*/
+	--borders-mentions: 0px; /*Border shapes for mentions. 10px for circle, 0px for square*/
+	--borders-reactions: 0px; /*Border shapes for reactions. 10px for circle, 0px for square*/
+	--borders-codes: 5px; /*Border shapes for codes and codeblocks. 10px for circle, 0px for square*/
+	--borders-embeds: 5px; /*Border shapes for embeds. 25px for circle, 0px for square*/
+	--borders-replies: 0px; /*Shape for top left replies border. 15px for circle, 0px for square*/
+	--borders-quotes: 0px; /*Border shapes for quote icon. 2px for circle, 0px for square*/
+	--borders-spoilers: 0px; /*Border shapes for spoilers. 10px for circle, 0px for square*/
+	--borders-toasts: 3px; /*Border shapes for toasts. 25px for circle, 0px for square*/
+	--borders-tooltips: 3px; /*Border shapes for tooltips. 25px for circle, 0px for square*/
+	--borders-scrollbars: 5px; /*Border shapes for scrollbars. 10px for circle, 0px for square*/
+	--borders-editors: 3px; /*Border shapes for editors workspace. 25px for circle, 0px for square*/
+	--borders-top-bar: 0px; /*Border shapes for the items in the top menu.*/
+	--borders-user-area: 0px; /*Border shapes of the ussr list.*/
+	--borders-PnP: 3px;
+	--border-spotify: 3px;
+	--br-friends-actions: 10%;
 
-  --user-anim-speed: 1.5s;
+	--user-anim-speed: 1.5s;
 
-  --thread-width: 240px;
+	--thread-width: 240px;
 
-  --grid-columns: 3;
+	--grid-friends-columns: 3;
 
 }
 
 
-  /*--------------------------------*/
+	/*--------------------------------*/
  /*-----------{Set Font}-----------*/
 /*--------------------------------*/
 
 /* text fonts/size */
 ::-webkit-input-placeholder{ font-family: 'Ubuntu'; }
 body { font-family: 'Ubuntu'; 
-  /* font-size: 14px; */  }
+	/* font-size: 14px; */  }
 span{ font-family: 'Ubuntu'; }
 h1{ font-family: 'Ubuntu'; }
 h2{ font-family: 'Ubuntu'; }
@@ -128,7 +129,7 @@ h3{ font-family: 'Ubuntu'; }
 
 
 
-  /*---------------------------------*/
+	/*---------------------------------*/
  /*--------{some snip snips}--------*/
 /*---------------------------------*/
 
@@ -136,51 +137,51 @@ h3{ font-family: 'Ubuntu'; }
 
 /*move icons in server menu to the frount */
 .iconContainer-2-XQPY {
-    order: -1;
-    margin-right: 8px;
-    margin-left: 0px;
+		order: -1;
+		margin-right: 8px;
+		margin-left: 0px;
 }
 
 
 
 
-  /*----------------------------------*/
+	/*----------------------------------*/
  /*-----------{scroll bar}-----------*/
 /*----------------------------------*/
 ::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background-color: var(--color-purple) !important;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+		border-radius: 5px;
+		background-color: var(--color-purple) !important;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
 }
 
 
 
-  /*---------------------------------*/
+	/*---------------------------------*/
  /*-----------{Bot Tags}------------*/
 /*---------------------------------*/
 .botTagRegular-2HEhHi {
-    transition: .5s;
-    background: rgba(30,0,27,0.1);
-    color: #ffffff;
+		transition: .5s;
+		background: rgba(30,0,27,0.1);
+		color: #ffffff;
 }
 .botTagRegular-2HEhHi:hover {
-    transition: .5s;
-    background: linear-gradient(320deg, var(--color-violet), var(--color-purple));
-    color: #ffffff;
+		transition: .5s;
+		background: linear-gradient(320deg, var(--color-violet), var(--color-purple));
+		color: #ffffff;
 }
 
 
 
 
 
-  /*---------------------------------------------------------------------*/
+	/*---------------------------------------------------------------------*/
  /*--------------------------{people home tabs}--------------------------*/
 /*---------------------------------------------------------------------*/
 @keyframes slide-up {
-    0% {
+		0% {
 		opacity: 0;
 		transform: translateY(50px);
 		-webkit-transform: translateY(50px);
@@ -188,9 +189,9 @@ h3{ font-family: 'Ubuntu'; }
 		-ms-transform: translateY(50px);
 		-o-transform: translateY(50px);
 	}
-    100% {
-    	opacity: 1;
-      	transform: translateY(0);
+		100% {
+			opacity: 1;
+				transform: translateY(0);
 		-webkit-transform: translateY(0);
 		-moz-transform: translateY(0);
 		-ms-transform: translateY(0);
@@ -202,83 +203,92 @@ h3{ font-family: 'Ubuntu'; }
 /*fix friend list bg*/
 /* peoplecolumn */
 .theme-dark .container-2cd8Mz{
-    background-color: var( --background-primary);
+		background-color: var( --background-primary);
 }
 
 
 .peopleList-2VBrVI > div{
 	display: grid;
-  	grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+	grid-template-columns: repeat(var(--grid-friends-columns), minmax(0, 1fr));
+	padding: 0 10px;
 }
 
 .peopleList-2VBrVI .title-x4dI75{
-    grid-column: 1/calc(var(--grid-columns) + 1);
+		grid-column: 1/calc(var(--grid-friends-columns) + 1);
 }
 
 .peopleList-2VBrVI .peopleListItem-u6dGxF{
-    height: 200px !important;
-    margin: 8px;
-    padding: 8px;
-    border-top: none;
-    background-color: var(--background-primary);
-    box-shadow: 0 -3px 10px -10px, 0 5px 10px -5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    transition:ease 150ms;
-    -webkit-transition:ease 150ms;
-    -moz-transition:ease 150ms;
-    -ms-transition:ease 150ms;
-    -o-transition:ease 150ms;
+		height: 200px !important;
+		margin: 8px;
+		padding: 8px;
+		border-top: none;
+		background-color: var(--background-primary);
+		box-shadow: 0 -3px 10px -10px, 0 5px 10px -5px;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		transition:ease 150ms;
+		-webkit-transition:ease 150ms;
+		-moz-transition:ease 150ms;
+		-ms-transition:ease 150ms;
+		-o-transition:ease 150ms;
 	animation: slide-up 300ms ease;
-  	-webkit-animation: slide-up 300ms ease;
+		-webkit-animation: slide-up 300ms ease;
 }
 .peopleList-2VBrVI .peopleListItem-u6dGxF:hover{
-    height: 200px !important;
-    margin: 8px;
-    padding: 8px;
-    background-color: rgb(36, 36, 36) ;
-    transform: translateY(-10px) scale(1.05, 1.05);
-    z-index: 5;
-    box-shadow: 0px -3px 10px -10px, 0 5px 10px -5px, 5px 20px 10px 0px rgb(0 0 0 / 40%);
-}
-/* layout of the "cards in the grid" */
-.peopleList-2VBrVI .listItemContents-2n2Uy9{
-    flex-direction: column;
-    padding: 8px;
-}
-.peopleList-2VBrVI .userInfo-2WpsYG{
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
-.peopleList-2VBrVI .text-3j8t_e{
-    margin-top: 10px;
-    align-items: center;
-}
-/* .peopleList-2VBrVI .text-3j8t_e .nameTag-H6kSJ0{
-    justify-content: center;
-} */
-.peopleList-2VBrVI .text-3j8t_e .discriminator-WV5K5s{
-    display: none;
+		height: 200px !important;
+		margin: 8px;
+		padding: 8px;
+		background-color: rgb(36, 36, 36) ;
+		transform: translateY(-10px) scale(1.05, 1.05);
+		z-index: 5;
+		box-shadow: 0px -3px 10px -10px, 0 5px 10px -5px, 5px 20px 10px 0px rgb(0 0 0 / 40%);
 }
 
-.peopleList-2VBrVI .actions-YHvpIT{
-    justify-content: space-evenly;
-    width: 80%;
-    margin: 0;
+/* layout of the "cards in the grid" */
+.peopleList-2VBrVI .listItemContents-2NFd61, /* pending */
+.peopleList-2VBrVI .listItemContents-2n2Uy9{
+		flex-direction: column;
+		padding: 8px;
 }
-.peopleList-2VBrVI .actions-YHvpIT .actionButton-3-B2x-{
-    margin-left: 0;
+.peopleList-2VBrVI .userInfo-2WpsYG{
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		flex: 1 1 auto;
+}
+.peopleList-2VBrVI .text-3j8t_e{
+		margin-top: 10px;
+		align-items: center;
+}
+/* .peopleList-2VBrVI .text-3j8t_e .nameTag-H6kSJ0{
+		justify-content: center;
+} */
+.peopleList-2VBrVI .text-3j8t_e .discriminator-WV5K5s{
+		display: none;
+}
+.peopleList-2VBrVI .actions-2ZgdH4,
+.peopleList-2VBrVI .actions-YHvpIT{
+		justify-content: space-evenly;
+		/* width: 80%; */
+		margin: 0;
+}
+.peopleList-2VBrVI .actionButton-3-B2x-{
+		margin-left: 0;
+		border-radius: var(--br-friends-actions);
+		-webkit-border-radius: var(--br-friends-actions);
+		-moz-border-radius: var(--br-friends-actions);
+		-ms-border-radius: var(--br-friends-actions);
+		-o-border-radius: var(--br-friends-actions);
 }
 
 .peopleList-2VBrVI .avatar-2MSPKk{
-  	width: 64px !important;
-    height: 64px !important;
-    /* margin-left: calc(50% - 32px); */
-    margin: 5px;
+		width: 64px !important;
+		height: 64px !important;
+		/* margin-left: calc(50% - 32px); */
+		margin: 5px;
 }
 
 
@@ -295,24 +305,24 @@ h3{ font-family: 'Ubuntu'; }
 
 /* poeple anim */
 /* .peopleListItem-u6dGxF{
-  transition: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
-  -webkit-transition: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
-  -moz-transition: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
-  -ms-transition: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
-  -o-transition: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
+	transition: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
+	-webkit-transition: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
+	-moz-transition: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
+	-ms-transition: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
+	-o-transition: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
 } */
 /* .peopleListItem-u6dGxF:hover {
-    box-shadow: 0px 2px 5px 0px rgb(11 11 11);
-    transition: 50ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    -webkit-transition: 50ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    -moz-transition: 50ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    -ms-transition: 50ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    -o-transition: 50ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    transform: scale(1.01);
-    -webkit-transform: scale(1.01);
-    -moz-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    -o-transform: scale(1.01);
+		box-shadow: 0px 2px 5px 0px rgb(11 11 11);
+		transition: 50ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		-webkit-transition: 50ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		-moz-transition: 50ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		-ms-transition: 50ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		-o-transition: 50ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		transform: scale(1.01);
+		-webkit-transform: scale(1.01);
+		-moz-transform: scale(1.01);
+		-ms-transform: scale(1.01);
+		-o-transform: scale(1.01);
 } */
 
 
@@ -321,18 +331,18 @@ h3{ font-family: 'Ubuntu'; }
 /* fix home page privateChannels status indicator */
 .peopleList-2VBrVI .wrapper-1VLyxH[aria-label*="Online"],
 .privateChannels-oVe7HL .wrapper-1VLyxH[aria-label*="Online"]{
-    box-shadow: 0 0 5px 2px var(--status-color-online);
-    border-radius: var(--br-avatar);
+		box-shadow: 0 0 5px 2px var(--status-color-online);
+		border-radius: var(--br-avatar);
 }
 .peopleList-2VBrVI .wrapper-1VLyxH[aria-label*="Idle"],
 .privateChannels-oVe7HL .wrapper-1VLyxH[aria-label*="Idle"]{
-    box-shadow: 0 0 5px 2px var(--status-color-idle);
-    border-radius: var(--br-avatar);
+		box-shadow: 0 0 5px 2px var(--status-color-idle);
+		border-radius: var(--br-avatar);
 }
 .peopleList-2VBrVI .wrapper-1VLyxH[aria-label*="Do Not Disturb"],
 .privateChannels-oVe7HL .wrapper-1VLyxH[aria-label*="Do Not Disturb"]{
-    box-shadow: 0 0 5px 2px var(--status-color-dnd);
-    border-radius: var(--br-avatar);
+		box-shadow: 0 0 5px 2px var(--status-color-dnd);
+		border-radius: var(--br-avatar);
 }
 
 
@@ -342,45 +352,45 @@ h3{ font-family: 'Ubuntu'; }
 
 
 
-  /*------------------------------------------------------------------------*/
+	/*------------------------------------------------------------------------*/
  /*-------------------------{home menu buttons}----------------------------*/
 /*------------------------------------------------------------------------*/
 /* make the top 4 in home buttons */
 .privateChannels-oVe7HL  [class*="content-"] {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
 }
 .privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) {
-  flex-grow: 1;
-  margin-top: 8px !important; 
-  margin-left: 0;
-  padding: 0 4px;
+	flex-grow: 1;
+	margin-top: 8px !important; 
+	margin-left: 0;
+	padding: 0 4px;
 }
 .privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]):first-of-type {
-  margin-left: 8px !important;
+	margin-left: 8px !important;
 }
 .privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="layout-"] {
-  justify-content: center;
-  padding: 0 !important;
+	justify-content: center;
+	padding: 0 !important;
 }
 .privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="avatar-"] {
-  margin: 0 !important;
+	margin: 0 !important;
 }
 .privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="content-"] {
-  display: none;
+	display: none;
 }
 .privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="children-"] {
-  position: absolute;
-  transform: translate(4px, 8px);
-  box-shadow: 0 0 0 3px var(--background-secondary);
-  border-radius: 100px;
+	position: absolute;
+	transform: translate(4px, 8px);
+	box-shadow: 0 0 0 3px var(--background-secondary);
+	border-radius: 100px;
 }
 .privateChannels-oVe7HL  [class*="content-"] > h2 {
-    width: 100%;
+		width: 100%;
 }
 .privateChannels-oVe7HL  [class*="content-"] > a[href*="/channels/@me/"] {
-    width: 100%;
+		width: 100%;
 }
 
 
@@ -391,42 +401,42 @@ h3{ font-family: 'Ubuntu'; }
 
 
 
-  /*---------------------------------------------------------------------*/
+	/*---------------------------------------------------------------------*/
  /*--------------------------{chat msg tweeks}--------------------------*/
 /*---------------------------------------------------------------------*/
 
-  /*--------------------------------*/
+	/*--------------------------------*/
  /*----------Blur spoiler----------*/
 /*--------------------------------*/
 /*blurs spoiler text instead of having a black bar over it*/
 .contents-2mQqc9 .spoilerText-3p6IlD.hidden-HHr2R9, .contents-2mQqc9 .spoilerText-3p6IlD.hidden-HHr2R9:hover, .contents-2mQqc9 .spoilerText-3p6IlD{
-  background:rgb(130,130,130,0.15);
-  /*adds minor grey-ish filter to differentiate spoilted text from normal text*/
+	background:rgb(130,130,130,0.15);
+	/*adds minor grey-ish filter to differentiate spoilted text from normal text*/
 }
 .contents-2mQqc9 .spoilerText-3p6IlD.hidden-HHr2R9>.inlineContent-3ZjPuv, .spoiler-1PPAUc.hiddenSpoilers-1ksnR6{
-  filter: blur(5px);
-  /*adds blur filter when text is left alone*/
-  opacity: 1;
-  /*makes blurred text fully opaque*/
+	filter: blur(5px);
+	/*adds blur filter when text is left alone*/
+	opacity: 1;
+	/*makes blurred text fully opaque*/
 }
 .contents-2mQqc9 .spoilerText-3p6IlD.hidden-HHr2R9:hover > .inlineContent-3ZjPuv,.spoilerContainer-331r0R:hover .spoiler-1PPAUc.hiddenSpoilers-1ksnR6{
-  filter:none;
-  /*removes blur filter on hover*/
-  opacity: 1;
-  /*makes text opacity look like normal, non-spoiled text on hover*/
+	filter:none;
+	/*removes blur filter on hover*/
+	opacity: 1;
+	/*makes text opacity look like normal, non-spoiled text on hover*/
 }
 /*hide the spoiler badge on images*/
 .spoilerContainer-331r0R:hover .spoilerWarning-2aAZq1{
-    opacity: 0;
+		opacity: 0;
 }
 
-  /*------------------------------------------*/
+	/*------------------------------------------*/
  /*-----------{@Mentiond in chat}------------*/
 /*------------------------------------------*/
 /*sets the hightlight color from yellow to black*/
 .message-2qnXI6.mentioned-xhSam7 {
-  background: rgba(0, 0, 0, 0.3);
-  /*removes highlight box that highlights the ping as well as the rest of the message*/
+	background: rgba(0, 0, 0, 0.3);
+	/*removes highlight box that highlights the ping as well as the rest of the message*/
 }
 /*removes the yellow virt bar at the start of @'ed msg*/
 .mentioned-xhSam7::before {
@@ -434,10 +444,10 @@ h3{ font-family: 'Ubuntu'; }
 }
 
 .mentioned-xhSam7 {
-    padding-top:10px !important;
-    padding-bottom:10px !important;
-    border-left: 3px solid rgba(180, 180, 180, 0.4);
-    border-radius: 0;
+		padding-top:10px !important;
+		padding-bottom:10px !important;
+		border-left: 3px solid rgba(180, 180, 180, 0.4);
+		border-radius: 0;
 }
 
 
@@ -445,13 +455,13 @@ h3{ font-family: 'Ubuntu'; }
 
 /* color the group DM dropdown sub containers*/
 .friend-3KALPe{
-  background-color: var( --background-secondary);
+	background-color: var( --background-secondary);
 }
 
 
 
 
-  /*---------------------------------------*/
+	/*---------------------------------------*/
  /*-----------{Context Popout}------------*/
 /*---------------------------------------*/
 /*Popup context menus*/
@@ -459,18 +469,18 @@ h3{ font-family: 'Ubuntu'; }
 .menu-3sdvDG.styleFlexible-wGDiIL, .submenu-2-ysNh.menu-3sdvDG, .menu-3sdvDG.styleFixed-sX-yHV {
 /*    -webkit-backdrop-filter: blur(3px);*/
 /*    backdrop-filter:blur(3px);*/
-    background-color: rgba(66,66,66, 0.7);
-    box-shadow: 2px 2px 5px #000;
+		background-color: rgba(66,66,66, 0.7);
+		box-shadow: 2px 2px 5px #000;
 }
 
 /*slide on hover over*/
 .item-1tOPte.labelContainer-1BLJti.colorDefault-2K3EoJ.focused-3afm-j {
-    left: -3px;
+		left: -3px;
 }
 /*hover color*/
 /*
 .colorDefault-2K3EoJ.focused-3afm-j{
-    background-color: rgba(33,33,33, .7);
+		background-color: rgba(33,33,33, .7);
 }
 */
 
@@ -490,80 +500,80 @@ h3{ font-family: 'Ubuntu'; }
 
 /*TODO:: move to thread.css*/
 
-  /*---------------------------------------------------------------------*/
+	/*---------------------------------------------------------------------*/
  /*-----------------------------{Theads}--------------------------------*/
 /*---------------------------------------------------------------------*/
 /* theads */
 /* .chat-3bRxxu.threadSidebarOpen-vdkwIh {
-    resize: horizontal;
-    min-width: 400px;
-    max-width: calc(100vw - var(--thread-width) - 72px - 400px);
+		resize: horizontal;
+		min-width: 400px;
+		max-width: calc(100vw - var(--thread-width) - 72px - 400px);
 } */
 .chat-3bRxxu:not(.threadSidebarOpen-vdkwIh) {
-    width: unset !important;
-    flex: 1 1 auto;
+		width: unset !important;
+		flex: 1 1 auto;
 }
 .threadSidebar-1o3BTy {
-    min-width: 400px;
-    width: 33vw;
-    flex: 1 1 auto;
+		min-width: 400px;
+		width: 33vw;
+		flex: 1 1 auto;
 }
 
 @media (max-width: 1150px){
-  .threadSidebar-1o3BTy {
-    max-width: 70px;
-    min-width: unset;
-    background-color: transparent;
-    backdrop-filter: blur(3px) !important;
-    transition: 1s ease;
-    -webkit-transition: 1s ease;
-    -moz-transition: 1s ease;
-    -ms-transition: 1s ease;
-    -o-transition: 1s ease;
+	.threadSidebar-1o3BTy {
+		max-width: 70px;
+		min-width: unset;
+		background-color: transparent;
+		backdrop-filter: blur(3px) !important;
+		transition: 1s ease;
+		-webkit-transition: 1s ease;
+		-moz-transition: 1s ease;
+		-ms-transition: 1s ease;
+		-o-transition: 1s ease;
 
-    scrollbar-width: 0px;
-  }
-  .threadSidebar-1o3BTy:hover {
-    max-width: 33vw;
-    /*min-width: 350px;*/
-    transition: 1s ease;
-    -webkit-transition: 1s ease;
-    -moz-transition: 1s ease;
-    -ms-transition: 1s ease;
-    -o-transition: 1s ease;
+		scrollbar-width: 0px;
+	}
+	.threadSidebar-1o3BTy:hover {
+		max-width: 33vw;
+		/*min-width: 350px;*/
+		transition: 1s ease;
+		-webkit-transition: 1s ease;
+		-moz-transition: 1s ease;
+		-ms-transition: 1s ease;
+		-o-transition: 1s ease;
 
-    scrollbar-width: 3px;
-  }
-  .threadSidebar-1o3BTy .toolbar-1t6TWx{
-    display: none;
-  }
-  /* .threadSidebar-1o3BTy:hover .container-1r6BKw{
-    opacity: 1;
-  } */
+		scrollbar-width: 3px;
+	}
+	.threadSidebar-1o3BTy .toolbar-1t6TWx{
+		display: none;
+	}
+	/* .threadSidebar-1o3BTy:hover .container-1r6BKw{
+		opacity: 1;
+	} */
 
-  /* main section */
-  .threadSidebar-1o3BTy .chatContent-a9vAAp{
-    background-color: transparent;
-  }
-  /* msg scroller */
-  .threadSidebar-1o3BTy .scrollerContent-WzeG7R{
-    min-width: 350px;
-  }
-  /* msg text container */
-  .threadSidebar-1o3BTy .scrollerInner-2YIMLh>div>.contents-2mQqc9{
-    background-color:rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-  }
-  .threadSidebar-1o3BTy .scroller-2LSbBU::-webkit-scrollbar{
-    width: 0px;
-  }
-  .threadSidebar-1o3BTy:hover .scroller-2LSbBU::-webkit-scrollbar{
-    width: 12px;
-  }
+	/* main section */
+	.threadSidebar-1o3BTy .chatContent-a9vAAp{
+		background-color: transparent;
+	}
+	/* msg scroller */
+	.threadSidebar-1o3BTy .scrollerContent-WzeG7R{
+		min-width: 350px;
+	}
+	/* msg text container */
+	.threadSidebar-1o3BTy .scrollerInner-2YIMLh>div>.contents-2mQqc9{
+		background-color:rgba(0, 0, 0, 0.3);
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+	}
+	.threadSidebar-1o3BTy .scroller-2LSbBU::-webkit-scrollbar{
+		width: 0px;
+	}
+	.threadSidebar-1o3BTy:hover .scroller-2LSbBU::-webkit-scrollbar{
+		width: 12px;
+	}
 
 }
 
@@ -574,7 +584,7 @@ h3{ font-family: 'Ubuntu'; }
 
 
 
-  /*-----------------------------------------------------------------------*/
+	/*-----------------------------------------------------------------------*/
  /*--------------------------{screen size rules}--------------------------*/
 /*-----------------------------------------------------------------------*/
 
@@ -582,73 +592,73 @@ h3{ font-family: 'Ubuntu'; }
 
 
 @media screen and (min-width: 1200px){
-  .container-2lgZY8.dynamic .membersWrap-2h-GB4{ max-width: 300px}
+	.container-2lgZY8.dynamic .membersWrap-2h-GB4{ max-width: 300px}
 }
 
 /* Sidebar Left 850 - 1000 */
 @media screen and (min-width: 851px) and (max-width: 1000px) {
-  .container-1eFtFS .sidebar-1tnWFu,
-  .container-1eFtFS .sidebar-1tnWFu .thin-1ybCId { width: 200px !important;}
-  .container-2lgZY8.dynamic .powercord-spotify:hover { width: 259px !important}
-  /* .panels-j1Uci_ .nameTag-3uD-yy { display: none;} */
-  /* .panels-j1Uci_  .avatarWrapper-2yR4wp { margin-right: 20px;} */
+	.container-1eFtFS .sidebar-1tnWFu,
+	.container-1eFtFS .sidebar-1tnWFu .thin-1ybCId { width: 200px !important;}
+	.container-2lgZY8.dynamic .powercord-spotify:hover { width: 259px !important}
+	/* .panels-j1Uci_ .nameTag-3uD-yy { display: none;} */
+	/* .panels-j1Uci_  .avatarWrapper-2yR4wp { margin-right: 20px;} */
 } 
 
 /* Sidebar Left 700 - 850 */
 @media screen and (min-width: 701px) and (max-width: 850px) {
-  /* .panels-j1Uci_  { position: fixed; bottom: -999px;} */
-  .container-2lgZY8.dynamic .powercord-spotify:hover { width: 259px !important}
-  .container-2lgZY8.dynamic .chat-3bRxxu{ margin-left: 0px; }
-  .container-1eFtFS .sidebar-1tnWFu{ width: 0px; }
-  .container-2lgZY8.dynamic .topic-TCb_qw.expandable-9fI_e3{ display: none; }
-  .container-2lgZY8.dynamic .children-19S4PO{ margin-right: 10px; }
-  .container-2lgZY8.dynamic .wrapper-3NnKdC:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh{
-    width:200px;
-    transition: .5s ease;
-    -webkit-transition: .5s ease;
-    -moz-transition: .5s ease;
-    -ms-transition: .5s ease;
-    -o-transition: .5s ease;
-  }
-  .container-1eFtFS .sidebar-1tnWFu:hover{
-    width:200px;
-    transition: .5s ease;
-    -webkit-transition: .5s ease;
-    -moz-transition: .5s ease;
-    -ms-transition: .5s ease;
-    -o-transition: .5s ease;
-  }
-  .container-2lgZY8.dynamic .sidebar-2K8pFh{
-     padding: 0px !important;
-    transition: .5s ease;
-    -webkit-transition: .5s ease;
-    -moz-transition: .5s ease;
-    -ms-transition: .5s ease;
-    -o-transition: .5s ease;
-  }
-  /* .sidebar-2K8pFh .thin-1ybCId{ display: none; } */
-  /* .toolbar-1t6TWx { display: none;} */
+	/* .panels-j1Uci_  { position: fixed; bottom: -999px;} */
+	.container-2lgZY8.dynamic .powercord-spotify:hover { width: 259px !important}
+	.container-2lgZY8.dynamic .chat-3bRxxu{ margin-left: 0px; }
+	.container-1eFtFS .sidebar-1tnWFu{ width: 0px; }
+	.container-2lgZY8.dynamic .topic-TCb_qw.expandable-9fI_e3{ display: none; }
+	.container-2lgZY8.dynamic .children-19S4PO{ margin-right: 10px; }
+	.container-2lgZY8.dynamic .wrapper-3NnKdC:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh{
+		width:200px;
+		transition: .5s ease;
+		-webkit-transition: .5s ease;
+		-moz-transition: .5s ease;
+		-ms-transition: .5s ease;
+		-o-transition: .5s ease;
+	}
+	.container-1eFtFS .sidebar-1tnWFu:hover{
+		width:200px;
+		transition: .5s ease;
+		-webkit-transition: .5s ease;
+		-moz-transition: .5s ease;
+		-ms-transition: .5s ease;
+		-o-transition: .5s ease;
+	}
+	.container-2lgZY8.dynamic .sidebar-2K8pFh{
+		 padding: 0px !important;
+		transition: .5s ease;
+		-webkit-transition: .5s ease;
+		-moz-transition: .5s ease;
+		-ms-transition: .5s ease;
+		-o-transition: .5s ease;
+	}
+	/* .sidebar-2K8pFh .thin-1ybCId{ display: none; } */
+	/* .toolbar-1t6TWx { display: none;} */
 }
 
 
 /* hide members list  0 - 750*/
 @media screen and (min-width: 0px) and (max-width: 750px) {
-  .container-2lgZY8.dynamic .membersWrap-2h-GB4 { display: none;}
-  .container-2lgZY8.dynamic .selected-1GqIat { display: none;}
-  .container-2lgZY8.dynamic .toolbar-1t6TWx .clickable-3rdHwn:nth-last-child(4) { display: none;}
+	.container-2lgZY8.dynamic .membersWrap-2h-GB4 { display: none;}
+	.container-2lgZY8.dynamic .selected-1GqIat { display: none;}
+	.container-2lgZY8.dynamic .toolbar-1t6TWx .clickable-3rdHwn:nth-last-child(4) { display: none;}
 }
 
 
 /* Sidebar Left 0 - 700 */
 @media screen and (min-width: 0px) and (max-width: 700px) {
-  .container-2lgZY8.dynamic .panels-j1Uci_  { position: fixed; bottom: -999px;}
-  .container-2lgZY8.dynamic .chat-3bRxxu { margin-left: 0px;}
-  .container-1eFtFS .sidebar-1tnWFu { width: 0px;}
-  .container-2lgZY8.dynamic .sidebar-2K8pFh .thin-1ybCId { display: none;}
-  .container-2lgZY8.dynamic .sidebar-2K8pFh  { padding: 0px !important;}
-  .container-2lgZY8.dynamic .toolbar-1t6TWx { display: none;}
-  .container-2lgZY8.dynamic .children-19S4PO { margin-right: 10px;}
-  .container-2lgZY8.dynamic .wrapper-3NnKdC { display: none;}
+	.container-2lgZY8.dynamic .panels-j1Uci_  { position: fixed; bottom: -999px;}
+	.container-2lgZY8.dynamic .chat-3bRxxu { margin-left: 0px;}
+	.container-1eFtFS .sidebar-1tnWFu { width: 0px;}
+	.container-2lgZY8.dynamic .sidebar-2K8pFh .thin-1ybCId { display: none;}
+	.container-2lgZY8.dynamic .sidebar-2K8pFh  { padding: 0px !important;}
+	.container-2lgZY8.dynamic .toolbar-1t6TWx { display: none;}
+	.container-2lgZY8.dynamic .children-19S4PO { margin-right: 10px;}
+	.container-2lgZY8.dynamic .wrapper-3NnKdC { display: none;}
 }
 
 
