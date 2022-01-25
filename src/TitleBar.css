@@ -65,6 +65,10 @@
 .title-31SJ6t .children-3xh0VB {
     justify-content: space-between;
 }
+/* fix layout when only title (h3) is present */
+.children-3xh0VB h3:last-child {
+    margin-right: calc(50% - 2em);
+}
 
 .title-31SJ6t .divider-q3P9HC {
     width: 2px;
