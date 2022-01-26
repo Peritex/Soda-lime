@@ -288,11 +288,11 @@ h3{ font-family: 'Ubuntu'; }
 		justify-content: space-evenly;
 		width: 100%;
 		margin: 0;
-		transform: rotateZ(90deg);
-		-webkit-transform: rotateZ(90deg);
-		-moz-transform: rotateZ(90deg);
-		-ms-transform: rotateZ(90deg);
-		-o-transform: rotateZ(90deg);
+		transform: rotateX(90deg);
+		-webkit-transform: rotateX(90deg);
+		-moz-transform: rotateX(90deg);
+		-ms-transform: rotateX(90deg);
+		-o-transform: rotateX(90deg);
 		transition: 250ms ease;
 		-webkit-transition: 250ms ease;
 		-moz-transition: 250ms ease;
