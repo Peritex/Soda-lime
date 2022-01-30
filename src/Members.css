@@ -12,6 +12,7 @@
     --members-list-width: 64px;
     --trans-members-list: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19) 250ms;
     --trans-members-text: 750ms ease-in;
+    --trans-members-message: 1s ease-out 0.2s;
 }
 
 
@@ -270,11 +271,9 @@
 
 .avatarHint-k7pYop,
 .pencilContainer-18TrEJ,
-.textarea-_59yqs,
 .aboutMeTitle-3pjiS7,
 .bodyTitle-2Az3VQ,
-.premiumIconWrapper-32h0Ri,
-.footer-3naVBw {
+.premiumIconWrapper-32h0Ri{
     display: none; 
 }
 .userPopout-2j1gM4 .banner-1YaD3N {
@@ -299,13 +298,45 @@
 }
 .customStatusText-3wj79x { 
     display: block;
-    text-align: center; }
-.body-2wLx-E {
+    text-align: center; 
+}
+
+/* main body of the popout */
+.userPopout-2j1gM4.body-2wLx-E {
+    max-height: 25vh;
+    min-height: 15vh;
     padding-bottom: 8px;
 }
 .rolesList-3uZoaa {
     margin-bottom: 2px;
 }
+
+/* slide out quick messages */
+.footer-3naVBw{
+  padding:  0px 16px;
+  transition: var(--trans-members-message);
+  -moz-transition: var(--trans-members-message);
+  -ms-transition: var(--trans-members-message);
+  -o-transition: var(--trans-members-message);
+  -webkit-transition: var(--trans-members-message);
+}
+.footer-3naVBw .input-2g-os5{
+  height: 0px;
+  padding: 0 10px;
+  transition: var(--trans-members-message);
+  -webkit-transition: var(--trans-members-message);
+  -moz-transition: var(--trans-members-message);
+  -ms-transition: var(--trans-members-message);
+  -o-transition: var(--trans-members-message);
+}
+.userPopout-2j1gM4:hover .footer-3naVBw .input-2g-os5,
+.userPopout-2j1gM4 .footer-3naVBw .input-2g-os5:focus{
+  height: 40px;
+  margin:  8px 0 10px 0;
+  padding: 10px;
+}
+
+
 
 /* grid the popout rolesList */
 [class*="rolesList-"] {
