@@ -472,3 +472,66 @@
     -ms-border-radius: var(--br-member-profile) !important;
     -o-border-radius: var(--br-member-profile) !important;
 }
+
+
+
+
+/* profile modal animation and 3D transition */
+.profileBannerPremium-KD60EB:after{
+  content:" ";
+  
+}
+
+.backdrop-2ByYRN.withLayer-2VVmpp {
+    backdrop-filter: blur(30px) grayscale(0.8);
+    opacity: 1 !important;
+    background: rgba(100, 100, 100, 0.15) !important;
+}
+
+
+[aria-label='User Profile Modal'].focusLock-2tveLW{
+ 
+  transform: perspective(1000px);
+  transform-style: preserve-3d;
+  transition: 2s;
+}
+[aria-label='User Profile Modal'].focusLock-2tveLW:hover{
+  transform: perspective(1000px) rotateX(3deg) rotateY(8deg) translateY(-20px);
+  transition: 2s;
+}
+
+[aria-label='User Profile Modal'].focusLock-2tveLW:before{
+  content:"";
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+  height: 10%;
+  width: 90%;
+  box-shadow: -75px 18px 14px 0 rgba(0, 0, 0, 0.75);
+  transform: skewX(60deg);
+  transition: 2s;
+}
+[aria-label='User Profile Modal'].focusLock-2tveLW:hover:before{
+  height: 12%;
+  transform: skewX(60deg);
+  box-shadow: -135px 38px 14px 5px rgba(0, 0, 0, 0.75);
+}
+
+.focusLock-2tveLW .root-g14mjS{
+   -webkit-box-reflect: below 40px linear-gradient(transparent 80%, rgb(0, 0, 0, 40%) );
+  transition: -webkit-box-reflec 2s;
+}
+.focusLock-2tveLW:hover .root-g14mjS{
+
+}
+
+@keyframes profile {
+  0%{transform: perspective(2000px) rotateX(7deg) rotateY(0deg);}
+  
+  33%{transform: perspective(2000px) rotateX(7deg) rotateY(15deg);}
+  
+  66%{transform: perspective(2000px) rotateX(7deg) rotateY(-15deg);}
+  
+  100%{transform: perspective(2000px) rotateX(7deg) rotateY(0deg);}
+  
+}
