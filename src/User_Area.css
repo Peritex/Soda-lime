@@ -49,32 +49,14 @@
   /*---------------------------------*/
  /*------------{Profile}------------*/
 /*---------------------------------*/
-.container-3baos1{
-    display: flex;
-    flex: 1 1 auto;
-    max-height: 55px;
-    bottom: 0px;
-    left: 0px;
-    padding: 2px 5px 5px 5px;
-    margin: 0;
-    z-index: 5;
+.container-YkUktl{
+  height: 59px;
+
 }
 /*pic*/
-.avatar-SmRMf2[role="img"]{
-    transition: 0.2s ease-in-out;
-    margin-left: 8px;
-    margin-right: 9px;
-    padding-left: 0px;
-}
-.container-3baos1:hover .avatar-SmRMf2[role="img"]{
-    transition: 0.2s ease-in-out;
-    padding-left: 0px;
-    
-}
-
-/*pic wrapper*/
-.avatarWrapper-2yR4wp{
-    margin: unset;
+.container-YkUktl > .avatarWrapper-1B9FTW > .avatar-1EWyVD{
+  height: 40px !important;
+  width: 40px !important;
 }
 
 
@@ -88,49 +70,17 @@
   /*---------------------------------*/
  /*--------{User tray icons}--------*/
 /*---------------------------------*/
-.panels-j1Uci_ > .container-3baos1:hover > .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignStretch-DpGPf3.noWrap-3jynv6{
-    flex: 1 1 auto !important;
-    display: flex;
-    justify-content: space-evenly;
-    transition: 0.5s ease-in-out;
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -ms-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-}
-.panels-j1Uci_ > .container-3baos1:hover > .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignStretch-DpGPf3.noWrap-3jynv6{
-    transition: ease-in-out 0.5s;
-    -webkit-transition: ease-in-out 0.5s;
-    -moz-transition: ease-in-out 0.5s;
-    -ms-transition: ease-in-out 0.5s;
-    -o-transition: ease-in-out 0.5s;
+.container-YkUktl:hover .flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz * {
+    width: 43px;
+    opacity: 1;
 }
 
-.panels-j1Uci_ .container-3baos1 button[aria-checked="false"],
-.panels-j1Uci_ .container-3baos1 button:not([role="switch"]){
-    transition: 0.2s ease-in-out;
-    width: 0px !important;
-    overflow: hidden !important;
-    opacity: 0 !important;
+.container-YkUktl .flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz * {
+    width: 0px;
+     opacity: 0;
+    transition: .25s ease;
 }
-.panels-j1Uci_ .container-3baos1:hover button.button-14-BFJ,
-.panels-j1Uci_ .container-3baos1 button[aria-label="Show Game Activity"] {
-    transition: 0.2s ease-in-out;
-    width: auto !important;
-    overflow: visible !important;
-    opacity: 1 !important;
-    -webkit-transition: 0.2s ease-in-out;
-    -moz-transition: 0.2s ease-in-out;
-    -ms-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
-}
-/*alow user area buttons to flex to number of children*/
-/*
-.panels-j1Uci_ .container-3baos1 .flex-1O1GKY{
-    flex: auto !important;
-    justify-content: space-around;
-}
-*/
+
 
   /*---------------------------------*/
  /*------{Cant copy usernames}------*/
@@ -154,6 +104,10 @@
 
 #status-picker-custom-status,
 #status-picker div[role=group] {
+  grid-column: 1/5;
+}
+/* Multi account experiment */
+.submenuContainer-3EVTeH{
   grid-column: 1/5;
 }
 
