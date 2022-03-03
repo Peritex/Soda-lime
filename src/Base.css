@@ -177,7 +177,7 @@ h3{ font-family: 'Ubuntu'; }
 
 
 
-	/*---------------------------------------------------------------------*/
+  /*---------------------------------------------------------------------*/
  /*--------------------------{people home tabs}--------------------------*/
 /*---------------------------------------------------------------------*/
 @keyframes slide-up {
@@ -382,44 +382,44 @@ h3{ font-family: 'Ubuntu'; }
 
 
 
-	/*------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------*/
  /*-------------------------{home menu buttons}----------------------------*/
 /*------------------------------------------------------------------------*/
 /* make the top 4 in home buttons */
-.privateChannels-oVe7HL  [class*="content-"] {
+.privateChannels-oVe7HL  [class*="channel-"] {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: flex-start;
 }
-.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) {
+.privateChannels-oVe7HL  [class*="-"] > a:not([href*="/channels/@me/"]) {
 	flex-grow: 1;
 	margin-top: 8px !important; 
 	margin-left: 0;
 	padding: 0 4px;
 }
-.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]):first-of-type {
+.privateChannels-oVe7HL  [class*="channel-"] > a:not([href*="/channels/@me/"]):first-of-type {
 	margin-left: 8px !important;
 }
-.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="layout-"] {
+.privateChannels-oVe7HL  [class*="channel-"] > a:not([href*="/channels/@me/"]) [class*="layout-"] {
 	justify-content: center;
 	padding: 0 !important;
 }
-.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="avatar-"] {
+.privateChannels-oVe7HL  [class*="channel-"] > a:not([href*="/channels/@me/"]) [class*="avatar-"] {
 	margin: 0 !important;
 }
-.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="content-"] {
+.privateChannels-oVe7HL  [class*="channel-"] > a:not([href*="/channels/@me/"]) [class*="content-"] {
 	display: none;
 }
-.privateChannels-oVe7HL  [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="children-"] {
+.privateChannels-oVe7HL  [class*="channel-"] > a:not([href*="/channels/@me/"]) [class*="children-"] {
 	position: absolute;
 	transform: translate(4px, 8px);
 	box-shadow: 0 0 0 3px var(--background-secondary);
 	border-radius: 100px;
 }
-.privateChannels-oVe7HL  [class*="content-"] > h2 {
+.privateChannels-oVe7HL  [class*="channel-"] > h2 {
 		width: 100%;
 }
-.privateChannels-oVe7HL  [class*="content-"] > a[href*="/channels/@me/"] {
+.privateChannels-oVe7HL  [class*="channel-"] > a[href*="/channels/@me/"] {
 		width: 100%;
 }
 

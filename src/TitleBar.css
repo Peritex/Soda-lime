@@ -108,14 +108,16 @@
 }
 
 /*hide search till clicked*/
-.search-1FM8Qc .searchBar-zdmu7v{
-    width:28px;
-    transition: width 0.5s ease-out;
-}
-.search-1FM8Qc:not(.open-3y3yI_) .searchBar-zdmu7v:hover{
-    width: 128px;
+.searchBar-jGtisZ{
+  width: 24px;
+  transition: width .5s ease-out;
+  -webkit-transition: width .5s ease-out;
+  -moz-transition: width .5s ease-out;
+  -ms-transition: width .5s ease-out;
+  -o-transition: width .5s ease-out;
 }
 
+/* discord unpdate button*/
 .toolbar-3_r2xA .updateIconForeground-2V_zo4 {
     fill: var(--color-green);
 }
