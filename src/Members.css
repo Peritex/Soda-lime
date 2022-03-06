@@ -28,6 +28,7 @@
 }
 /* new popout member list */
 .membersWrap-3NUR2t {
+    flex: 1;
     transition: var(--trans-members-list);
     -webkit-transition: var(--trans-members-list);
     -moz-transition: var(--trans-members-list);
