@@ -386,40 +386,49 @@ h3{ font-family: 'Ubuntu'; }
  /*-------------------------{home menu buttons}----------------------------*/
 /*------------------------------------------------------------------------*/
 /* make the top 4 in home buttons */
-.privateChannels-oVe7HL  [class*="channel-"] {
+.privateChannels-oVe7HL  ul.content-2a4AW9 {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: flex-start;
 }
-.privateChannels-oVe7HL  [class*="-"] > a:not([href*="/channels/@me/"]) {
-	flex-grow: 1;
-	margin-top: 8px !important; 
-	margin-left: 0;
-	padding: 0 4px;
+
+.privateChannels-oVe7HL [class*="channel-"] {
+  flex: 1 1;
 }
-.privateChannels-oVe7HL  [class*="channel-"] > a:not([href*="/channels/@me/"]):first-of-type {
+
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=nitro]:first-of-type,
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=friends]:first-of-type,
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=library]:first-of-type {
 	margin-left: 8px !important;
 }
-.privateChannels-oVe7HL  [class*="channel-"] > a:not([href*="/channels/@me/"]) [class*="layout-"] {
-	justify-content: center;
-	padding: 0 !important;
+
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=nitro] [class*="layout-"],
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=friends] [class*="layout-"],
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=library] [class*="layout-"]{
+  justify-content: center;
+  padding: 0 !important;
 }
-.privateChannels-oVe7HL  [class*="channel-"] > a:not([href*="/channels/@me/"]) [class*="avatar-"] {
-	margin: 0 !important;
+
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=nitro] [class*="avatar-"],
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=friends] [class*="avatar-"],
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=library] [class*="avatar-"]{
+  margin: 0 !important;
 }
-.privateChannels-oVe7HL  [class*="channel-"] > a:not([href*="/channels/@me/"]) [class*="content-"] {
-	display: none;
+
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=nitro] [class*="content-"],
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=friends] [class*="content-"],
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=library] [class*="content-"]{
+  display: none;
 }
-.privateChannels-oVe7HL  [class*="channel-"] > a:not([href*="/channels/@me/"]) [class*="children-"] {
-	position: absolute;
-	transform: translate(4px, 8px);
-	box-shadow: 0 0 0 3px var(--background-secondary);
-	border-radius: 100px;
+
+.privateChannels-oVe7HL [class*="channel-"] .numberBadge-37OJ3S{
+  position: absolute;
+	transform: translate(38px, 12px) scale(0.8);
+	box-shadow: 0 0 0 2px var(--background-secondary);
+	border-radius: 3px;
 }
-.privateChannels-oVe7HL  [class*="channel-"] > h2 {
-		width: 100%;
-}
-.privateChannels-oVe7HL  [class*="channel-"] > a[href*="/channels/@me/"] {
+
+.privateChannels-oVe7HL  [class*="channel-"]  a[href*="/channels/@me/"] {
 		width: 100%;
 }
 
