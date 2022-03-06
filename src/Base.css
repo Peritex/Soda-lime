@@ -393,7 +393,7 @@ h3{ font-family: 'Ubuntu'; }
 }
 
 .privateChannels-oVe7HL [class*="channel-"] {
-  flex: 1 1;
+  flex: 1 1 100%;
 }
 
 .privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=nitro]:first-of-type,
