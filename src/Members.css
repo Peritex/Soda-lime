@@ -231,7 +231,7 @@
 /*--------{Member profile popout}--------*/
 /*---------------------------------------*/
 .userPopout-2j1gM4 {
-    width: 400px !important;
+    width: 400px;
     border-radius: var(--br-member-popout);
     -webkit-border-radius: var(--br-member-popout);
     -moz-border-radius: var(--br-member-popout);
@@ -371,6 +371,66 @@
 [class*="rolesList-"] [class*="roleName-"] {
     margin: auto;
 }
+
+
+
+
+  /*------------------------------------------------*/
+ /*--------{Member profile popout animator}--------*/
+/*------------------------------------------------*/
+.animatorLeft-3yvG13 > div{
+  box-shadow:  0 0 0 #cccccc, 0 0 0 #ffffff;
+  animation: anime 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards ;
+}
+.animatorLeft-3yvG13 > div .avatarWrapper-eenWra{
+   animation: avatarOpacity 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes avatarOpacity{
+  0%{
+    opacity: 0;
+  }
+  35%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes anime {
+    0% {
+    width: 60px;
+    height: 60px;
+    max-height: 60px;
+    box-shadow: 10px 10px 10px #000,
+                10px 10px 10px #000;
+
+    }
+    50% {
+    width: 60px;
+    height: 65vh;
+    max-height: calc(80hv - 20px);
+    box-shadow: 10px 10px 10px #000,
+                5px 5px 20px #050505;
+    }
+    99% {
+    width: 400px;
+    height:65vh;
+    max-height: calc(80vh - 20px);
+    box-shadow: 40px 40px 40px #000,
+                0 0 40px #000;
+
+    }
+    100%{
+    width: 400px;
+    max-height: calc(80vh - 20px);
+    box-shadow: 40px 40px 40px #000,
+                0 0 40px #000;
+    }
+}
+
+
 
 
 
