@@ -77,9 +77,14 @@
 
 .container-YkUktl .flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz * {
     width: 0px;
-     opacity: 0;
+    opacity: 0;
     transition: .25s ease;
 }
+.container-YkUktl .flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz *[aria-checked="true"] {
+  width: 43px;
+  opacity: 1;
+}
+
 
 
   /*---------------------------------*/
@@ -330,63 +335,48 @@
   /*------------------------------------------*/
  /*------------{Voice Chat Panel}------------*/
 /*------------------------------------------*/
-/*Set VC wrapper to resize */
-.wrapper-24pKcD:not(:empty){
-    height: auto;
-    overflow: hidden;
-    /* width: 240px; */
-}
-/*VC div content*/ /*flex grow and stack buttons on top*/
-.container-1giJp5{
+.container-1zzFcN{
     display: flex;
     flex-wrap: wrap-reverse;
     max-width: 240px;
     padding: 0px 8px;
     padding-bottom: 7px;
-    
+    /*
     border-bottom: 1px solid;
     border-image: var(--gradient3);
     border-image-slice: 1;
+  */
 }
-/* flex box inside container-1giJp5 */
-.container-1giJp5 .connection-3KRENF{
+/*stop disconnect button going out of bounds*/
+.container-1zzFcN > div:not(.actionButtons-2vEOUh){
     width: -webkit-fill-available;
 }
-/* VC inside this div */
-.container-1giJp5 .inner-tyMogq{
-    padding: 5px 0px 0px 5px;
-}
+
 /* voice status text and icon */
-.container-1giJp5 .rtcConnectionStatus-2-jIsi{
+.container-1zzFcN .rtcConnectionStatus-2-jIsi{
     padding-bottom: 7px;
 }
 
 /*VC cam/share screen button */
-.actionButtons-14eAc_{
+.actionButtons-2vEOUh{
     flex: 1 1 auto;
     transition: .5s cubic-bezier(0.7, 0.1, 0.7, 0.1) .5s;
     height: 0px;
     overflow: hidden;
+  	padding-bottom: 8px;
     margin-top: 0px;
 }
 /*show VC buttons on hover*/
-.wrapper-24pKcD:hover .actionButtons-14eAc_{
-    transition: .5s cubic-bezier(0.2, 0.8, 0.3, 1);
+.wrapper-3Hk9OB:hover .actionButtons-2vEOUh{
+    transition: .5s ease-out;
     margin-top: 7px;
     height: 32px;
 }
 /*hide noise button*/
-.container-1giJp5 button[aria-label="Noise Suppression powered by Krisp"]{
+.container-1zzFcN button[aria-label="Noise Suppression powered by Krisp"]{
     display: none;
 }
-/*stop disconnect button going out of bounds*/
-.container-1giJp5 a > div:not(.actionButtons-14eAc_){
-    max-width:  -webkit-fill-available;
-}
-.container-1giJp5 > .actionButtons-14eAc_ .lookFilled-1Gx00P > .contents-18-Yxp
-{
-    width: 20px;
-}
+
 
   /*--------------------------------------------*/
  /*------------{Screen share Panel}------------*/
