@@ -80,11 +80,14 @@
     opacity: 0;
     transition: .25s ease;
 }
-.container-YkUktl .flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz *[aria-checked="true"] {
+.container-YkUktl .flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz > *[aria-checked="true"] {
   width: 43px;
   opacity: 1;
+  order: 2;
 }
-
+.container-YkUktl button[aria-label*="User Settings"]{
+  order: -1;
+}
 
 
   /*---------------------------------*/
