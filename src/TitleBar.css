@@ -1,51 +1,50 @@
   /*-------------------------------------------------------------------*/
  /*----------------------------{TiTle Bar}----------------------------*/
 /*-------------------------------------------------------------------*/
-
+.platform-win{
+  --TB-position-top: 0px;
+	--TB-position-right: 0;
+  --TB-height: 48px;
+  --TB-width: 50px;
+}
   /*--------------------------------*/
  /*-----------{Top Bar}------------*/
 /*--------------------------------*/
 
 /*Min Max close contaner*/
-.platform-win .typeWindows-1za-n7 {
+.platform-win .typeWindows-2-g3UY {
 	margin-top: 0;
 	position: absolute;
 	top: 1px;
 	left: 0;
 	width: 100%;
-    height: 15px;
-	background: 0 0;
+  height: 10px;
+	background: unset;
 }
 /*close button del*/
-.platform-win .winButtonClose-1HsbF- {
-    display:none;
+.platform-win .winButtonClose-3Q8ZH5 {
+    display: none;
 }
-.platform-win .winButton-iRh8-Z[aria-label="Maximize"]{
+.platform-win .winButton-3UMjdg[aria-label="Maximise"]{
   order: 1;
 }
-
+.platform-win .winButton-3UMjdg[aria-label="Maximise"]:hover{
+  background-color: rgb(230 170 100 / 80%);
+}
+.platform-win .winButton-3UMjdg[aria-label="Minimise"]:hover{
+  background-color: rgb(230 100 100 / 80%);
+}
 /*Min Max Close Buttons*/
-.platform-win .winButton-iRh8-Z {
+.platform-win .winButton-3UMjdg {
 	position: relative;
-	top: calc(var(--TB-position-top, 0px) - 1px);
-	right: var(--TB-position-right, 0);
-	height: var(--TB-height, 48px);
-	width: var(--TB-width, 55px);
-}
-/*Min Max Close Buttons hover */
-.platform-win .winButton-iRh8-Z:not(.winButtonClose-1HsbF-):hover {
-	background-color: var( --background-modifier-selected);
-}
-/*Title bar content */
-.platform-win .container-1r6BKw {
-	padding-right: var(--TB-header-padding, 115px)
+	top: calc(var(--TB-position-top) - 1px);
+	right: var(--TB-position-right);
+	height: var(--TB-height);
+	width: var(--TB-width);
 }
 /* Discord title del*/
-.platform-win .wordmarkWindows-1v0lYD {
+.platform-win .wordmarkWindows-2dq6rw {
 	display: none;
-}
-.platform-win #app-mount.bd-detached-editor .winButton-iRh8-Z {
-	right: 30%
 }
 
 
@@ -56,6 +55,7 @@
 /*------------------------------------------------*/
 .title-31SJ6t {
     -webkit-app-region: drag;
+    max-width: calc(100% - var(--TB-width)*2 + 8px);
 }
 
   /*--------------------------------------------*/
