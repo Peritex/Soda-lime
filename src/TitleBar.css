@@ -53,7 +53,8 @@
   /*------------------------------------------------*/
  /*-------------{Title bar container}--------------*/
 /*------------------------------------------------*/
-.title-31SJ6t {
+/* wrapper for all the top buttons */
+.title-31SJ6t,.container-ZMc96U {
     -webkit-app-region: drag;
     max-width: calc(100% - var(--TB-width)*2 + 8px);
 }
