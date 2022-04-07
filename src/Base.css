@@ -46,7 +46,7 @@
 	--gradient2: linear-gradient(300deg, transparent, var(--color-orange), var(--color-orange), var(--color-purple));
 	--gradient3: linear-gradient(90deg, transparent, var(--color-purple), var(--color-green), transparent);
 	--gradUpdate: linear-gradient(90deg, var(--color-green), var(--color-green), var(--color-lime));
-
+ 	--gradientSidebar: linear-gradient(90deg,transparent , var(--color-blue) , var(--color-purple) 25%, transparent);
 
 	--gradientR1: radial-gradient(var(--color-green), transparent);
 

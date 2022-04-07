@@ -24,6 +24,14 @@
 }
 /* .content-3YMskv */
 
+/* center sidebar group headers */
+.sidebar-1tnWFu .name-3BUDLf.container-q97qHp{
+  display: flex;
+  justify-content: center;
+  border-image: var(--gradientSidebar) 1;
+  border-style: solid;
+  border-bottom-width: 1px;
+}
 
 
   /*-----------------------------------------------------*/

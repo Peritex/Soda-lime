@@ -381,9 +381,11 @@
 .animatorLeft-3yvG13 > div{
   box-shadow:  0 0 0 #cccccc, 0 0 0 #ffffff;
   animation: anime 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards ;
+  -webkit-animation: anime 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards ;
 }
 .animatorLeft-3yvG13 > div .avatarWrapper-eenWra{
    animation: avatarOpacity 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+   -webkit-animation: avatarOpacity 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @keyframes avatarOpacity{
