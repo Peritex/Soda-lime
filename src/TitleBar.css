@@ -129,3 +129,19 @@
 .toolbar-3_r2xA > a.anchor-1MIwyf{
     display: none;
 }
+
+  /*----------------------------------------------------*/
+ /*-------------{home menu friends pills}--------------*/
+/*----------------------------------------------------*/
+/* add friend topbar pill */
+.item-3mHhwr.item-3XjbnG[aria-label*='Add']:before {
+    content: "+";
+    font-family: 'Ubuntu';
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 20px;
+}
+/* hide add friend text */
+.item-3mHhwr.item-3XjbnG[aria-label*='Add'] span{
+  display: none;
+}
