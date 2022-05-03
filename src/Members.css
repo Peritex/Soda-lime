@@ -1,5 +1,9 @@
 :root {
-    --premium-size: 480px; /* vars for background if nitro */
+    --profile-modal-width:600px;
+
+
+    --premium-height: 480px;
+    --premium-width: 600px; /* vars for background if nitro */
     --premium-opacity: .25;
     --premium-blur: blur(3px);
 
@@ -421,6 +425,15 @@
 /*--------{Big Member profile popout}--------*/
 /*------------------------------------------*/
 
+/* profile modal sub root */
+.focusLock-2tveLW .root-g14mjS{
+    width: 70vh;
+    height: 60vh;
+    min-width: 600px;
+    min-height: 400px;
+}
+
+
 .theme-dark .root-8LYsGj .body-1Ukv50,
 .topSection-13QKHs .tabBarContainer-sCZC4w .tabBar-2hXqzU,
 .tabBarItem-30Te4- {
@@ -454,7 +467,8 @@
 .body-1Ukv50 {
     position: absolute;
     background-color: transparent;
-    left: 190px;
+    /* left: 190px; */
+    right: 20px;
     top: 30px;
     height: 350px;
     width: 400px
@@ -468,14 +482,17 @@
 }
 
 .profileBannerPremium-KD60EB {
-    height: 475px;
     top: 0;
-    height: var(--premium-size);
-    background-position: center;
+    width: 100%;
+    height: 100%;
+    /*width: var(--premium-width);
+    height: var(--premium-height);
+    */background-position: center;
     background-size: cover;
     opacity: var(--premium-opacity);
     position: absolute;
-    filter: var(--premium-blur)
+    filter: var(--premium-blur);
+    -webkit-filter: var(--premium-blur);
 }
 
 .profileBanner-1owKI5,
@@ -531,7 +548,7 @@
 }
 
 .topSection-13QKHs {
-    height: 475px
+    flex: 1 1 auto;
 }
 
 .body-1Ukv50,
