@@ -68,6 +68,55 @@
 }
 
 
+  /*--------------------------------------------------*/
+ /*------------{Profile status indicator}------------*/
+/*--------------------------------------------------*/
+.container-YkUktl .avatar-1EWyVD[aria-label*='Online']:before{ 
+  content: "";
+  position: absolute;
+  left: -7px;
+  bottom: -10px;
+  display: block;
+  height: 5px;
+  width: 238px;
+  background-image: linear-gradient(transparent, var(--status-color-online));
+  border-radius: 25px 25px 0 0;
+  z-index: 1;   
+}
+.container-YkUktl .avatar-1EWyVD[aria-label*='Idle']:before{ 
+  content: "";
+  position: absolute;
+  left: -8px;
+  bottom: -10px;
+  display: block;
+  height: 5px;
+  width: 240px;
+    background-image: linear-gradient(transparent, var(--status-color-idle));
+    border-radius: 25px 25px 0 0;
+  z-index: 1;    
+}
+.container-YkUktl .avatar-1EWyVD[aria-label*='Do Not']:before{ 
+  content: "";
+  position: absolute;
+  left: -8px;
+  bottom: -10px;
+  display: block;
+  height: 5px;
+  width: 240px;
+    background-image: linear-gradient(transparent, var(--status-color-dnd));
+    border-radius: 25px 25px 0 0;
+  z-index: 1;    
+}
+/* hide old */
+.container-YkUktl .avatarWrapper-1B9FTW rect{
+  opacity:0;
+}
+
+
+
+
+
+
   /*-------------------------------*/
  /*--------{User name del}--------*/
 /*-------------------------------*/
