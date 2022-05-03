@@ -582,14 +582,21 @@
 
 
 [aria-label='User Profile Modal'].focusLock-2tveLW{
- 
-  transform: perspective(1000px);
-  transform-style: preserve-3d;
-  transition: 2s;
+    transform-style: preserve-3d;
+    transition: 2s;
+    transform: perspective(1000px) rotateX(3deg) rotateY(8deg) translateY(-20px);
+    -webkit-transform: perspective(1000px) rotateX(3deg) rotateY(8deg) translateY(-20px);
+    -moz-transform: perspective(1000px) rotateX(3deg) rotateY(8deg) translateY(-20px);
+    -ms-transform: perspective(1000px) rotateX(3deg) rotateY(8deg) translateY(-20px);
+    -o-transform: perspective(1000px) rotateX(3deg) rotateY(8deg) translateY(-20px);
 }
 [aria-label='User Profile Modal'].focusLock-2tveLW:hover{
-  transform: perspective(1000px) rotateX(3deg) rotateY(8deg) translateY(-20px);
   transition: 2s;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px);
+  -webkit-transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px);
+  -moz-transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px);
+  -ms-transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px);
+  -o-transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px);
 }
 
 [aria-label='User Profile Modal'].focusLock-2tveLW:before{
