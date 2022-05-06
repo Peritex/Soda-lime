@@ -426,7 +426,7 @@
 /*------------------------------------------*/
 
 /* profile modal sub root */
-.focusLock-2tveLW .root-g14mjS{
+.focusLock-2tveLW[aria-label*="User Profile"] .root-g14mjS{
     width: 70vw;
     height: 60vh;
     min-width: 600px;
