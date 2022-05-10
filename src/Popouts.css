@@ -356,3 +356,14 @@
 .searchResultGroup-1DphGG .searchResult-9tQ1uo {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+
+
+  /*----------------------------------------------*/
+ /*------------{Server hover pop out}------------*/
+/*----------------------------------------------*/
+
+.tooltipContent-Nejnvh foreignObject,
+.tooltipContent-Nejnvh .avatar-3TrM7c{
+  border-radius: 5px;
+}

@@ -33,6 +33,12 @@
   border-bottom-width: 1px;
 }
 
+ /*---------------------{side bar VC}---------------------*/
+.avatar-3FKimL{
+  border-radius: 5px;
+}
+
+
 
   /*-----------------------------------------------------*/
  /*---------------------{User area}---------------------*/
@@ -66,7 +72,9 @@
   height: 40px !important;
   width: 40px !important;
 }
-
+.avatarSpeaking-33RRJU{
+  border-radius: 5px;
+}
 
   /*--------------------------------------------------*/
  /*------------{Profile status indicator}------------*/
