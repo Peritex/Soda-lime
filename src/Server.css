@@ -43,6 +43,20 @@
     -o-border-radius:var(--br-server) ;
 }
 
+/* pills */
+span.item-2LIpTv {
+    border-radius: 2px;
+    background-color: var(--color-green);
+    width: 2px;
+    right: 1px;
+}
+.unread span.item-2LIpTv {
+    background-color: var(--color-orange);
+}
+
+
+
+
   /*----------------------------------*/
  /*-----------{Home Icon}------------*/
 /*----------------------------------*/
