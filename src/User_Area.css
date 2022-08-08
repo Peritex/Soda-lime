@@ -69,15 +69,15 @@
 }
 .container-YkUktl .avatarWrapper-1B9FTW{
   min-width: unset;
-  width: 120px
+  width: 120px;
+  margin-right: 0px;
 }
+.avatarWrapper-1B9FTW.withTagAsButton-OsgQ9L:hover{
+  min-width: none;
+}
+
 .container-YkUktl:hover .avatarWrapper-1B9FTW .nameTag-sc-gpq{
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
   width: 0px;
-  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-  -moz-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-  -ms-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-  -o-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
 
 
