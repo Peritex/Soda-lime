@@ -65,6 +65,7 @@
 /*---------------------------------*/
 .container-YkUktl{
   height: 59px;
+  justify-content: space-between;
 
 }
 .container-YkUktl .avatarWrapper-1B9FTW{
@@ -73,7 +74,7 @@
   margin-right: 0px;
 }
 .avatarWrapper-1B9FTW.withTagAsButton-OsgQ9L:hover{
-  min-width: none;
+  min-width: unset;
 }
 
 .container-YkUktl:hover .avatarWrapper-1B9FTW .nameTag-sc-gpq{
