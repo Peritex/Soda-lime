@@ -624,6 +624,31 @@ h3{ font-family: 'Ubuntu'; }
 
 
 
+  /*------------------------------------------------------------------------*/
+ /*----------------------------{Discord notice}----------------------------*/
+/*------------------------------------------------------------------------*/
+.notice-2HEN-u {
+    /* order: 100; */
+    top: 48px;
+    margin-bottom: -36px;
+    width: 50px;
+    height: 36px;
+    align-self: flex-end;
+    border-radius: 0 0 5px 5px;
+    opacity: 0.6;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+.notice-2HEN-u:hover {
+    top: 48px;
+    margin-bottom: -36px;
+    width: calc(100% - 270px);
+    align-self: flex-end;
+    border-radius: 0 0 5px 5px;
+    opacity: 1;
+}
+
+
 
 
 
