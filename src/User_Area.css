@@ -143,8 +143,6 @@
 
 
 
-
-
   /*-------------------------------*/
  /*--------{User name del}--------*/
 /*-------------------------------*/
@@ -181,6 +179,78 @@
 .header-23xsNx{
   user-select:none;
 }
+
+
+
+
+
+
+
+  /*--------------------------------------------------------------------*/
+ /*---------------------{User area account popout}---------------------*/
+/*--------------------------------------------------------------------*/
+
+#account{
+  --account-width: 450px;
+  --account-hight: 200px;
+  
+  width: var(--account-width);
+  height: var(--account-hight);
+}
+
+#account > div{
+  display: flex;
+  flex-direction: column;
+}
+
+#account  div[role = group]:not(.profileGroup-1yKk23){
+  width: 50%;
+  align-self: flex-end;
+}
+
+#account .profileGroup-1yKk23{
+  width: 50%;
+  bottom: 0px;
+}
+#account #account-info{
+  left: 250px;
+  height: 80px;
+}
+#account #account-info .headerTop-3GPUSF{
+  padding-top: 30px;
+}
+
+#account .headerText-1-WmDq{
+  margin-left: 0px !important
+}
+
+#account .profileBadges-2pItdR,
+#account .separator-1So4YB{
+  display: none;
+}
+
+#account .popoutBannerPremium-3i5EEI{
+  position: absolute;
+  max-width: none;
+  width: var(--account-width);
+  height: var(--account-hight);
+  filter: blur(2px) brightness(0.5);
+}
+
+#account .profileBody-3QbfPe{
+  display: none;
+}
+#account .avatarWrapper-eenWra{
+  top: 20px;  
+}
+
+
+
+
+
+
+
+
   /*---------------------------------*/
  /*---------{Status picker}---------*/
 /*---------------------------------*/
