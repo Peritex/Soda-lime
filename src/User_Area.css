@@ -225,7 +225,9 @@
 }
 
 #account .profileBadges-2pItdR,
-#account .separator-1So4YB{
+#account .separator-1So4YB,
+#account .popoutBanner-3cqRD9,
+#account #account-style-your-profile{
   display: none;
 }
 
