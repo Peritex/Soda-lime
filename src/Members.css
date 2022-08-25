@@ -101,6 +101,13 @@
     border-radius: var(--br-avatar);
 }
 
+/* hide old status indicator */
+.avatar-6qzftW rect{
+    display: none;
+}
+
+
+
 /* list avatar pic   .wrapper-1VLyxH is more universal than .avatar-6qzftW */
 .wrapper-1VLyxH foreignObject{
     mask: none;

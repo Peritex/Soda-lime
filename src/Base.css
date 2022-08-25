@@ -330,7 +330,10 @@ h3{ font-family: 'Ubuntu'; }
 	-ms-border-radius: calc(var(--br-avatar) * 0.5);
 	-o-border-radius: calc(var(--br-avatar) * 0.5);
 }
-
+/* remove old status indicator */
+.avatar-2MSPKk rect {
+    display: none;
+}
 
 
 /* poeple anim */
@@ -375,6 +378,10 @@ h3{ font-family: 'Ubuntu'; }
 		border-radius: var(--br-avatar);
 }
 
+/* remove old status indicator */
+.avatar-1HDIsL rect {
+    display: none;
+}
 
 
 
@@ -474,6 +481,10 @@ h3{ font-family: 'Ubuntu'; }
 .spoilerContainer-331r0R:hover .spoilerWarning-2aAZq1{
 		opacity: 0;
 }
+
+
+
+
 
 	/*------------------------------------------*/
  /*-----------{@Mentiond in chat}------------*/
