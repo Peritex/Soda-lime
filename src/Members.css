@@ -229,18 +229,22 @@
     -ms-border-radius: var(--br-member-popout);
     -o-border-radius: var(--br-member-popout);
 }
+
 /* top banner for nitro */
 .popoutBannerPremium-2RvDNZ{
     max-width: 400px;
     height: 150px;
+    min-height: 140px;
 }
 
-.headerText-1-WmDq {
-    margin-left: 160px !important; 
+.overlayBackground-arbZMT{
+  margin: 20px 16px 16px;
 }
+
+
 /* move pic down - nitro */
-.avatarPositionPremium-1zPBq9{
-    top: 128px;
+[class*="avatarPositionPremiumBanner"]{
+    top: 100px;
 }
 /* avatar pic wrapper */
 .avatar-2OC07D.wrapper-1VLyxH{
@@ -262,71 +266,58 @@
     -o-border-radius: var(--br-avatar);
 }
 
-.avatarHint-k7pYop,
-.pencilContainer-18TrEJ,
+.avatarHint-2g3Mcd,
+.profileBadges-31rDHI,
 .aboutMeTitle-3pjiS7,
 .bodyTitle-2Az3VQ,
 .premiumIconWrapper-32h0Ri{
     display: none; 
 }
-.userPopout-2j1gM4 .banner-1YaD3N {
-    width: auto; 
-}
+
 /* make userName have min height */
-.headerTop-3GPUSF {
-    min-height: 64px;
-    padding-top: 48px;
-    padding-bottom: 24px; 
+.userText-148fun{
+  margin-left: 45%;
+  min-height: 55px;
 }
-.customStatus-3XAoF9 {
-    margin-top: 10px; 
-    padding-bottom: 5px;
+.customStatus-3Bvsdb{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+  
 }
-.customStatusEmoji-1bFQdD { 
-    width: 128px !important;
-    height: 128px !important; 
-    margin-left: 119px !important;
-    margin-bottom: 5px !important;
-    float: none !important;
-}
-.customStatusText-3wj79x { 
-    display: block;
-    text-align: center; 
+.customStatus-3Bvsdb > img.customStatusEmoji-1hUpwD{
+  width: 100px;
+  height: 100px;
 }
 
-/* main body of the popout */
-.userPopout-2j1gM4.body-2wLx-E {
-    max-height: 25vh;
-    min-height: 15vh;
-    padding-bottom: 8px;
-}
-.rolesList-3uZoaa {
-    margin-bottom: 2px;
-}
+
 
 /* slide out quick messages */
-.footer-3naVBw{
-  padding:  0px 16px;
+.inputWrapper-1YNMmM{
+   padding:  0px 16px;
   transition: var(--trans-members-message);
   -moz-transition: var(--trans-members-message);
   -ms-transition: var(--trans-members-message);
   -o-transition: var(--trans-members-message);
   -webkit-transition: var(--trans-members-message);
 }
-.footer-3naVBw .input-2g-os5{
+
+.inputWrapper-1YNMmM .input-2g-os5{
   height: 0px;
-  padding: 0 10px;
+  padding: 0;
   transition: var(--trans-members-message);
   -webkit-transition: var(--trans-members-message);
   -moz-transition: var(--trans-members-message);
   -ms-transition: var(--trans-members-message);
   -o-transition: var(--trans-members-message);
 }
-.userPopout-2j1gM4:hover .footer-3naVBw .input-2g-os5,
-.userPopout-2j1gM4 .footer-3naVBw .input-2g-os5:focus{
-  height: 40px;
+
+.overlayBackground-arbZMT:hover .inputWrapper-1YNMmM .input-2g-os5,
+.overlayBackground-arbZMT .inputWrapper-1YNMmM .input-2g-os5:focus{
+  height: 30px;
   margin:  8px 0 10px 0;
-  padding: 10px;
 }
 
 
@@ -382,10 +373,14 @@
   animation: anime 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards ;
   -webkit-animation: anime 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards ;
 }
-.animatorLeft-3yvG13 .avatarWrapper-3y0KZ1{
+
+.animatorLeft-3yvG13 .avatarWrapper-3y0KZ1,
+.overlayBackground-arbZMT{
    animation: avatarOpacity 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
    -webkit-animation: avatarOpacity 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+
 
 @keyframes avatarOpacity{
   0%{
