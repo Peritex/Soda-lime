@@ -321,8 +321,14 @@ h3{ font-family: 'Ubuntu'; }
 		margin: 5px;
 }
 
+.peopleColumn-1wMU14 .avatar-2MSPKk svg {
+	width: 100%;
+	height: 100%;
+}
 
 .peopleColumn-1wMU14 .avatar-2MSPKk foreignObject{
+	width: 40px;
+	height: 40px;
 	mask: none;
 	border-radius: calc(var(--br-avatar) * 0.5);
 	-webkit-border-radius: calc(var(--br-avatar) * 0.5);
