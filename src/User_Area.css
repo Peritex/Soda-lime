@@ -192,7 +192,7 @@
 
 .accountProfilePopoutWrapper-3GskID{
   --account-width: 450px;
-  --account-hight: 200px;
+  --account-hight: 250px;
   
   width: var(--account-width);
   height: var(--account-hight);
@@ -207,14 +207,32 @@
 }
 
 
+/* main content */
 .accountProfilePopoutWrapper-3GskID  .overlayBackground-1KgwVi{
   background-color: transparent;
   height: 100%;
+  flex-direction: row;
 }
+
 .accountProfilePopoutWrapper-3GskID .copiableNameTag-1BpMX8{
   margin-top: 70%;
   width: 100px;
 }
+
+.accountProfilePopoutWrapper-3GskID .section-3FmfOT {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.accountProfilePopoutWrapper-3GskID .section-3FmfOT .userText-148fun{
+  margin-left: 0px;
+}
+
+.accountProfilePopoutWrapper-3GskID .customStatus-3Bvsdb{
+  flex-direction: column;
+}
+
+
 
 
 
@@ -235,6 +253,7 @@
   margin-left: 0px !important
 }
 
+.accountProfilePopoutWrapper-3GskID .divider-1tWBgZ,
 .accountProfilePopoutWrapper-3GskID .profileBadges-2pItdR,
 .accountProfilePopoutWrapper-3GskID .separator-1So4YB,
 .accountProfilePopoutWrapper-3GskID .popoutBanner-3cqRD9,
@@ -242,12 +261,17 @@
   display: none;
 }
 
+
+/* banner to background */
 .bannerSVGWrapper-qc0szY{
     position: absolute;
     max-width: none;
     width: var(--account-width);
     height: var(--account-hight);
     z-index: 0 !important;
+}
+.bannerSVGWrapper-qc0szY > foreignObject{
+  mask: none !important;
 }
 
 .accountProfilePopoutWrapper-3GskID .popoutBannerPremium-2RvDNZ{
@@ -260,6 +284,7 @@
 }
 
 
+/* account pic */
 .accountProfilePopoutWrapper-3GskID .profileBody-3QbfPe{
   display: none;
 }
@@ -270,7 +295,10 @@
 
 
 
-
+.accountProfilePopoutWrapper-3GskID .scroller-1jBQYo {
+    position: absolute;
+    bottom: 0px;
+}
 
 
 
