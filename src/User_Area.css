@@ -196,18 +196,28 @@
   
   width: var(--account-width);
   height: var(--account-hight);
+  left: 0px;
 }
-
+.accountProfilePopoutWrapper-3GskID .userPopoutOuter-3AVBmJ{
+  width: var(--account-width);
+}
 .accountProfilePopoutWrapper-3GskID .userProfileInner-3F03PX{
   width: var(--account-width);
   height: var(--account-hight);
 }
 
 
-.accountProfilePopoutWrapper-3GskID  div[role = group]:not(.profileGroup-1yKk23){
-  width: 50%;
-  align-self: flex-end;
+.accountProfilePopoutWrapper-3GskID  .overlayBackground-1KgwVi{
+  background-color: transparent;
+  height: 100%;
 }
+.accountProfilePopoutWrapper-3GskID .copiableNameTag-1BpMX8{
+  margin-top: 70%;
+  width: 100px;
+}
+
+
+
 
 .accountProfilePopoutWrapper-3GskID .profileGroup-1yKk23{
   width: 50%;
@@ -240,11 +250,12 @@
     z-index: 0 !important;
 }
 
-.accountProfilePopoutWrapper-3GskID .popoutBannerPremium-3i5EEI{
+.accountProfilePopoutWrapper-3GskID .popoutBannerPremium-2RvDNZ{
   position: absolute;
+  top: -35px;
   max-width: none;
   width: var(--account-width);
-  height: var(--account-hight);
+  height: 200px;
   filter: blur(2px) brightness(0.5);
 }
 
@@ -252,9 +263,15 @@
 .accountProfilePopoutWrapper-3GskID .profileBody-3QbfPe{
   display: none;
 }
-.accountProfilePopoutWrapper-3GskID .avatarWrapper-eenWra{
-  top: 20px;  
+.accountProfilePopoutWrapper-3GskID .avatarWrapper-3y0KZ1{
+  top: 22px;  
 }
+
+
+
+
+
+
 
 
 
