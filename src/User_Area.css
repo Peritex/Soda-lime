@@ -212,6 +212,7 @@
   background-color: transparent;
   height: 100%;
   flex-direction: row;
+  margin-right: 0px;
 }
 
 .accountProfilePopoutWrapper-3GskID .copiableNameTag-1BpMX8{
@@ -326,8 +327,8 @@
   grid-row: 1;
 }
 
-#account .menu-1QACrS[aria-activedescendant*="account-status-picker"] .status-2xYiEF,
-#account .menu-1QACrS[aria-activedescendant*="account-status-picker"] .description-1Dd2kv{
+#account .menu-1QACrS[aria-activedescendant*="account-status-picker"] .status-qmUf7L,
+#account .menu-1QACrS[aria-activedescendant*="account-status-picker"] .description-22_U3B{
   display: none;
 }
 
