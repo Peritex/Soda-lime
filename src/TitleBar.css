@@ -19,7 +19,7 @@
 	left: 0;
 	width: 100%;
   height: 10px;
-	background: unset;
+	background: unset !important;
 }
 /*close button del*/
 .platform-win .winButtonClose-3Q8ZH5 {
