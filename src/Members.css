@@ -63,7 +63,16 @@
     opacity: 1;
 }
 
-.membersWrap-3NUR2t:before {
+.member-48YF_l, .members-3WRCEx {
+    background: var(--bg-overlay-chat,var(--background-secondary));
+    background-color: rgba(8, 8, 8, 0.5);
+    z-index: 0;
+    backdrop-filter: blur(10px) grayscale(0.8);
+}
+
+
+/* old background style */
+/* .membersWrap-3NUR2t:before {
     content: "";
     display: block;
     position: absolute;
@@ -74,7 +83,7 @@
     background-color: rgba(8, 8, 8, 0.5);
     z-index: 0;
     backdrop-filter: blur(10px) grayscale(0.8);
-}
+} */
 .membersWrap-3NUR2t .member-2gU6Ar,
 .member-2gU6Ar, .member-2gU6Ar>div {
     background-color: transparent;
