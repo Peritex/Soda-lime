@@ -362,7 +362,7 @@ h3{ font-family: 'Ubuntu'; }
 		border-radius: var(--br-avatar);
 }
 
-/* remove old status indicator */
+/* remove discords status indicator */
 .avatar-1HDIsL rect {
     display: none;
 }
@@ -388,45 +388,56 @@ h3{ font-family: 'Ubuntu'; }
 
 .privateChannels-oVe7HL [class*="channel-"][aria-posinset='1'],
 .privateChannels-oVe7HL [class*="channel-"][aria-posinset='2'],
-.privateChannels-oVe7HL [class*="channel-"][aria-posinset='3']{
+.privateChannels-oVe7HL [class*="channel-"][aria-posinset='3'],
+.privateChannels-oVe7HL [class*="channel-"]:not([aria-posinset]){
   flex: 1;
 } 
 
 .privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=nitro]:first-of-type,
 .privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=friends]:first-of-type,
-.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=library]:first-of-type {
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=library]:first-of-type,
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=Requests]:first-of-type {
 	margin-left: 8px !important;
 }
 
 .privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=nitro] [class*="layout-"],
 .privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=friends] [class*="layout-"],
-.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=library] [class*="layout-"]{
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=library] [class*="layout-"],
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=Requests] [class*="layout-"]{
   justify-content: center;
   padding: 0 !important;
 }
 
 .privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=nitro] [class*="avatar-"],
 .privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=friends] [class*="avatar-"],
-.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=library] [class*="avatar-"]{
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=library] [class*="avatar-"],
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=Requests] [class*="avatar-"]{
   margin: 0 !important;
 }
 
 .privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=nitro] [class*="content-"],
 .privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=friends] [class*="content-"],
-.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=library] [class*="content-"]{
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=library] [class*="content-"],
+.privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=Requests] [class*="content-"]{
   display: none;
 }
 
 .privateChannels-oVe7HL [class*="channel-"] .numberBadge-37OJ3S{
 	position: absolute;
-	transform: translate(38px, 12px) scale(0.8);
 	box-shadow: 0 0 0 2px var(--background-secondary);
 	border-radius: 3px;
+	transform: translate(150%, 70%) scale(0.8);
+	-webkit-transform: translate(150%, 70%) scale(0.8);
+	-moz-transform: translate(150%, 70%) scale(0.8);
+	-ms-transform: translate(150%, 70%) scale(0.8);
+	-o-transform: translate(150%, 70%) scale(0.8);
 }
 
-.privateChannels-oVe7HL  [class*="channel-"]  a[href*="/channels/@me/"] {
+
+/* old --- remove soon */
+/* .privateChannels-oVe7HL  [class*="channel-"]  a[href*="/channels/@me/"] {
 	width: 100%;
-}
+} */
 
 
 
