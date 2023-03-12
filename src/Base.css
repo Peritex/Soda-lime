@@ -472,8 +472,20 @@ h3{ font-family: 'Ubuntu'; }
 	opacity: 1;
 	/*makes text opacity look like normal, non-spoiled text on hover*/
 }
+
+.spoiler-3aUoEX.hiddenSpoilers-19m4Pg{
+	filter: blur(44px) grayscale(1);
+	-webkit-filter: blur(44px) grayscale(1);
+}
+
+.spoilerContainer-1Dl06W:hover .spoiler-3aUoEX.hiddenSpoilers-19m4Pg {
+    filter: blur(5px) grayscale(0);
+    -webkit-filter: blur(5px) grayscale(0);
+}
+
+
 /*hide the spoiler badge on images*/
-.spoilerContainer-331r0R:hover .spoilerWarning-2aAZq1{
+.spoilerContainer-1Dl06W:hover .spoilerWarning-1JN1Ot{
 		opacity: 0;
 }
 
