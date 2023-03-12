@@ -479,8 +479,8 @@ h3{ font-family: 'Ubuntu'; }
 }
 
 .spoilerContainer-1Dl06W:hover .spoiler-3aUoEX.hiddenSpoilers-19m4Pg {
-    filter: blur(5px) grayscale(0);
-    -webkit-filter: blur(5px) grayscale(0);
+    filter: blur(0px) grayscale(0);
+    -webkit-filter: blur(0px) grayscale(0);
 }
 
 
