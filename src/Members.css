@@ -165,9 +165,13 @@
     -o-border-radius: var(--br-member-popout);
 }
 
+[class*="userPopoutOverlayBackground"]{
+    margin: 95px 16px 16px;
+}
+
 /* top banner for nitro */
 .popoutBannerPremium-2RvDNZ{
-    max-width: 400px;
+    max-width: 333px;
     height: 150px;
     min-height: 140px;
 }
@@ -176,20 +180,32 @@
   margin: 20px 16px 16px;
 }
 
+[class*="userPopoutOuter"] .bannerSVGWrapper-qc0szY{
+    position: absolute;
+    max-width: none;
+    width: 100%;
+    height: var(--account-hight);
+    z-index: 0 !important;
+}
+
+[class*="userPopoutOuter"] .bannerSVGWrapper-qc0szY > foreignObject {
+    mask: none !important;
+    width: 333px;
+}
+
+
+
+
+
 
 /* move pic down - nitro */
 [class*="avatarPositionPremiumBanner"]{
     top: 100px;
 }
 /* avatar pic wrapper */
-.avatar-2OC07D.wrapper-3Un6-K{
+.avatarWrapper-3y0KZ1 .wrapper-3Un6-K svg{
     width: 128px !important;
     height: 128px !important;
-    border-radius: var(--br-avatar);
-    -webkit-border-radius: var(--br-avatar);
-    -moz-border-radius: var(--br-avatar);
-    -ms-border-radius: var(--br-avatar);
-    -o-border-radius: var(--br-avatar);
 }
 /* make pic not round */
 .avatarWrapper-eenWra .avatar-2Vndt_ foreignObject{
@@ -214,10 +230,14 @@
   margin-left: 45%;
   min-height: 55px;
 }
+
+
+
+
 .customStatus-3Bvsdb{
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
     align-items: center;
     margin: 10px 0;
   
@@ -226,6 +246,11 @@
   width: 100px;
   height: 100px;
 }
+
+
+
+
+
 
 
 
