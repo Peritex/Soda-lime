@@ -1,6 +1,8 @@
 :root {
     --profile-modal-width:600px;
 
+    --members-popout-avatar-width:128px;
+    --members-list-avatar-width:32px;
 
     --premium-height: 480px;
     --premium-width: 600px; /* vars for background if nitro */
@@ -120,6 +122,8 @@
 /* list avatar pic   .wrapper-3Un6-K is more universal than .avatar-6qzftW */
 .wrapper-3Un6-K foreignObject{
     mask: none;
+    width: 100%;
+    height: 100%;
     border-radius: var(--br-avatar);
     -webkit-border-radius: var(--br-avatar);
     -moz-border-radius: var(--br-avatar);
@@ -194,18 +198,35 @@
 }
 
 
-
-
-
-
 /* move pic down - nitro */
 [class*="avatarPositionPremiumBanner"]{
     top: 100px;
 }
+
+
+.avatarWrapper-3y0KZ1{
+    z-index: 1;
+}
+
+/* new member popout status indicator */
+.avatarWrapper-3y0KZ1 .wrapper-3Un6-K:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 4px 12px 5px 2px #111, 5px 12px 5px 4px orange;
+}
+
+.avatarWrapper-3y0KZ1 .wrapper-3Un6-K{
+    width: 100%;
+    height: 100%;
+}
+
+
 /* avatar pic wrapper */
 .avatarWrapper-3y0KZ1 .wrapper-3Un6-K svg{
-    width: 128px !important;
-    height: 128px !important;
+    width: var(--members-popout-avatar-width)!important;
+    height: var(--members-popout-avatar-width) !important;
 }
 /* make pic not round */
 .avatarWrapper-eenWra .avatar-2Vndt_ foreignObject{
@@ -328,13 +349,13 @@
   /*------------------------------------------------*/
  /*--------{Member profile popout animator}--------*/
 /*------------------------------------------------*/
-.animatorLeft-3yvG13 > div{
+.animatorLeft-1I1Kvj > div{
   box-shadow:  0 0 0 #cccccc, 0 0 0 #ffffff;
   animation: anime 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards ;
   -webkit-animation: anime 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards ;
 }
 
-.animatorLeft-3yvG13 .avatarWrapper-3y0KZ1,
+.animatorLeft-1I1Kvj .avatarWrapper-3y0KZ1,
 .overlayBackground-arbZMT{
    animation: avatarOpacity 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
    -webkit-animation: avatarOpacity 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
