@@ -355,12 +355,12 @@
   -webkit-animation: anime 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards ;
 }
 
-.animatorLeft-1I1Kvj .avatarWrapper-3y0KZ1,
+/* .animatorLeft-1I1Kvj .avatarWrapper-3y0KZ1,
 .overlayBackground-arbZMT{
    animation: avatarOpacity 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
    -webkit-animation: avatarOpacity 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
    z-index: 1;
-}
+} */
 
 
 
