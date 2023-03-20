@@ -229,6 +229,7 @@
 /* avatar pic wrapper */
 .avatarWrapper-3y0KZ1 .wrapper-3Un6-K,
 .avatarWrapper-3y0KZ1 .wrapper-3Un6-K svg{
+    display: flex;
     width: var(--members-popout-avatar-width) !important;
     height: var(--members-popout-avatar-width) !important;
 }
