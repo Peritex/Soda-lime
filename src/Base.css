@@ -374,6 +374,11 @@ h3{ font-family: 'Ubuntu'; }
 [class*="privateChannels-"] [class*="avatar-"]{
 	width: 32px;
 	height: 32px;
+	border-radius: var(--br-avatar);
+	-webkit-border-radius: var(--br-avatar);
+	-moz-border-radius: var(--br-avatar);
+	-ms-border-radius: var(--br-avatar);
+	-o-border-radius: var(--br-avatar);
 }
 
 
