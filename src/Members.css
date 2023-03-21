@@ -223,7 +223,7 @@
     border-radius: 8px;
     box-shadow: 4px 12px 5px 2px #111, 5px 12px 5px 4px var(--status-color-online);
 }
-.avatarWrapper-3y0KZ1 [aria-label*="Idel"].wrapper-3Un6-K:before {
+.avatarWrapper-3y0KZ1 [aria-label*="Idle"].wrapper-3Un6-K:before {
     content: "";
     width: var(--members-popout-avatar-width);
     height: var(--members-popout-avatar-width);
