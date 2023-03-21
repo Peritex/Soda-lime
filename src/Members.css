@@ -237,12 +237,18 @@
     border-radius: 8px;
     box-shadow: 4px 12px 5px 2px #111, 5px 12px 5px 4px var(--status-color-dnd);
 }
+/* hide my status for userArea popout */
+.userPopoutOuter-3AVBmJ .avatarWrapper-3y0KZ1 [aria-label*="Online"].wrapper-3Un6-K:before{
+    display: none;
+}
+
 
 /* hide discord status indicators */
 .avatarWrapper-3y0KZ1 .wrapper-3Un6-K svg circle,
 .avatarWrapper-3y0KZ1 .wrapper-3Un6-K svg rect{
     display: none;
 }
+
 
 
 /* avatar pic wrapper */
