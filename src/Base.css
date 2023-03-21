@@ -201,7 +201,7 @@ h3{ font-family: 'Ubuntu'; }
 
 
 /*fix friend list bg*/
-/* peoplecolumn */
+/* friends main container */
 .theme-dark .container-2cd8Mz{
 		background-color: var( --background-primary);
 }
@@ -371,6 +371,14 @@ h3{ font-family: 'Ubuntu'; }
 
 
 
+[class*="privateChannels-"] [class*="avatar-"]{
+	width: 32px;
+	height: 32px;
+}
+
+
+
+
 
 
   /*------------------------------------------------------------------------*/
@@ -392,6 +400,8 @@ h3{ font-family: 'Ubuntu'; }
 .privateChannels-oVe7HL [class*="channel-"][aria-posinset='3'],
 .privateChannels-oVe7HL [class*="channel-"]:not([aria-posinset]){
   flex: 1;
+  min-width: 30%;
+  margin-top: 4px;
 } 
 
 .privateChannels-oVe7HL [class*="channel-"] a[data-list-item-id*=nitro]:first-of-type,
