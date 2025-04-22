@@ -29,11 +29,11 @@
 
 
 /* members wrapper container */
-.container-2o3qEW{
+.container_c8ffbb{
     width: var(--members-list-width);
 }
 /* new popout member list */
-.membersWrap-3NUR2t {
+.membersWrap_c8ffbb {
     flex: 1;
     transition: var(--trans-members-list);
     -webkit-transition: var(--trans-members-list);
@@ -41,7 +41,7 @@
     -ms-transition: var(--trans-members-list);
     -o-transition: var(--trans-members-list);
 }
-.membersWrap-3NUR2t:hover {
+.membersWrap_c8ffbb:hover {
     transform: translateX(calc(var(--members-list-width) - 240px));
     -webkit-transform: translateX(calc(var(--members-list-width) - 240px));
     -moz-transform: translateX(calc(var(--members-list-width) - 240px));
@@ -49,8 +49,8 @@
     -o-transform: translateX(calc(var(--members-list-width) - 240px));
 }
 /* members list nameTag text and members list group text */
-.membersWrap-3NUR2t .membersGroup-2eiWxl, 
-.membersWrap-3NUR2t .member-2gU6Ar .content-1U25dZ {
+.membersWrap_c8ffbb .membersGroup-2eiWxl, 
+.membersWrap_c8ffbb .members_c8ffbb .content-1U25dZ {
     transform: translateX(50px);
     opacity: 0;
     transition: var(--trans-members-text);
@@ -59,8 +59,8 @@
     -ms-transition: var(--trans-members-text);
     -o-transition: var(--trans-members-text);
 }
-.membersWrap-3NUR2t:hover .membersGroup-2eiWxl,
-.membersWrap-3NUR2t:hover .member-2gU6Ar .content-1U25dZ {
+.membersWrap_c8ffbb:hover .membersGroup-2eiWxl,
+.membersWrap_c8ffbb:hover .members_c8ffbb .content-1U25dZ {
     transform: translateX(0px);
     opacity: 1;
 }
@@ -74,7 +74,7 @@
 
 
 /* old background style */
-/* .membersWrap-3NUR2t:before {
+/* .membersWrap_c8ffbb:before {
     content: "";
     display: block;
     position: absolute;
@@ -86,8 +86,8 @@
     z-index: 0;
     backdrop-filter: blur(10px) grayscale(0.8);
 } */
-.membersWrap-3NUR2t .member-2gU6Ar,
-.member-2gU6Ar, .member-2gU6Ar>div {
+.membersWrap_c8ffbb .members_c8ffbb,
+.members_c8ffbb, .members_c8ffbb>div {
     background-color: transparent;
 }
 
@@ -96,17 +96,17 @@
 
 
 /* new status indicator -- members is members && root is big user profile */
-.member-2gU6Ar .wrapper-3Un6-K[aria-label*="Online"], 
+.members_c8ffbb .wrapper-3Un6-K[aria-label*="Online"], 
 .root-8LYsGj .wrapper-3Un6-K[aria-label*="Online"]{
     box-shadow: 0 0 5px 2px var(--status-color-online);
     border-radius: var(--br-avatar);
 }
-.member-2gU6Ar .wrapper-3Un6-K[aria-label*="Idle"], 
+.members_c8ffbb .wrapper-3Un6-K[aria-label*="Idle"], 
 .root-8LYsGj .wrapper-3Un6-K[aria-label*="Idle"]{
     box-shadow: 0 0 5px 2px var(--status-color-idle);
     border-radius: var(--br-avatar);
 }
-.member-2gU6Ar .wrapper-3Un6-K[aria-label*="Do Not Disturb"], 
+.members_c8ffbb .wrapper-3Un6-K[aria-label*="Do Not Disturb"], 
 .root-8LYsGj .wrapper-3Un6-K[aria-label*="Do Not Disturb"]{
     box-shadow: 0 0 5px 2px var(--status-color-dnd);
     border-radius: var(--br-avatar);
@@ -118,7 +118,7 @@
 }
 
 /* clamp members list svg size */
-.membersWrap-3NUR2t .wrapper-3Un6-K svg{
+.membersWrap_c8ffbb .wrapper-3Un6-K svg{
     width: var(--members-list-avatar-width);
     height: var(--members-list-avatar-width);
 }
