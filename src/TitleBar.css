@@ -11,6 +11,33 @@
  /*-----------{Top Bar}------------*/
 /*--------------------------------*/
 
+@supports (grid-template-columns:subgrid) and (white-space-collapse:collapse) {
+  .visual-refresh .base_c48ade {
+grid-template-rows: [top] 0px [titleBarEnd] min-content [noticeEnd] 1fr [end];
+  }}
+
+  
+.bar_c38106{
+  z-index: 101;
+}
+
+/*TopBar help button del*/
+.bar_c38106 > a.anchor_edefb8{
+    display: none;
+}
+/* discord unpdate button*/
+.bar_c38106 .updateIconForeground-2V_zo4 {
+  fill: var(--color-green);
+}
+.bar_c38106 .updateIconForeground-2V_zo4 {
+  fill: var(--color-lime);
+}
+
+
+
+
+
+
 /*Min Max close contaner*/
 .platform-win .typeWindows-2-g3UY {
 	margin-top: 0;
@@ -54,7 +81,7 @@
  /*-------------{Title bar container}--------------*/
 /*------------------------------------------------*/
 /* wrapper for all the top buttons */
-.title-31SJ6t,.container-ZMc96U {
+.title_f75fb0,.container__9293f {
     -webkit-app-region: drag;
     max-width: calc(100% - var(--TB-width)*2 + 8px);
 }
@@ -63,17 +90,17 @@
  /*-------------{Chat Title text}--------------*/
 /*--------------------------------------------*/
 
-.title-31SJ6t .children-3xh0VB {
-  justify-content: center;
+.title_f75fb0 .children__9293f {
+  /* justify-content: center; */
 }
 
-.title-31SJ6t > .iconWrapper-2awDjA{
+.title_f75fb0 > .iconWrapper__9293f{
   position: absolute;
   left: 1px;
 }
 
 
-.title-31SJ6t .divider-q3P9HC {
+.title_f75fb0 .divider-q3P9HC {
   position: absolute;
   right: 1px;
   width: 2px;
@@ -84,7 +111,7 @@
   border-radius: 0.1rem; */
 }
 
-.title-31SJ6t .topic-11NuQZ {
+.title_f75fb0 .topic-11NuQZ {
   position: absolute;
   left: 1px;
   width: 1.5rem;
@@ -98,7 +125,7 @@
 /*-------------------------------------------*/
 
 /*ring the mute bell*/
-.iconWrapper-2awDjA[aria-label="Notification Settings"]:hover {
+.iconWrapper__9293f[aria-label="Notification Settings"]:hover {
     animation: Ring 0.15s 6;
   }
   @keyframes Ring {
@@ -114,26 +141,22 @@
 }
 
 /*hide search till clicked*/
-.searchBar-jGtisZ{
-  width: 24px;
+.searchBar__97492{
+  width: 30px;
   transition: width .5s ease-out;
   -webkit-transition: width .5s ease-out;
   -moz-transition: width .5s ease-out;
   -ms-transition: width .5s ease-out;
   -o-transition: width .5s ease-out;
 }
+.searchBar__97492 .DraftEditor-root {
+  padding: 0px;
+}
 
-/* discord unpdate button*/
-.toolbar-3_r2xA .updateIconForeground-2V_zo4 {
-    fill: var(--color-green);
-}
-.toolbar-3_r2xA .updateIconForeground-2V_zo4 {
-    fill: var(--color-lime);
-}
-/*TopBar help button del*/
-.toolbar-3_r2xA > a.anchor-1X4H4q{
-    display: none;
-}
+
+
+
+
 
   /*----------------------------------------------------*/
  /*-------------{home menu add friends pills}--------------*/

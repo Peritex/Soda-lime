@@ -3,6 +3,9 @@
 
     --members-popout-avatar-width:128px;
     --members-list-avatar-width:32px;
+    --members-list-blur:20px;
+
+
 
     --premium-height: 480px;
     --premium-width: 600px; /* vars for background if nitro */
@@ -15,7 +18,7 @@
 
     --roleslist-columns: 2; /* Number of role columns */
 
-    --members-list-width: 64px;
+    --members-list-width: 70px;
     --trans-members-list: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19) 250ms;
     --trans-members-text: 750ms ease-in;
     --trans-members-message: 1s ease-out 0.2s;
@@ -31,10 +34,13 @@
 /* members wrapper container */
 .container_c8ffbb{
     width: var(--members-list-width);
+    border-left: none; 
 }
 /* new popout member list */
 .membersWrap_c8ffbb {
+    border-left: 1px solid var(--border-subtle);
     flex: 1;
+    backdrop-filter: blur(20px);
     transition: var(--trans-members-list);
     -webkit-transition: var(--trans-members-list);
     -moz-transition: var(--trans-members-list);
@@ -48,9 +54,12 @@
     -ms-transform: translateX(calc(var(--members-list-width) - 240px));
     -o-transform: translateX(calc(var(--members-list-width) - 240px));
 }
+.visual-refresh .membersGroup_c8ffbb{
+    padding: 12px 8px 0 16px;
+}
+
 /* members list nameTag text and members list group text */
-.membersWrap_c8ffbb .membersGroup-2eiWxl, 
-.membersWrap_c8ffbb .members_c8ffbb .content-1U25dZ {
+.membersWrap_c8ffbb .membersGroup_c8ffbb {
     transform: translateX(50px);
     opacity: 0;
     transition: var(--trans-members-text);
@@ -59,13 +68,18 @@
     -ms-transition: var(--trans-members-text);
     -o-transition: var(--trans-members-text);
 }
-.membersWrap_c8ffbb:hover .membersGroup-2eiWxl,
-.membersWrap_c8ffbb:hover .members_c8ffbb .content-1U25dZ {
+.membersWrap_c8ffbb:hover .membersGroup_c8ffbb {
     transform: translateX(0px);
     opacity: 1;
+    color: white;
+    text-shadow: 0 0 2px #000;
 }
 
-.member-48YF_l, .members-3WRCEx {
+/* .membersWrap_c8ffbb .members_c8ffbb .content__99f8c{
+
+} */
+
+.member__5d473, .members-3WRCEx {
     background: var(--bg-overlay-chat,var(--background-secondary));
     background-color: rgba(8, 8, 8, 0.5);
     z-index: 0;
